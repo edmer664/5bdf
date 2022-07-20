@@ -7,7 +7,7 @@
                         <img src="{{asset('assets/images/Logo5BDF.png')}}" alt="" class="n-logo-sizer">
                     </a>
                 </div>
-                <div class="col text-end">
+                <div class="col d-flex align-items-end justify-content-center flex-column">
 
 
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -15,6 +15,9 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
+                </div>
+                <div class="col-12 col-md-6">
                     <div class="collapse navbar-collapse justify-content-end align-items-center h-100" id="mobile-collapse">
                         <ul class="navbar-nav">
                             <li class="nav-item">

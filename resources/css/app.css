@@ -1,8 +1,12 @@
-.big{
-  font-size: 100px;
+*{
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  overflow-x: hidden;
 }
 
 .n-logo-sizer{
+<<<<<<< HEAD
   width: 100px;
 }
 
@@ -46,3 +50,29 @@
         grid-template-columns: 1fr;
     }
 }
+=======
+  max-width: 125px;
+}
+
+.bg-orange{
+  background-color: #F37524;
+}
+.text-orange{
+  color: #F37524;
+}
+.bg-green{
+  background-color: #0F381A;
+}
+
+.section-title{
+  font-weight: 700;
+  text-align: left;
+  /* thick orange underline */
+  text-decoration: underline;
+  text-decoration-color: #F37524;
+  text-decoration-style: solid;
+  text-decoration-thickness: 4px;
+
+}
+
+>>>>>>> a3bfafec7a20d3519d62756da5f935cc2ae09e14
