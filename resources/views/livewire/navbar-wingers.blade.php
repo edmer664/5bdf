@@ -24,7 +24,7 @@
                                 <a class="nav-link" href="#">Brands</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Careers</a>
+                                <a class="nav-link" href="{{ route('wingers.careers') }}">Careers</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Events</a>
