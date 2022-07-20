@@ -6,7 +6,6 @@ html,body{
 }
 
 .n-logo-sizer{
-<<<<<<< HEAD
   width: 100px;
 }
 
@@ -50,9 +49,7 @@ html,body{
         grid-template-columns: 1fr;
     }
 }
-=======
-  max-width: 125px;
-}
+
 
 .bg-orange{
   background-color: #F37524;
@@ -75,4 +72,3 @@ html,body{
 
 }
 
->>>>>>> a3bfafec7a20d3519d62756da5f935cc2ae09e14

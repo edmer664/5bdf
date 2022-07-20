@@ -16,8 +16,8 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::group(['as' => 'wingers.'], function (){
-    Route::get('/', [WingersController::class, 'index'])->name('index');
-    Route::view('/careers', 'wingers.careers.index')->name('careers');
+    Route::get('/', [HomeController::class, 'index'])->name('index');
+    Route::get('/careers', [HomeController::class, 'careers'])->name('careers');
 
 });
 
