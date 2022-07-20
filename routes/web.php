@@ -17,7 +17,8 @@ use App\Http\Controllers\HomeController;
 
 Route::group(['as' => 'wingers.'], function (){
     Route::get('/', [WingersController::class, 'index'])->name('index');
-    
+    Route::view('/careers', 'wingers.careers.index')->name('careers');
+
 });
 
 Auth::routes();
