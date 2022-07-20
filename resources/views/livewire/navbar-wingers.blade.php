@@ -21,10 +21,10 @@
                     <div class="collapse navbar-collapse justify-content-end align-items-center h-100" id="mobile-collapse">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Brands</a>
+                                <a class="nav-link" href="{{route('5bdf.index')}}">Brands</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('wingers.careers') }}">Careers</a>
+                                <a class="nav-link" href="{{ route('5bdf.careers') }}">Careers</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Events</a>

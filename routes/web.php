@@ -15,12 +15,13 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::group(['as' => 'wingers.'], function (){
+Route::group(['as' => '5bdf.'], function (){
     Route::get('/', [HomeController::class, 'index'])->name('index');
     Route::get('/careers', [HomeController::class, 'careers'])->name('careers');
+    
 
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

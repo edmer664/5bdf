@@ -14,13 +14,13 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('assets/images/Carousel.png') }}" alt="First slide">
+                    <img class="w-100" src="{{ asset('assets/images/img3.jpg') }}" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('assets/images/Carousel.png') }}" alt="Second slide">
+                    <img class="w-100" src="{{ asset('assets/images/img3.jpg') }}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('assets/images/Carousel.png') }}" alt="Third slide">
+                    <img class="w-100" src="{{ asset('assets/images/img3.jpg') }}" alt="Third slide">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
