@@ -3,7 +3,7 @@
     <livewire:navbar-wingers />
 
     <style>
-        #careers-title {
+        #careers-title , #contact-title {
             display: inline;
             border-bottom: 4px #FF500A solid;
         }
@@ -20,16 +20,31 @@
             -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
             -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
         }
-        @media(max-width: 992px){
+        #contact input{
+            background: #F8FAFC;
+        }
+        #contact input::placeholder{
+            color: #B8BCCA;
+        }
+        #contact button{
+            background: #0F381A;
+        }
+        #contact-content{
+            background: #D76543;
+            border-radius: 11px;
+        }
+        @media(max-width: 868px){
             .careers-grid{
                 grid-template-columns: repeat(2, 1fr)
             }
         }
-        @media(max-width: 768px){
+        @media(max-width: 540px){
             .careers-grid{
                 grid-template-columns: 1fr;
             }
         }
+
     </style>
 
     @include('wingers.careers.hero')
+    @include('wingers.careers.contact')
