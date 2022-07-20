@@ -1,7 +1,32 @@
-.big{
-  font-size: 100px;
+*{
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  overflow-x: hidden;
 }
 
 .n-logo-sizer{
-  width: 100px;
+  max-width: 125px;
 }
+
+.bg-orange{
+  background-color: #F37524;
+}
+.text-orange{
+  color: #F37524;
+}
+.bg-green{
+  background-color: #0F381A;
+}
+
+.section-title{
+  font-weight: 700;
+  text-align: left;
+  /* thick orange underline */
+  text-decoration: underline;
+  text-decoration-color: #F37524;
+  text-decoration-style: solid;
+  text-decoration-thickness: 4px;
+
+}
+
