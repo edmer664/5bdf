@@ -1,4 +1,4 @@
-<section class="container" id="careers">
+<section class="container-xl" id="careers">
     <div>
         <h4 id="careers-title" class="display-5 fw-bold"> Careers</h4>
     </div>

@@ -1,4 +1,4 @@
-<section id="contact" class="container my-5">
+<section id="contact" class="container-xl my-5">
 
     <div>
         <h4 id="contact-title" class="display-5 fw-bold">Contact Us</h4>
