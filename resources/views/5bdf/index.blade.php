@@ -61,7 +61,7 @@
                 <div class="row">
                     <div class="col-sm-6 d-flex flex-column justify-content-center">
                         <h2>
-                            NY Hot Wings Flagship
+                            NY Sports Lounge Flagship
                         </h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente voluptatem magni
@@ -80,7 +80,7 @@
                 <div class="row">
                     <div class="col-sm-6 d-flex flex-column justify-content-center">
                         <h2>
-                            NY Hot Wings Flagship
+                            Wingers Flagship
                         </h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente voluptatem magni
