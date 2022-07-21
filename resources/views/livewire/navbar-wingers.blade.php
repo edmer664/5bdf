@@ -1,13 +1,13 @@
 <div>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-xl">
-            <div class="row justify-content-between w-100">
-                <div class="col">
+        <div class="container-xl ">
+            <div class="row justify-content-between gx-0 w-100">
+                <div class="col-3">
                     <a class="navbar-brand" href="/">
                         <img src="{{asset('assets/images/Logo5BDF.png')}}" alt="" class="n-logo-sizer">
                     </a>
                 </div>
-                <div class="col d-flex align-items-end justify-content-center flex-column">
+                <div class="col-3 d-flex align-items-end justify-content-center flex-column">
 
 
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -17,7 +17,7 @@
                     </button>
 
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-5">
                     <div class="collapse navbar-collapse justify-content-end align-items-center h-100" id="mobile-collapse">
                         <ul class="navbar-nav">
                             <li class="nav-item">
