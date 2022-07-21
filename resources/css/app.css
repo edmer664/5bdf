@@ -1,74 +1,108 @@
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+    font-family: "Poppins", sans-serif;
 }
-html,body{
-  overflow-x: hidden;
-}
-
-.n-logo-sizer{
-  width: 100px;
+html,
+body {
+    overflow-x: hidden;
 }
 
-#careers-title , #contact-title {
+.n-logo-sizer {
+    width: 100px;
+}
+
+#careers-title,
+#contact-title {
     display: inline;
-    border-bottom: 4px #FF500A solid;
+    border-bottom: 4px #ff500a solid;
 }
-.careers-grid{
+.careers-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .careers-grid-items {
-    border-left: 7px #9F9F9F solid;
+    border-left: 7px #9f9f9f solid;
     border-radius: 0 6px 6px 0;
     box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
 }
-#contact input{
-    background: #F8FAFC;
+#contact input {
+    background: #f8fafc;
 }
-#contact input::placeholder{
-    color: #B8BCCA;
+#contact input::placeholder {
+    color: #b8bcca;
 }
-#contact button{
-    background: #0F381A;
+#contact button {
+    background: #0f381a;
 }
-#contact-content{
-    background: #D76543;
+#contact-content {
+    background: #d76543;
     border-radius: 11px;
 }
-@media(max-width: 868px){
-    .careers-grid{
-        grid-template-columns: repeat(2, 1fr)
+@media (max-width: 868px) {
+    .careers-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-@media(max-width: 540px){
-    .careers-grid{
+@media (max-width: 540px) {
+    .careers-grid {
         grid-template-columns: 1fr;
     }
 }
 
-
-.bg-orange{
-  background-color: #F37524;
+.bg-orange {
+    background-color: #f37524;
 }
-.text-orange{
-  color: #F37524;
+.text-orange {
+    color: #f37524;
 }
-.bg-green{
-  background-color: #0F381A;
-}
-
-.section-title{
-  font-weight: 700;
-  text-align: left;
-  /* thick orange underline */
-  text-decoration: underline;
-  text-decoration-color: #F37524;
-  text-decoration-style: solid;
-  text-decoration-thickness: 4px;
-
+.bg-green {
+    background-color: #0f381a;
 }
 
+.section-title {
+    font-weight: 700;
+    text-align: left;
+    /* thick orange underline */
+    text-decoration: underline;
+    text-decoration-color: #f37524;
+    text-decoration-style: solid;
+    text-decoration-thickness: 4px;
+}
+
+.controls {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translatey(-50%);
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    
+
+    
+}
+.controls > li{
+  color:#f37524;
+  padding: 0 3.14px;
+  border: #f37524 solid 4px;
+  border-radius: 100%;
+}
+
+.controls > li:hover {
+  cursor: pointer;
+
+}
+
+.slider{
+  width: 90%;
+}
+
+.w-90{
+  width: 90%;
+}

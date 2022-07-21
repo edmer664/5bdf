@@ -27,10 +27,10 @@
                                 <a class="nav-link" href="{{ route('5bdf.careers') }}">Careers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Events</a>
+                                <a class="nav-link" href="{{ route('5bdf.events') }}">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CSR</a>
+                                <a class="nav-link" href="{{route('5bdf.csr')}}">CSR</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Our Group</a>

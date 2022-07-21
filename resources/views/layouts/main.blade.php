@@ -13,6 +13,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +31,7 @@
     {{-- Custom CSS --}}
     @vite(['resources/css/app.css'])
 
+    @stack('styles')
 </head>
 
 <body>
@@ -37,6 +39,9 @@
     <main>
         @yield('content')
     </main>
+
+
+    @stack('scripts')
 
     @livewireScripts
 </body>
