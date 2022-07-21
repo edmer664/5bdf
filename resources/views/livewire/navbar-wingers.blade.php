@@ -33,7 +33,7 @@
                                 <a class="nav-link" href="{{route('5bdf.csr')}}">CSR</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Our Group</a>
+                                <a class="nav-link" href="{{route('5bdf.our-group')}}">Our Group</a>
                             </li>
                         </ul>
                     </div>
