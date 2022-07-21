@@ -15,4 +15,14 @@ class HomeController extends Controller
     {
         return view('5bdf.careers.index');
     }
+
+    public function events()
+    {
+        return view('5bdf.events');
+    }
+
+    public function csr()
+    {
+        return view('5bdf.csr');
+    }
 }
