@@ -106,3 +106,10 @@ body {
 .w-90{
   width: 90%;
 }
+
+.circler{
+  height: 100px !important;
+  width: 100px !important;
+  display: block;
+
+}

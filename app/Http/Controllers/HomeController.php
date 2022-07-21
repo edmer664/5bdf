@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('5bdf.csr');
     }
+
+    public function ourGroup()
+    {
+        return view('5bdf.our_group');
+    }
 }

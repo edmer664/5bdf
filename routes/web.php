@@ -20,6 +20,7 @@ Route::group(['as' => '5bdf.'], function (){
     Route::get('/careers', [HomeController::class, 'careers'])->name('careers');
     Route::get('/events', [HomeController::class, 'events'])->name('events');
     Route::get('/csr', [HomeController::class, 'csr'])->name('csr');
+    Route::get('/our-group', [HomeController::class, 'ourGroup'])->name('our-group');
 
 });
 
