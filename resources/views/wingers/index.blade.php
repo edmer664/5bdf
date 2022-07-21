@@ -2,6 +2,7 @@
 @section('content')
     {{-- Navbar --}}
     <livewire:navbar-wingers />
+    <livewire:wingers-navbar />
 
     {{-- Carousel --}}
     {{-- TODO:Add Connection to Admin Panel Replace Static Image --}}

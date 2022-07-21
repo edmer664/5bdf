@@ -23,6 +23,9 @@ Route::group(['as' => '5bdf.'], function (){
 
 });
 
+Route::group(['as' => 'wingers.'], function (){
+    Route::get('/wingers', [WingersController::class, 'index'])->name('index');
+});
 Auth::routes();
 
 
