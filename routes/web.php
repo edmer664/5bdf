@@ -24,7 +24,11 @@ Route::group(['as' => '5bdf.'], function (){
 
 });
 
-Route::view('/wingers/careers' , 'wingers.careers.index')->name('careers');
+Route::group(['as' => '5bdf.wingers.'], function (){
+    Route::get('/wingers', [WingersController::class, 'index'])->name('index');
+    Route::get('/wingers/careers', [WingersController::class, 'careers'])->name('careers');
+
+});
 
 Auth::routes();
 
