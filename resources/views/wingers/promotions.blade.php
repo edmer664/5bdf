@@ -55,7 +55,7 @@
             <h2 class="section-title pb-5">
                 Category 1
             </h2>
-            <section class="py-5">
+            <div class="">
                 <div class="bg-green mb-3">
                     <div class="container-xl">
                         <div class="row">
@@ -131,7 +131,31 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            {{-- green view more btn --}}
+            <div class="row justify-content-center">
+                <div class="col-4 text-center">
+                    <a href="#" class="btn bg-green text-white">
+                        View More
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="py-5">
+        <div class="container-xl">
+            <p class="text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus asperiores cupiditate tempora
+                perspiciatis sequi! Minus atque accusamus vitae illo fugit! Tempore quae repudiandae velit neque eos, quam
+                aperiam quibusdam alias perspiciatis corrupti, sit voluptatibus, nobis quis mollitia et itaque. Neque
+                voluptatibus vitae ad cum obcaecati et consequuntur recusandae ut expedita.
+
+            </p>
+        </div>
+    </section>
+
+    <livewire:contact-us />
+    <livewire:footer />
+    
 @endsection
