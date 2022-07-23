@@ -10,10 +10,11 @@
     </section>
     <section class="py-5">
         <div class="container-xl">
-
-            <h1 class="pb-5 section-title text-center">
-                OUR GROUP
-            </h1>
+            <div class="pb-5 text-center">
+                <h1 class="section-title">
+                    OUR GROUP
+                </h1>
+            </div>
 
             <p class="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto recusandae eius eligendi aperiam,
@@ -55,9 +56,12 @@
 
     <section class="py-5">
         <div class="container-xl pb-5">
-            <h2 class="section-title pb-3">
-                Mission
-            </h2>
+            <div class="pb-5">              
+                <h2 class="section-title">
+                    Mission
+                </h2>
+            </div>
+
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto dolore aperiam officiis consequatur aut
                 necessitatibus facilis nemo. Odit, reprehenderit sequi.
@@ -65,18 +69,23 @@
             </p>
         </div>
         <div class="container-xl pb-5">
-            <h2 class="section-title pb-3">
-                Vision
-            </h2>
+            <div class="pb-5">
+
+                <h2 class="section-title">
+                    Vision
+                </h2>
+            </div>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum blanditiis sed labore, dolorum voluptates
                 dignissimos est! Beatae perferendis laboriosam tenetur!
             </p>
         </div>
         <div class="container-xl pb-5">
-            <h2 class="section-title pb-3">
-                Core Values
-            </h2>
+            <div class="pb-5">
+                <h2 class="section-title">
+                    Core Values
+                </h2>
+            </div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam corporis perferendis? Perspiciatis,
                 modi totam itaque nulla non sed adipisci?
@@ -85,9 +94,11 @@
     </section>
     <section class="py-5">
         <div class="container-xl">
-            <h2 class="section-title text-center fs-1 pb-5">
-                OUR TEAM
-            </h2>
+            <div class="pb-5 text-center">
+                <h2 class="section-title">
+                    OUR TEAM
+                </h2>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <div class="text-center">

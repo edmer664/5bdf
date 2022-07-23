@@ -28,6 +28,7 @@ Route::group(['as' => '5bdf.wingers.'], function (){
     Route::get('/wingers', [WingersController::class, 'index'])->name('index');
     Route::get('/wingers/promotions',[WingersController::class, 'promotions'])->name('promotions');
     Route::get('/wingers/careers', [WingersController::class, 'careers'])->name('careers');
+    Route::get('/wingers/franchise', [WingersController::class, 'franchise'])->name('franchise');
 
 });
 

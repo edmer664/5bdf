@@ -37,9 +37,11 @@
     <section class="py-5">
         <div class="container-xl">
 
-            <h2 class="section-title text-center pb-5">
-                Promotions
-            </h2>
+            <div class="pb-5 text-center">
+                <h2 class="section-title">
+                    Promotions
+                </h2>
+            </div>
             <p class="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima nostrum animi odit architecto minus
                 exercitationem sint excepturi facilis similique esse perferendis, hic cumque, ea totam nisi dolore atque
@@ -52,9 +54,11 @@
 
     <section class="py-5">
         <div class="container-xl">
-            <h2 class="section-title pb-5">
-                Category 1
-            </h2>
+            <div class="pb-5">
+                <h2 class="section-title">
+                    Category 1
+                </h2>
+            </div>
             <div class="">
                 <div class="bg-green mb-3">
                     <div class="container-xl">

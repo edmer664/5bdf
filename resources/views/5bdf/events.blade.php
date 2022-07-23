@@ -38,9 +38,11 @@
     {{-- Events --}}
     <section class="py-5">
         <div class="container-xl">
-            <h2 class="pb-5 section-title">
-                Events
-            </h2>
+            <div class="pb-5">
+                <h2 class="section-title">
+                    Events
+                </h2>
+            </div>
             {{-- Container --}}
             <div class="events-container position-relative d-flex flex-column justify-content-center">
                 {{-- Controls --}}
@@ -147,9 +149,11 @@
     {{-- Monthly Events --}}
     <section class="py-5">
         <div class="container-xl">
-            <h2 class="section-title pb-5">
-                Monthly Events
-            </h2>
+            <div class="pb-5">
+                <h2 class="section-title">
+                    Monthly Events
+                </h2>
+            </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt=""

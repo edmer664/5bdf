@@ -83,9 +83,11 @@
     {{-- Our Products --}}
     <section class="py-5">
         <div class="container-xl">
-            <h2 class="section-title pb-5">
-                Our Products
-            </h2>
+            <div class="pb-5">
+                <h2 class="section-title">
+                    Our Products
+                </h2>
+            </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
@@ -122,9 +124,11 @@
     {{-- Franchise Form --}}
     <section class="py-5">
         <div class="container-xl">
-            <h2 class="section-title pb-5">
-                Let us know what you think
-            </h2>
+            <div class="pb-5">
+                <h2 class="section-title">
+                    Let us know what you think
+                </h2>
+            </div>
             <div class="row">
                 <div class="col-md-6 py-2">
                     <form action="">

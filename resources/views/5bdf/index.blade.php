@@ -98,9 +98,12 @@
 
     {{-- Our Brands Section --}}
     <section class="py-5">
-        <h2 class="section-title container-xl pb-5">
-            Our Brands
-        </h2>
+        <div class="container-xl pb-5">
+
+            <h2 class="section-title">
+                Our Brands
+            </h2>
+        </div>
         <div class="container-xl">
 
             <div class="row justify-content-center">
@@ -157,9 +160,11 @@
     {{-- Franchise Section --}}
     <section class="py-5">
         <div class="container-xl">
-            <h2 class="section-title pb-5">
-                Franchise
-            </h2>
+            <div class="pb-5">
+                <h2 class="section-title">
+                    Franchise
+                </h2>
+            </div>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, molestias dolorem. Blanditiis laborum ab
                 distinctio. Deserunt quaerat nemo laudantium quasi eius doloribus, aperiam dignissimos itaque recusandae
@@ -196,9 +201,11 @@
     {{-- Franchise Form --}}
     <section class="py-5">
         <div class="container-xl">
-            <h2 class="section-title pb-5">
-                Franchise Form
-            </h2>
+            <div class="pb-5">
+                <h2 class="section-title">
+                    Franchise Form
+                </h2>
+            </div>
             <div class="row">
                 <div class="col-md-6 py-2">
                     <form action="">

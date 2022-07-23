@@ -20,4 +20,9 @@ class WingersController extends Controller
     {
         return view('wingers.careers.index');
     }
+
+    function franchise()
+    {
+        return view('wingers.franchise');
+    }
 }
