@@ -108,9 +108,11 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-4 col-sm-6 p-3">
-                    <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100">
-                        <img class="img-fluid" src="{{ asset('assets/images/HotWingsLogo.png') }}" alt="">
-                    </div>
+                    <a href="{{route('5bdf.hot-wings.index')}}">
+                        <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100">
+                            <img class="img-fluid" src="{{ asset('assets/images/HotWingsLogo.png') }}" alt="">
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
                     <a href="{{route('5bdf.wingers.index')}}">
@@ -120,9 +122,11 @@
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
-                    <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100">
-                        <img class="img-fluid" src="{{ asset('assets/images/SportsLoungeLogo.png') }}" alt="">
-                    </div>
+                    <a href="{{route('5bdf.sports.index')}}">
+                        <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100">
+                            <img class="img-fluid" src="{{ asset('assets/images/SportsLoungeLogo.png') }}" alt="">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

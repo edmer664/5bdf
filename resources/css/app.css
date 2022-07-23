@@ -66,6 +66,9 @@ body {
 .bg-green {
     background-color: #0f381a;
 }
+.bg-red{
+    background-color: #d10000;
+}
 
 .section-title {
     font-weight: 700;

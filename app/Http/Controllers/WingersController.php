@@ -25,4 +25,9 @@ class WingersController extends Controller
     {
         return view('wingers.franchise');
     }
+
+    function store()
+    {
+        return view('wingers.store');
+    }
 }
