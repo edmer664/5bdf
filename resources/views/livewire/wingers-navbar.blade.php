@@ -4,7 +4,7 @@
 
         <ul class=" list-unstyled d-flex gap-3 gap-md-5 align-items-lg-center  m-0">
             <li class="fw-5"><a class="text-decoration-none text-white" href="">Careers</a></li>
-            <li class="fw-5"><a class="text-decoration-none text-white" href="">Promotions</a></li>
+            <li class="fw-5"><a class="text-decoration-none text-white" href="{{route('5bdf.wingers.promotions')}}">Promotions</a></li>
             <li class="fw-5"><a class="text-decoration-none text-white" href="">Franchise</a></li>
             <li class="fw-5"><a class="text-decoration-none text-white" href="">Store</a></li>
         </ul>

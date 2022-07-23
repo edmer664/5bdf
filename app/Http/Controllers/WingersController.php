@@ -10,4 +10,9 @@ class WingersController extends Controller
     {
         return view('wingers.index');
     }
+
+    function promotions()
+    {
+        return view('wingers.promotions');
+    }
 }
