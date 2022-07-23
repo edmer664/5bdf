@@ -1,7 +1,7 @@
 <div>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-xl">
-            <div class="row justify-content-between w-100">
+            <div class="row justify-content-between w-100 g-0">
                 <div class="col">
                     <a class="navbar-brand" href="/">
                         <img src="{{asset('assets/images/Logo5BDF.png')}}" alt="" class="n-logo-sizer">
