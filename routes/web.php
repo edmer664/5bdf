@@ -5,6 +5,7 @@ use App\Http\Controllers\WingersController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HotWingController;
 use App\Http\Controllers\SportController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,6 +52,10 @@ Route::group(['as'=>'5bdf.sports.'], function (){
     Route::get('/sports/franchise', [SportController::class, 'franchise'])->name('franchise');
     Route::get('/sports/store', [SportController::class, 'store'])->name('store');
 
+});
+
+Route::group(['as'=>'5bdf.admin.'], function(){
+    Route::get('/admin', [AdminController::class, 'index'])->name('index');
 });
 
 Auth::routes();
