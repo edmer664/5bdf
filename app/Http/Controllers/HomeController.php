@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Carousel;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('5bdf.index');
+        return view('5bdf.index',[
+            'carousels' => Carousel::where('branch', '=', 'main')->get(),
+        ]);
     }
 
     public function careers()
