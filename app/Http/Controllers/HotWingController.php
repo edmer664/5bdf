@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Carousel;
 
 class HotWingController extends Controller
 {
     //
     function index()
     {
-        return view('hot_wings.index');
+        return view('hot_wings.index',[
+            'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+        ]);
     }
 
     function promotions()
