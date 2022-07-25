@@ -59,6 +59,8 @@ Route::group(['as'=>'5bdf.admin.','middleware' => 'auth'], function(){
 
 });
 
-Auth::routes();
+Auth::routes([
+    'register' => false,
+]);
 
 
