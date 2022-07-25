@@ -21,19 +21,19 @@
                     <div class="collapse navbar-collapse justify-content-end align-items-center h-100" id="mobile-collapse">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('5bdf.index')}}">Brands</a>
+                                <a class="nav-link {{(Route::currentRouteName() == '5bdf.index') ? 'active' : ''}}" href="{{route('5bdf.index')}}">Brands</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('5bdf.careers') }}">Careers</a>
+                                <a class="nav-link {{(Route::currentRouteName() == '5bdf.careers') ? 'active' : ''}}" href="{{ route('5bdf.careers') }}">Careers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('5bdf.events') }}">Events</a>
+                                <a class="nav-link {{(Route::currentRouteName() == '5bdf.events') ? 'active' : ''}}" href="{{ route('5bdf.events') }}">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('5bdf.csr')}}">CSR</a>
+                                <a class="nav-link {{(Route::currentRouteName() == '5bdf.csr') ? 'active' : ''}}" href="{{route('5bdf.csr')}}">CSR</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('5bdf.our-group')}}">Our Group</a>
+                                <a class="nav-link {{(Route::currentRouteName() == '5bdf.our-group') ? 'active' : ''}}" href="{{route('5bdf.our-group')}}">Our Group</a>
                             </li>
                         </ul>
                     </div>

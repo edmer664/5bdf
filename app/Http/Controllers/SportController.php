@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Carousel;
 
 class SportController extends Controller
 {
     //
     function index(){
-        return view('sports_lounge.index');
+        return view('sports_lounge.index',[
+            'carousels' => Carousel::where('branch', '=', 'sports')->get(),
+        ]);
     }
 
     function promotions(){

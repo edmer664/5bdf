@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Carousel;
 
 class WingersController extends Controller
 {
     function index()
     {
-        return view('wingers.index');
+        return view('wingers.index',[
+            'carousels' => Carousel::where('branch', '=', 'wingers')->get(),
+        ]);
     }
 
     function promotions()
