@@ -19,6 +19,10 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('res/css/sb-admin-2.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="{{ asset('res/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+
     @vite(['resources/css/app.css'])
 
 </head>
@@ -32,9 +36,10 @@
         <ul class="navbar-nav bg-orange sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('5bdf.admin.index')}}">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center"
+                href="{{ route('5bdf.admin.index') }}">
                 <div class="">
-                    <img src="{{asset('assets/images/5bdfLogo.png')}}" class="img-fluid" alt="">
+                    <img src="{{ asset('assets/images/5bdfLogo.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="sidebar-brand-text mx-3">Admin</div>
             </a>
@@ -85,10 +90,10 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Branch</h6>
-                        <a class="collapse-item" href="">5BDF</a>
-                        <a class="collapse-item" href="">Hot Wings</a>
-                        <a class="collapse-item" href="">Wingers Unlimited</a>
-                        <a class="collapse-item" href="">Sports Lounge</a>
+                        <a class="collapse-item" href="{{ route('5bdf.admin.carousel.main') }}">5BDF</a>
+                        <a class="collapse-item" href="{{ route('5bdf.admin.carousel.hot-wings') }}">Hot Wings</a>
+                        <a class="collapse-item" href="{{ route('5bdf.admin.carousel.wingers') }}">Wingers Unlimited</a>
+                        <a class="collapse-item" href="{{ route('5bdf.admin.carousel.sports') }}">Sports Lounge</a>
                     </div>
                 </div>
             </li>
@@ -131,7 +136,8 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span
                                     class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
-                                <img class="img-profile rounded-circle" src="{{ asset('res/img/undraw_profile.svg') }}">
+                                <img class="img-profile rounded-circle"
+                                    src="{{ asset('res/img/undraw_profile.svg') }}">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -225,6 +231,14 @@
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('res/js/sb-admin-2.min.js') }}"></script>
 
+    <!-- Page level plugins -->
+    <script src="{{ asset('res/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('res/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{{ asset('res/js/demo/datatables-demo.js') }}"></script>
+
+    @stack('scripts')
 </body>
 
 </html>
