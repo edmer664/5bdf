@@ -32,7 +32,7 @@
         <ul class="navbar-nav bg-orange sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('5bdf.admin.index')}}">
                 <div class="">
                     <img src="{{asset('assets/images/5bdfLogo.png')}}" class="img-fluid" alt="">
                 </div>
@@ -84,7 +84,7 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header"></h6>
+                        <h6 class="collapse-header">Branch</h6>
                         <a class="collapse-item" href="">5BDF</a>
                         <a class="collapse-item" href="">Hot Wings</a>
                         <a class="collapse-item" href="">Wingers Unlimited</a>
