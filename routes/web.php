@@ -54,8 +54,9 @@ Route::group(['as'=>'5bdf.sports.'], function (){
 
 });
 
-Route::group(['as'=>'5bdf.admin.'], function(){
+Route::group(['as'=>'5bdf.admin.','middleware' => 'auth'], function(){
     Route::get('/admin', [AdminController::class, 'index'])->name('index');
+
 });
 
 Auth::routes();
