@@ -16,7 +16,7 @@ class SportController extends Controller
     }
 
     function careers(){
-        return view('sports_lounge.careers');
+        return view('sports_lounge.careers.index');
     }
 
     function franchise(){
@@ -26,5 +26,5 @@ class SportController extends Controller
     function store(){
         return view('sports_lounge.store');
     }
-    
+
 }
