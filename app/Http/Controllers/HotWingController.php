@@ -19,7 +19,7 @@ class HotWingController extends Controller
 
     function careers()
     {
-        return view('hot_wings.careers');
+        return view('hot_wings.careers.index');
     }
 
     function franchise()
