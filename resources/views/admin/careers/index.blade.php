@@ -92,7 +92,6 @@
                                                     class="btn btn-primary"><i class="fas fa-edit"></i></a>
                                                 <button onclick="document.querySelector('#deleteBtn').click()"
                                                     class="btn btn-danger"><i class="fas fa-trash"></i></button>
-
                                             </div>
                                             <form action="{{ route('5bdf.admin.careers.destroy', $career->id) }}"
                                                 method="post" class="d-none">

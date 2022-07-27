@@ -44,7 +44,7 @@ class EventController extends Controller
         Log::info($request->all());
         $event = new Event;
         $event->title = $request->title;
-        $event->description = json_encode($request->description);
+        $event->description = $request->description;
         $event->branch = $request->branch;
         $event->date = $request->date;
         $event->save();
@@ -71,6 +71,9 @@ class EventController extends Controller
     public function edit(Event $event)
     {
         //
+        return view('admin.events.edit', [
+            'event' => $event
+        ]);
     }
 
     /**

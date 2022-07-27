@@ -1,9 +1,8 @@
 @extends('layouts.auth')
 @section('heading')
-  <i class="fas fa-calendar"></i> Events
+    <i class="fas fa-calendar"></i> Events
 @endsection
 @section('content')
-
     <div class="row">
         <div class="col-md-6 py-2">
             <div class="card border-left-warning">
@@ -16,17 +15,17 @@
                 <div class="card-body">
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control" name="title" id="title" placeholder="Event 1">
+                        <input type="text" class="form-control" name="title" id="title" placeholder="Event 1" required>
                     </div>
                     <div class="form-group">
                         <label for="date">Date</label>
                         <input type="date" name="date" id="date" class="form-control" placeholder=""
-                            aria-describedby="when">
+                            aria-describedby="when" required>
                         <small id="when" class="text-muted">Set the date.</small>
                     </div>
                     <div class="form-group">
                         <label for="branch">Branch</label>
-                        <select class="form-control" name="branch" id="branch">
+                        <select class="form-control" name="branch" id="branch" required>
                             <option value="hot-wings">Hot Wings</option>
                             <option value="sports">Sports Lounge</option>
                             <option value="main">5BDF</option>
@@ -38,7 +37,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-secondary">Cancel</button>
+                    {{-- <a php class="btn btn-secondary">Cancel</a> --}}
                     <button id="submit" class="btn btn-warning">Save</button>
                 </div>
             </div>
@@ -67,7 +66,7 @@
                                     <th>
                                         Action
                                     </th>
-    
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -83,12 +82,17 @@
                                             {{ $event->branch }}
                                         </td>
                                         <td>
-                                          <div class="btn-group">
-                                            <a href="{{ route('5bdf.admin.events.edit', $event->id) }}"
-                                                class="btn btn-primary"><i class="fas fa-edit"></i></a>
-                                            <a href="{{ route('5bdf.admin.events.destroy', $event->id) }}"
-                                                class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                                          </div>
+                                            <div class="btn-group">
+                                                <a href="{{ route('5bdf.admin.events.edit', $event->id) }}"
+                                                    class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                                                <button onclick="document.getElementById('deleteBTN').click()" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                            <form action="{{ route('5bdf.admin.events.destroy', $event->id) }}"
+                                                method="post">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" id="deleteBTN" class="d-none"></button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -97,11 +101,9 @@
                     </div>
                 </div>
             </div>
-    
+
         </div>
     </div>
-    
-
 @endsection
 
 @push('scripts')
@@ -132,7 +134,7 @@
             var data = {
                 title: title,
                 date: date,
-                description: description,
+                description: JSON.stringify(description),
                 branch: branch
             };
             const URL = "{{ route('5bdf.admin.events.store') }}";
