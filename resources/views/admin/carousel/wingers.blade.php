@@ -1,16 +1,7 @@
 @extends('layouts.auth')
 @section('heading', 'Carousel - Wingers Unlimited')
 @section('content')
-    @if (Session::has('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
-    @if (Session::has('error'))
-        <div class="alert alert-danger">
-            {{ session('error') }}
-        </div>
-    @endif
+
     <div class="row mb-3">
         <div class="col-md-6">
             <div class="card border-left-warning">
