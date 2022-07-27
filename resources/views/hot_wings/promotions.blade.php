@@ -67,8 +67,8 @@
                                 <img src="{{ asset('assets/images/img5.jpg') }}" class="rounded w-100" alt="">
                             </div>
                             {{-- <div class="col-md-6 d-none py-2 d-md-flex align-items-center">
-                          <img src="{{ asset('assets/images/ceo.png') }}" class="rounded" alt="">
-                      </div> --}}
+                        <img src="{{ asset('assets/images/ceo.png') }}" class="rounded" alt="">
+                    </div> --}}
                             <div class="col-md-6 py-2 text-white d-flex justify-content-center flex-column">
                                 <h2>
                                     <u>
