@@ -54,11 +54,11 @@
 
     <section class="py-5">
         <div class="container-xl">
-            <div class="pb-5">
+            {{-- <div class="pb-5">
                 <h2 class="section-title">
                     Category 1
                 </h2>
-            </div>
+            </div> --}}
             <div class="">
                 <div class="bg-green mb-3">
                     <div class="container-xl">
