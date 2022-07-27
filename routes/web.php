@@ -7,6 +7,8 @@ use App\Http\Controllers\HotWingController;
 use App\Http\Controllers\SportController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CarouselController;
+use App\Http\Controllers\CareerPostController;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,7 +68,12 @@ Route::group(['as'=>'5bdf.admin.','middleware' => 'auth'], function(){
     Route::get('/admin/carousel/wingers', [CarouselController::class, 'wingersView'])->name('carousel.wingers');
     Route::get('/admin/carousel/hot-wings', [CarouselController::class, 'hotWingsView'])->name('carousel.hot-wings');
     Route::get('/admin/carousel/sports', [CarouselController::class, 'sportsView'])->name('carousel.sports');
-    
+
+    // Careers CRUD
+    Route::resource('/admin/careers', CareerPostController::class);
+
+    // Events CRUD
+    Route::resource('/admin/events', EventController::class);
 });
 
 
