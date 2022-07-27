@@ -23,6 +23,10 @@
     <!-- Custom styles for this page -->
     <link href="{{ asset('res/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 
+
+    {{-- CSS Quill --}}
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
     @vite(['resources/css/app.css'])
 
 </head>
@@ -72,8 +76,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Contents</h6>
-                        <a class="collapse-item" href="">Career</a>
-                        <a class="collapse-item" href="">Event</a>
+                        <a class="collapse-item" href="{{ route('5bdf.admin.careers.index') }}">Career</a>
+                        <a class="collapse-item" href="{{ route('5bdf.admin.events.index') }}">Event</a>
                         <a href="" class="collapse-item">CSR</a>
                     </div>
                 </div>
@@ -167,6 +171,16 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">@yield('heading')</h1>
+                    @if (Session::has('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    @if (Session::has('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error') }}
+                        </div>
+                    @endif
                     @yield('content')
                 </div>
                 <!-- /.container-fluid -->
@@ -238,6 +252,9 @@
     <!-- Page level custom scripts -->
     <script src="{{ asset('res/js/demo/datatables-demo.js') }}"></script>
 
+    {{-- Quill.js Library --}}
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://unpkg.com/quill-image-compress@1.2.11/dist/quill.imageCompressor.min.js"></script>
     @stack('scripts')
 </body>
 
