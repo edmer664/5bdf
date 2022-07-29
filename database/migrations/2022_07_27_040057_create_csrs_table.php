@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('csrs', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->enum('branch',['hot-wings','sports','wingers','main']);
+            $table->string('path');
         });
     }
 

@@ -25,12 +25,19 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+
+
 Route::group(['as' => '5bdf.'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('index');
+
+    // Careers
     Route::get('/careers', [HomeController::class, 'careers'])->name('careers');
+    Route::get('/careers/{career}', [HomeController::class, 'career_view'])->name('career_view');
+
     Route::get('/events', [HomeController::class, 'events'])->name('events');
     Route::get('/csr', [HomeController::class, 'csr'])->name('csr');
     Route::get('/our-group', [HomeController::class, 'ourGroup'])->name('our-group');
+
 });
 
 Route::group(['as' => '5bdf.wingers.'], function () {
@@ -55,6 +62,11 @@ Route::group(['as' => '5bdf.sports.'], function () {
     Route::get('/sports/careers', [SportController::class, 'careers'])->name('careers');
     Route::get('/sports/franchise', [SportController::class, 'franchise'])->name('franchise');
     Route::get('/sports/store', [SportController::class, 'store'])->name('store');
+});
+
+// Global Resources
+Route::group(['as'=> '5bdf.resources.'], function () {
+    //
 });
 
 Route::group(['as' => '5bdf.admin.', 'middleware' => 'auth'], function () {

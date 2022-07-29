@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Csr extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'branch',
+        'path',
+    ];
 }

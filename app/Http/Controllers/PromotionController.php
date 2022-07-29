@@ -15,6 +15,12 @@ class PromotionController extends Controller
     public function index()
     {
         //
+        return view(
+            'admin.promotions.index',
+            [
+                'promotions' => Promotion::all()
+            ]
+        );
     }
 
     /**
@@ -36,6 +42,12 @@ class PromotionController extends Controller
     public function store(Request $request)
     {
         //
+        Promotion::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'branch' => $request->branch,
+        ]);
+        return redirect()->back()->with('success','Promotion created successfully');
     }
 
     /**
@@ -58,6 +70,12 @@ class PromotionController extends Controller
     public function edit(Promotion $promotion)
     {
         //
+        return view(
+            'admin.promotions.edit',
+            [
+                'promotion' => $promotion
+            ]
+        );
     }
 
     /**
@@ -70,6 +88,12 @@ class PromotionController extends Controller
     public function update(Request $request, Promotion $promotion)
     {
         //
+        $promotion->update([
+            'title' => $request->title,
+            'description' => $request->description,
+            'branch' => $request->branch,
+        ]);
+        return redirect()->back()->with('success','Promotion updated successfully');
     }
 
     /**

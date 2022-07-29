@@ -15,6 +15,9 @@ class CsrController extends Controller
     public function index()
     {
         //
+        return view('admin.csr.index',[
+            'csrs'=>Csr::orderBy('created_at', 'desc')->get(),
+        ]);
     }
 
     /**
@@ -35,7 +38,15 @@ class CsrController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $imageFile = $request->file('image');
+        $imageName = time().'.'.$imageFile->getClientOriginalExtension();
+        $imageFile->storeAs('public/csr',$imageName);
+
+        Csr::create([
+            'path' => $imageName,
+            'branch' => $request->branch,
+        ]);
+        return redirect()->back()->with('success','Image uploaded successfully');
     }
 
     /**
@@ -70,6 +81,7 @@ class CsrController extends Controller
     public function update(Request $request, Csr $csr)
     {
         //
+
     }
 
     /**
@@ -81,5 +93,7 @@ class CsrController extends Controller
     public function destroy(Csr $csr)
     {
         //
+        $csr->delete();
+        return redirect()->back()->with('success','File deleted');
     }
 }

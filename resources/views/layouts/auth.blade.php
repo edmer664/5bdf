@@ -78,7 +78,8 @@
                         <h6 class="collapse-header">Contents</h6>
                         <a class="collapse-item" href="{{ route('5bdf.admin.careers.index') }}">Career</a>
                         <a class="collapse-item" href="{{ route('5bdf.admin.events.index') }}">Event</a>
-                        <a href="" class="collapse-item">CSR</a>
+                        <a class="collapse-item" href="{{ route('5bdf.admin.csr.index') }}">CSR</a>
+                        <a href="{{ route('5bdf.admin.promotions.index') }}" class="collapse-item">Promotions</a>
                     </div>
                 </div>
             </li>
