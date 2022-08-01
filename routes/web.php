@@ -11,6 +11,7 @@ use App\Http\Controllers\CareerPostController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\CsrController;
 use App\Http\Controllers\PromotionController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -42,8 +43,11 @@ Route::group(['as' => '5bdf.'], function () {
 
 Route::group(['as' => '5bdf.wingers.'], function () {
     Route::get('/wingers', [WingersController::class, 'index'])->name('index');
-    Route::get('/wingers/promotions', [WingersController::class, 'promotions'])->name('promotions');
+
     Route::get('/wingers/careers', [WingersController::class, 'careers'])->name('careers');
+    // Route::get('/wingers/careers/{career}', [WingersController::class, 'career_view'])->name('career_view');
+
+    Route::get('/wingers/promotions', [WingersController::class, 'promotions'])->name('promotions');
     Route::get('/wingers/franchise', [WingersController::class, 'franchise'])->name('franchise');
     Route::get('/wingers/store', [WingersController::class, 'store'])->name('store');
 });
@@ -92,6 +96,9 @@ Route::group(['as' => '5bdf.admin.', 'middleware' => 'auth'], function () {
 
     // CSR CRUD
     Route::resource('/admin/csr', CsrController::class);
+
+    // Products CRUD
+    Route::resource('/admin/products', ProductController::class);
 });
 
 
