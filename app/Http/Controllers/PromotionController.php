@@ -41,11 +41,16 @@ class PromotionController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->all());
         //
+        $image = $request->file('image');
+        $imageName = time().'.'.$image->getClientOriginalExtension();
+        $image->storeAs('public/promotions',$imageName);
         Promotion::create([
             'title' => $request->title,
             'description' => $request->description,
             'branch' => $request->branch,
+            'image' => $imageName,
         ]);
         return redirect()->back()->with('success','Promotion created successfully');
     }
@@ -105,5 +110,12 @@ class PromotionController extends Controller
     public function destroy(Promotion $promotion)
     {
         //
+        // find the image and delete
+        $image = $promotion->image;
+        $imagePath = public_path('storage/promotions/'.$image);
+        unlink($imagePath);
+        $promotion->delete();
+        return redirect()->back()->with('success','Promotion deleted successfully');
+        
     }
 }
