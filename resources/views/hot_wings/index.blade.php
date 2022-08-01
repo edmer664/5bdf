@@ -58,35 +58,33 @@
                 </h2>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt=""
-                        srcset="">
-                </div>
+                @if (count($products) > 0)
+                    @foreach ($products as $product)
+                        <div class="col-md-4 col-sm-6">
+                            <img src="{{ asset('storage/products/' . $product->image) }}" class="img-fluid py-3"
+                                alt="">
+                        </div>
+                    @endforeach
+                @else
+                    <div class="col-md-12">
+                        <h3 class="text-center py-5">
+                            No Products
+                        </h3>
+                    </div>
+                @endif
+
             </div>
-            <div class="row justify-content-center">
-                <div class="col-4">
-                    <div class="text-center">
-                        <a href="#" class="btn bg-orange text-white">
-                            View More
-                        </a>
+            @if (count($products) == 6)
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="text-center">
+                            <a href="{{route('5bdf.wingers.index',['all'=>true])}}" class="btn bg-green text-white">
+                                View More
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endif
         </div>
     </section>
 
