@@ -39,6 +39,16 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         //
+        $imageFile = $request->file('image');
+        $imageName = time() . '.' . $imageFile->getClientOriginalExtension();
+        $imageFile->storeAs('public/products', $imageName);
+
+        Product::create([
+            'name' => $request->name,
+            'image' => $imageName,
+            'branch' => $request->branch,
+        ]);
+        return redirect()->back()->with('success', 'Image uploaded successfully');
     }
 
     /**
