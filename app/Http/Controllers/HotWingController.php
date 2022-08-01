@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CareerPost;
 use Illuminate\Http\Request;
 use App\Models\Carousel;
 use App\Models\Product;
@@ -24,7 +25,9 @@ class HotWingController extends Controller
 
     function careers()
     {
-        return view('hot_wings.careers.index');
+        return view('hot_wings.careers.index',[
+            'careers' => CareerPost::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->get()
+        ]);
     }
 
     function franchise()
