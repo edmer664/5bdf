@@ -10,11 +10,17 @@ use App\Models\Product;
 
 class WingersController extends Controller
 {
-    function index()
+    function index(Request $request)
     {
+        if ($request->has('all')) {
+            return view('wingers.index', [
+                'carousels' => Carousel::where('branch', '=', 'wingers')->get(),
+                'products' => Product::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
+            ]);
+        }
         return view('wingers.index', [
             'carousels' => Carousel::where('branch', '=', 'wingers')->get(),
-            'products' => Product::where('branch', '=', 'wingers')->get(),
+            'products' => Product::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->take(6)->get(),
         ]);
     }
 
