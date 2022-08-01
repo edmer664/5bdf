@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -93,6 +94,12 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        // find the image from storage then delete
+        $image = Product::find($product->id)->image;
+        Storage::delete('public/products/' . $image);
+        // delete the product
+        $product->delete();
+
+        return redirect()->back()->with('success', 'Product deleted successfully');
     }
 }
