@@ -6,6 +6,7 @@ use App\Models\Carousel;
 use Illuminate\Http\Request;
 use App\Models\CareerPost;
 use App\Models\Csr;
+use App\Models\MonthlyEvent;
 
 class HomeController extends Controller
 {
@@ -34,7 +35,10 @@ class HomeController extends Controller
 
     public function events()
     {
-        return view('5bdf.events');
+        return view('5bdf.events',[
+            'carousels' => Carousel::where('branch', '=', 'main')->orderBy('created_at', 'desc')->get(),
+            'monthly_events' => MonthlyEvent::orderBy('created_at', 'desc')->get(),
+        ]);
     }
 
     public function csr()
