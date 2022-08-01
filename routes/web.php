@@ -76,6 +76,9 @@ Route::group(['as'=> '5bdf.resources.'], function () {
 
 Route::group(['as' => '5bdf.admin.', 'middleware' => 'auth'], function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('index');
+    Route::get('/admin/settings', [AdminController::class, 'settings'])->name('settings');
+    Route::put('/admin/settings', [AdminController::class, 'update_detail'])->name('update_detail');
+    Route::put('/admin/password', [AdminController::class, 'update_password'])->name('update_password');
 
     // Carousel CRUD
     Route::post('/admin/carousel/store', [CarouselController::class, 'store'])->name('carousel.store');

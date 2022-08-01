@@ -23,6 +23,8 @@
     <!-- Custom styles for this page -->
     <link href="{{ asset('res/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 
+    {{-- favicon --}}
+    <link rel="icon" href="{{ asset('assets/images/5bdfLogo.png') }}">
 
     {{-- CSS Quill --}}
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
@@ -150,7 +152,7 @@
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
 
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{{route('5bdf.admin.settings')}}">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
                                 </a>
@@ -226,7 +228,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <form action="{{ 'logout' }}" method="post">
+                    <form action="{{ route('logout') }}" method="post">
                         @csrf
                         <button type="submit" class="btn bg-orange text-white">
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
