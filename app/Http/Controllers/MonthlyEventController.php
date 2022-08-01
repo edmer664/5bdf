@@ -15,6 +15,9 @@ class MonthlyEventController extends Controller
     public function index()
     {
         //
+        return view('admin.monthly_events.index', [
+            'monthly_events' => MonthlyEvent::all()->sortByDesc('created_at')
+        ]);
     }
 
     /**
@@ -36,6 +39,17 @@ class MonthlyEventController extends Controller
     public function store(Request $request)
     {
         //
+        $image = $request->file('image');
+        $imageName = time() . '.' . $image->getClientOriginalExtension();
+        $image->storeAs('public/monthly_events', $imageName);
+
+
+        $monthly_event = new MonthlyEvent();
+        $monthly_event->name = $request->name;
+        $monthly_event->image = $imageName;
+        $monthly_event->branch = $request->branch;
+        $monthly_event->save();
+        return redirect()->back()->with('success', 'Monthly Event created successfully');
     }
 
     /**
@@ -80,6 +94,13 @@ class MonthlyEventController extends Controller
      */
     public function destroy(MonthlyEvent $monthlyEvent)
     {
-        //
+        // locate image then delete
+        $image_path = public_path('public/monthly_events/' . $monthlyEvent->image);
+        if (file_exists($image_path)) {
+            unlink($image_path);
+        }
+        $monthlyEvent->delete();
+        return redirect()->back()->with('success', 'Monthly Event deleted successfully');
+
     }
 }
