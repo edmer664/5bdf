@@ -1,4 +1,4 @@
-<section class="container-xl" id="careers">
+<section class="container-xl py-5" id="careers">
     <div>
         <h4 id="careers-title" class="display-5 fw-bold"> Careers</h4>
     </div>

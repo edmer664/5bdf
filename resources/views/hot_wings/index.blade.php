@@ -78,7 +78,7 @@
                 <div class="row justify-content-center">
                     <div class="col-4">
                         <div class="text-center">
-                            <a href="{{route('5bdf.wingers.index',['all'=>true])}}" class="btn bg-green text-white">
+                            <a href="{{route('5bdf.wingers.index',['all'=>true])}}" class="btn bg-orange text-white">
                                 View More
                             </a>
                         </div>
