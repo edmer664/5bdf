@@ -127,24 +127,20 @@
                 </h2>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/images/img4.jpg') }}" class="img-fluid py-3" alt="" srcset="">
-                </div>
+                @if (count($monthly_events) > 0)
+                    @foreach ($monthly_events as $monthly_event)
+                        <div class="col-md-4 col-sm-6">
+                            <img src="{{ asset('storage/monthly_events/'.$monthly_event->image) }}" class="img-fluid py-3" alt=""
+                                srcset="">
+                        </div>
+                    @endforeach
+                @else
+                    <div class="col-md-12">
+                        <h3 class="text-center py-5">
+                            No monthly events at the moment.
+                        </h3>
+                    </div>
+                @endif
 
             </div>
         </div>
