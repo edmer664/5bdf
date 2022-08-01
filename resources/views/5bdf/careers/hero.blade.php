@@ -5,7 +5,7 @@
     @if (count($careers) > 0)
         <div class=" mt-5 gap-3 careers-grid">
             @foreach ($careers as $career)
-                <livewire:career-item :career="$career" />
+                <livewire:career-item :career="$career" :border="'grey'"/>
             @endforeach
         </div>
     @else
