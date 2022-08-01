@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class MonthlyEvent extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'image',
+        'branch',
+    ];
 }
