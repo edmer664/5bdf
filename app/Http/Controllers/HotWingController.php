@@ -6,21 +6,42 @@ use App\Models\CareerPost;
 use Illuminate\Http\Request;
 use App\Models\Carousel;
 use App\Models\Product;
+use App\Models\Promotion;
 
 class HotWingController extends Controller
 {
     //
     function index()
     {
-        return view('hot_wings.index',[
-            'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
-            'products' => Product::where('branch', '=', 'hot-wings')->get()
-        ]);
+        if($request->has('all')){
+            return view('hot_wings.index',[
+                'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+                'products' => Product::where('branch', '=', 'hot-wings')->get()
+            ]);
+        }else{
+            return view('hot_wings.index',[
+                'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+                'products' => Product::where('branch', '=', 'hot-wings')->take(6)->get()
+            ]);
+        }
     }
 
-    function promotions()
+    function promotions(Request $request)
     {
-        return view('hot_wings.promotions');
+        if($request->has('all')){
+
+            return view('hot_wings.promotions',[
+                'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+                'promotions' => Promotion::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
+                'all' => true
+            ]);
+        }else{
+            return view('hot_wings.promotions',[
+                'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+                'promotions' => Promotion::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->take(3)->get(),
+                'all' => false
+            ]);
+        }
     }
 
     function careers()
@@ -32,7 +53,9 @@ class HotWingController extends Controller
 
     function franchise()
     {
-        return view('hot_wings.franchise');
+        return view('hot_wings.franchise',[
+            'carousels' => Carousel::where('branch', '=', 'hot-wings')->get()
+        ]);
     }
 
     function store()
