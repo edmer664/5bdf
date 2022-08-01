@@ -122,3 +122,14 @@ f37524
     width: 100px !important;
     display: block;
 }
+
+
+.sticky{
+    /* make fixed on top */
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+
+
+}

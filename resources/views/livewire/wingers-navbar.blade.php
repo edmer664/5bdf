@@ -12,3 +12,22 @@
         </ul>
     </div>
 </div>
+
+
+
+@push('scripts')
+{{-- make nav sticky onscroll --}}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var navbar = document.getElementById('wingers-navbar');
+        var sticky = navbar.offsetTop;
+        window.onscroll = function () {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        };
+    });
+</script>
+@endpush
