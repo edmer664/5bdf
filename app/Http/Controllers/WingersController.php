@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Carousel;
 use App\Models\CareerPost;
 use App\Models\Promotion;
+use App\Models\Product;
 
 class WingersController extends Controller
 {
@@ -13,6 +14,7 @@ class WingersController extends Controller
     {
         return view('wingers.index', [
             'carousels' => Carousel::where('branch', '=', 'wingers')->get(),
+            'products' => Product::where('branch', '=', 'wingers')->get(),
         ]);
     }
 
