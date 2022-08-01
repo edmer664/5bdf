@@ -11,7 +11,7 @@ use App\Models\Promotion;
 class HotWingController extends Controller
 {
     //
-    function index()
+    function index(Request $request)
     {
         if($request->has('all')){
             return view('hot_wings.index',[
