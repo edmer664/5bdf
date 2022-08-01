@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Carousel;
+use App\Models\Product;
 
 class HotWingController extends Controller
 {
@@ -12,6 +13,7 @@ class HotWingController extends Controller
     {
         return view('hot_wings.index',[
             'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+            'products' => Product::where('branch', '=', 'hot-wings')->get()
         ]);
     }
 
