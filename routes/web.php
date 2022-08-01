@@ -12,6 +12,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\CsrController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\MonthlyEventController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -99,6 +100,9 @@ Route::group(['as' => '5bdf.admin.', 'middleware' => 'auth'], function () {
 
     // Products CRUD
     Route::resource('/admin/products', ProductController::class);
+
+    // Monthly Events CRUD
+    Route::resource('/admin/monthly-events', MonthlyEventController::class);
 });
 
 

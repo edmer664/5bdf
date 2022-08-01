@@ -81,6 +81,7 @@
                         <a class="collapse-item" href="{{ route('5bdf.admin.csr.index') }}">CSR</a>
                         <a href="{{ route('5bdf.admin.promotions.index') }}" class="collapse-item">Promotions</a>
                         <a href="{{route('5bdf.admin.products.index')}}" class="collapse-item">Products</a>
+                        <a href="{{route('5bdf.admin.monthly-events.index')}}" class="collapse-item">Monthly Events</a>
                     </div>
                 </div>
             </li>
