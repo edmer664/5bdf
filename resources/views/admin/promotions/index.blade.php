@@ -8,7 +8,9 @@
                     <h4 class="card-title">Create</h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('5bdf.admin.promotions.store') }}" method="post">
+                    <form action="{{ route('5bdf.admin.promotions.store') }}" method="post" 
+                    enctype="multipart/form-data"
+                    >
                         @csrf
                         <div class="form-group">
                             <label for="title">Title</label>
@@ -27,6 +29,15 @@
                         <div class="form-group">
                             <label for="description">Description</label>
                             <textarea class="form-control" name="description" id="description" rows="3" required></textarea>
+                        </div>
+                        {{-- image input --}}
+                        <div class="form-group">
+                            <label for="image">Image</label>
+                            <input type="file" class="form-control" name="image" id="image" required>
+                        </div>
+                        {{-- preview image --}}
+                        <div class="form-group">
+                            <img src="" id="image-preview" class="img-fluid" alt="">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -102,3 +113,15 @@
             </div>
         </div>
     @endsection
+
+    @push('scripts')
+        <script>
+            document.querySelector('#image').addEventListener('change', function (e) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.querySelector('#image-preview').src = e.target.result;
+                };
+                reader.readAsDataURL(e.target.files[0]);
+            });
+        </script>
+    @endpush
