@@ -17,8 +17,9 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title');
-            $table->string('description');
+            $table->text('description');
             $table->enum('branch',['wingers','sports','hot-wings','main']);
+            $table->string('image');
         });
     }
 
