@@ -7,9 +7,9 @@
       <div class="container-xl">
         <div class="row">
           <div class="col">
-            <div class="card">
+            <div class="card shadow">
               <div class="card-header">
-                <h1 class="card-title">
+                <h1 class="card-title text-center">
                   {{$career->title}}
                 </h1>
               </div>
