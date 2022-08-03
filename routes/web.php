@@ -93,7 +93,7 @@ Route::group(['as' => '5bdf.admin.', 'middleware' => 'auth'], function () {
     Route::resource('/admin/careers', CareerPostController::class);
 
     // Events CRUD
-    Route::resource('/admin/events', EventController::class);
+    Route::resource('/admin/events', EventController::class)->except('show');
 
     // Promotion CRUD
     Route::resource('/admin/promotions', PromotionController::class);

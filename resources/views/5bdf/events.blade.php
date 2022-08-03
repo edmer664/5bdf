@@ -12,7 +12,7 @@
         <div class="container-xl">
             <div class="pb-5">
                 <h2 class="section-title">
-                    Events
+                    Events ni
                 </h2>
             </div>
             {{-- Container --}}
@@ -30,86 +30,28 @@
                 <div class="w-90 m-auto">
 
                     <div class="position-relative slider">
-                        <div class="p-2">
-                            <div class="card">
-                                <div class="card-header p-0">
-                                    {{-- Image header --}}
-                                    <img data-src="{{ asset('assets/images/img3.jpg') }}" alt=""
-                                        class="img-fluid rounded-top">
-                                </div>
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        Lorem Ipsum
-                                    </h3>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim.
-                                    </p>
-                                    <button class="btn btn-sm bg-orange text-white">
-                                        Lorem Ipsum
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-2">
-                            <div class="card">
-                                <div class="card-header p-0">
-                                    {{-- Image header --}}
-                                    <img data-src="{{ asset('assets/images/img3.jpg') }}" alt=""
-                                        class="img-fluid rounded-top">
-                                </div>
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        Lorem Ipsum
-                                    </h3>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim.
-                                    </p>
-                                    <button class="btn btn-sm bg-orange text-white">
-                                        Lorem Ipsum
-                                    </button>
+                        @foreach ($events as $event)
+                            <div class="p-2">
+                                <div class="card">
+                                    <div class="card-header p-0">
+                                        {{-- Image header --}}
+                                        <img data-src="{{ asset('assets/images/img3.jpg') }}" alt=""
+                                            class="img-fluid rounded-top">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title">
+                                            {{ $event->title }}
+                                        </h3>
+                                        <p>
+                                            {{$event->description }}
+                                        </p>
+                                        <a href="{{ route() }}" class="btn btn-sm bg-orange text-white">
+                                            See More
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="p-2">
-                            <div class="card">
-                                <div class="card-header p-0">
-                                    {{-- Image header --}}
-                                    <img data-src="{{ asset('assets/images/img3.jpg') }}" alt=""
-                                        class="img-fluid rounded-top">
-                                </div>
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        Lorem Ipsum
-                                    </h3>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim.
-                                    </p>
-                                    <button class="btn btn-sm bg-orange text-white">
-                                        Lorem Ipsum
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-2">
-                            <div class="card">
-                                <div class="card-header p-0">
-                                    {{-- Image header --}}
-                                    <img data-src="{{ asset('assets/images/img3.jpg') }}" alt=""
-                                        class="img-fluid rounded-top">
-                                </div>
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        Lorem Ipsum
-                                    </h3>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim.
-                                    </p>
-                                    <button class="btn btn-sm bg-orange text-white">
-                                        Lorem Ipsum
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
 
@@ -130,8 +72,8 @@
                 @if (count($monthly_events) > 0)
                     @foreach ($monthly_events as $monthly_event)
                         <div class="col-md-4 col-sm-6">
-                            <img src="{{ asset('storage/monthly_events/'.$monthly_event->image) }}" class="img-fluid py-3" alt=""
-                                srcset="">
+                            <img src="{{ asset('storage/monthly_events/' . $monthly_event->image) }}" class="img-fluid py-3"
+                                alt="" srcset="">
                         </div>
                     @endforeach
                 @else
