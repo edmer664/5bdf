@@ -37,6 +37,7 @@ Route::group(['as' => '5bdf.'], function () {
     Route::get('/careers/{career}', [HomeController::class, 'career_view'])->name('career_view');
 
     Route::get('/events', [HomeController::class, 'events'])->name('events');
+    Route::get('/events/{event}', [HomeController::class, 'event_view'])->name('event_view');
     Route::get('/csr', [HomeController::class, 'csr'])->name('csr');
     Route::get('/our-group', [HomeController::class, 'ourGroup'])->name('our-group');
 
@@ -93,7 +94,7 @@ Route::group(['as' => '5bdf.admin.', 'middleware' => 'auth'], function () {
     Route::resource('/admin/careers', CareerPostController::class);
 
     // Events CRUD
-    Route::resource('/admin/events', EventController::class)->except('show');
+    Route::resource('/admin/events', EventController::class);
 
     // Promotion CRUD
     Route::resource('/admin/promotions', PromotionController::class);
