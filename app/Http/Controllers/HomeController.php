@@ -43,6 +43,14 @@ class HomeController extends Controller
         ]);
     }
 
+    public function event_view(Event $event)
+    {
+        return view('5bdf.event_view',[
+            'event' => $event,
+        ]);
+    }
+   
+
     public function csr()
     {
         // first six csr
