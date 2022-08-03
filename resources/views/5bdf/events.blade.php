@@ -12,7 +12,7 @@
         <div class="container-xl">
             <div class="pb-5">
                 <h2 class="section-title">
-                    Events ni
+                    Events
                 </h2>
             </div>
             {{-- Container --}}
@@ -28,7 +28,7 @@
                     </li>
                 </ul>
                 <div class="w-90 m-auto">
-
+                    @if(count($events) > 0)
                     <div class="position-relative slider">
                         @foreach ($events as $event)
                             <div class="p-2">
@@ -43,9 +43,9 @@
                                             {{ $event->title }}
                                         </h3>
                                         <p>
-                                            {{$event->description }}
+                                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta enim veritatis beatae voluptatum sit illum delectus, hic placeat amet et.
                                         </p>
-                                        <a href="{{ route() }}" class="btn btn-sm bg-orange text-white">
+                                        <a href="{{ route('5bdf.event_view',$event->id) }}" class="btn btn-sm bg-orange text-white">
                                             See More
                                         </a>
                                     </div>
@@ -53,6 +53,13 @@
                             </div>
                         @endforeach
                     </div>
+                    @else
+                        <div class="text-center py-5">
+                            <h3 class="text-center">
+                                No Events Found
+                            </h3>
+                        </div>
+                    @endif
                 </div>
 
             </div>
