@@ -8,7 +8,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    {{-- META TAGS --}}
+    <title>@yield('title','5BDF')</title>
+    <meta name="description" content="@yield('description','5BDF Website')">
+    <meta name="keywords" content="@yield('keywords','5BDF, 5BDF Website')">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -25,6 +28,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+
+    {{-- Favicon --}}
+    <link rel="icon" href="{{asset('assets/images/Logo5bdf.png')}}" type="image/png">
+
+
 
     @livewireStyles
 

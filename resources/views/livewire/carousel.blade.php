@@ -1,5 +1,20 @@
+<style>
+    
+    .c-image{
+        width: 100%;
+        height: 50vh;
+        object-fit: contain;
+    }
+    @media (min-width: 768px) {
+        .c-image{
+            object-fit: cover;
+            height: 80vh;
+        }
+    }
+</style>
+
 <div class="w-100 ">
-        <div id="hero" class="carousel slide" data-bs-ride="carousel">
+        <div id="hero" class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 @if(count($carousels) == 0)
                     <li data-bs-target="#hero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
@@ -18,7 +33,7 @@
                     @foreach($carousels as $carousel)
                         <div class="carousel-item @if($loop->first) active @endif">
                             <div class="w-100">
-                                <img class="w-100 d-block mx-auto" style="max-height: 640px; object-fit: contain" src="{{ asset('storage/carousel/'.$carousel->path) }}" alt="{{ $carousel->name }}">
+                                <img class="w-100 d-block mx-auto c-image" src="{{ asset('storage/carousel/'.$carousel->path) }}" alt="{{ $carousel->name }}">
                             </div>
                         </div>
                     @endforeach

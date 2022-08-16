@@ -21,6 +21,9 @@
     <link href="{{asset('res/css/sb-admin-2.min.css')}}" rel="stylesheet">
     @vite(['resources/css/app.css'])
 
+    {{-- Favicon --}}
+    <link rel="icon" href="{{asset('assets/images/Logo5bdf.png')}}" type="image/png">
+
 </head>
 <body class="bg-orange">
 

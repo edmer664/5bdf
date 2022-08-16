@@ -13,6 +13,7 @@ class Event extends Model
         'title',
         'description',
         'branch',
-        'date'
+        'date',
+        'image'
     ];
 }

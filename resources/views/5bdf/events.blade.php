@@ -32,20 +32,39 @@
                     <div class="position-relative slider">
                         @foreach ($events as $event)
                             <div class="p-2">
-                                <div class="card">
-                                    <div class="card-header p-0">
+                                <div class="card" style="">
+                                    <div class="card-header p-0" style="position: relative;">
                                         {{-- Image header --}}
-                                        <img data-src="{{ asset('assets/images/img3.jpg') }}" alt=""
-                                            class="img-fluid rounded-top">
+                                        <img data-src="{{ asset('storage/events/'.$event->image) }}" alt=""
+                                            class="rounded-top mx-auto d-block" style="height: 200px; width: 100%; object-fit: cover">
+                                        {{-- Date --}}
+                                        <div class="bg-orange p-2 w-25" style="position: absolute; bottom: 0">
+                                            <div class="text-center">
+                                                <h5 class="text-white">
+                                                    {{ Date::parse($event->date)->format('d') }}
+                                                </h5>
+                                                <small class="text-white d-block">
+                                                    {{ Date::parse($event->date)->format('F') }}
+                                                </small>
+                                                <small class="text-white d-block">
+                                                    {{ Date::parse($event->date)->format('Y') }}
+                                                </small>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body" style="min-height: 200px;position: relative;">
                                         <h3 class="card-title">
                                             {{ $event->title }}
                                         </h3>
-                                        <p>
-                                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta enim veritatis beatae voluptatum sit illum delectus, hic placeat amet et.
+                                        <p class="pb-4">
+                                            @foreach (json_decode($event->description) as $e)
+                                                {{ 
+                                                // first 200 characters
+                                                substr($e[0]->insert, 0, 150) . '...'
+                                                 }}
+                                            @endforeach
                                         </p>
-                                        <a href="{{ route('5bdf.event_view',$event->id) }}" class="btn btn-sm bg-orange text-white">
+                                        <a href="{{ route('5bdf.event_view',$event->id) }}" class="btn-block btn btn-sm bg-orange text-white" style="position: absolute;bottom: 10px;">
                                             See More
                                         </a>
                                     </div>

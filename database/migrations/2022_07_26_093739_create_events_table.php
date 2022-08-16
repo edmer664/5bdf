@@ -20,6 +20,7 @@ return new class extends Migration
             $table->json('description');
             $table->enum('branch', ['hot-wings', 'wingers', 'sports', 'main']);
             $table->date('date');
+            $table->string('image');
             
         });
     }

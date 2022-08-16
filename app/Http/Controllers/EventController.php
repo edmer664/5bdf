@@ -41,12 +41,18 @@ class EventController extends Controller
     {
         //
         Log::info('EventController@store');
-        Log::info($request->all());
         $event = new Event;
         $event->title = $request->title;
         $event->description = $request->description;
         $event->branch = $request->branch;
         $event->date = $request->date;
+
+        $imageFile = $request->file('image');
+        $imageName = time().'.'.$imageFile->getClientOriginalExtension();
+        $imageFile->storeAs('public/events',$imageName);
+
+        $event->image = $imageName;
+
         $event->save();
         return response()->json(['success' => 'Event created successfully.']);
     }
@@ -86,6 +92,13 @@ class EventController extends Controller
     public function update(Request $request, Event $event)
     {
         //
+        Log::info('EventController@update');
+        $event->title = $request->title;
+        $event->description = $request->description;
+        $event->branch = $request->branch;
+        $event->date = $request->date;
+        $event->save();
+        return response()->json(['success' => 'Event updated successfully.']);
     }
 
     /**

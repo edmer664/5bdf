@@ -14,7 +14,7 @@ class SportController extends Controller
     function index(Request $request){
         if ($request->has('all')) {
             return view('sport.index', [
-                'carousels' => Carousel::where('branch', '=', 'sport')->get(),
+                'carousels' => Carousel::where('branch', '=', 'sport')->orderBy('created_at', 'desc')->get(),
                 'products' => Product::where('branch', '=', 'sport')->orderBy('created_at', 'desc')->get(),
             ]);
         }

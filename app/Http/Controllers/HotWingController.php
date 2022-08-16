@@ -15,12 +15,12 @@ class HotWingController extends Controller
     {
         if($request->has('all')){
             return view('hot_wings.index',[
-                'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+                'carousels' => Carousel::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
                 'products' => Product::where('branch', '=', 'hot-wings')->get()
             ]);
         }else{
             return view('hot_wings.index',[
-                'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+                'carousels' => Carousel::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
                 'products' => Product::where('branch', '=', 'hot-wings')->take(6)->get()
             ]);
         }
@@ -31,13 +31,13 @@ class HotWingController extends Controller
         if($request->has('all')){
 
             return view('hot_wings.promotions',[
-                'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+                'carousels' => Carousel::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
                 'promotions' => Promotion::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
                 'all' => true
             ]);
         }else{
             return view('hot_wings.promotions',[
-                'carousels' => Carousel::where('branch', '=', 'hot-wings')->get(),
+                'carousels' => Carousel::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
                 'promotions' => Promotion::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->take(3)->get(),
                 'all' => false
             ]);
@@ -54,7 +54,7 @@ class HotWingController extends Controller
     function franchise()
     {
         return view('hot_wings.franchise',[
-            'carousels' => Carousel::where('branch', '=', 'hot-wings')->get()
+            'carousels' => Carousel::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->get()
         ]);
     }
 

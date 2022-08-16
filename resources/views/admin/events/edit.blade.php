@@ -77,15 +77,17 @@
                 title: title,
                 date: date,
                 description: description,
-                branch: branch
+                branch: branch,
+                _method: 'PUT'
             };
-            const URL = "{{ route('5bdf.admin.events.store') }}";
+            const URL = "{{ route('5bdf.admin.events.update',$event->id) }}";
 
             fetch(URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'X-CSRF-TOKEN': "{{ csrf_token() }}"
+                    'X-CSRF-TOKEN': "{{ csrf_token() }}",
+                    
                 },
                 body: JSON.stringify(data)
             }).then(function(response) {

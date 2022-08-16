@@ -13,6 +13,12 @@
                 </div>
 
                 <div class="card-body">
+                    <div class="custom-file">
+                      <label class="custom-file-label" for="image">Header Image</label>
+                      <input type="file" class="custom-file-input" name="image" id="image" placeholder="image" aria-describedby="fileHelpId">
+                      <small id="fileHelpId" class="form-text text-muted"><i>Recommended aspect ration 16:9</i></small>
+                    </div>
+                    <img src="" alt="" id="preview" class="img-fluid" style="max-width: 200px">
                     <div class="form-group">
                         <label for="title">Title</label>
                         <input type="text" class="form-control" name="title" id="title" placeholder="Event 1" required>
@@ -66,7 +72,6 @@
                                     <th>
                                         Action
                                     </th>
-
                                 </tr>
                             </thead>
                             <tbody>
@@ -137,15 +142,22 @@
                 description: JSON.stringify(description),
                 branch: branch
             };
+            var formData = new FormData();
+            formData.append('title', title);
+            formData.append('date', date);
+            formData.append('description', JSON.stringify(description));
+            formData.append('branch', branch);
+            formData.append('image', document.getElementById('image').files[0]);
+
+
             const URL = "{{ route('5bdf.admin.events.store') }}";
 
             fetch(URL, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
                     'X-CSRF-TOKEN': "{{ csrf_token() }}"
                 },
-                body: JSON.stringify(data)
+                body: formData,
             }).then(function(response) {
                 return response.json();
             }).then(function(data) {
@@ -153,6 +165,24 @@
                 window.location.href = '/admin/events';
             });
 
+        });
+    </script>
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#preview').attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#image").change(function() {
+            readURL(this);
         });
     </script>
 @endpush

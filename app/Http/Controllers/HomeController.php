@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function index()
     {
         return view('5bdf.index', [
-            'carousels' => Carousel::where('branch', '=', 'main')->get(),
+            'carousels' => Carousel::where('branch', '=', 'main')->orderBy('created_at', 'desc')->get(),
         ]);
     }
 
