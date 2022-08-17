@@ -10,6 +10,7 @@ use App\Http\Controllers\CarouselController;
 use App\Http\Controllers\CareerPostController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\CsrController;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\MonthlyEventController;
@@ -41,33 +42,35 @@ Route::group(['as' => '5bdf.'], function () {
     Route::get('/csr', [HomeController::class, 'csr'])->name('csr');
     Route::get('/our-group', [HomeController::class, 'ourGroup'])->name('our-group');
 
+    Route::get('/franchise', [EmailController::class, 'franchiseForm'])->name('email');
+
 });
 
 Route::group(['as' => '5bdf.wingers.'], function () {
-    Route::get('/wingers', [WingersController::class, 'index'])->name('index');
+    Route::get('/wingersunlimited', [WingersController::class, 'index'])->name('index');
 
-    Route::get('/wingers/careers', [WingersController::class, 'careers'])->name('careers');
+    Route::get('/wingersunlimited/careers', [WingersController::class, 'careers'])->name('careers');
     // Route::get('/wingers/careers/{career}', [WingersController::class, 'career_view'])->name('career_view');
 
-    Route::get('/wingers/promotions', [WingersController::class, 'promotions'])->name('promotions');
-    Route::get('/wingers/franchise', [WingersController::class, 'franchise'])->name('franchise');
-    Route::get('/wingers/store', [WingersController::class, 'store'])->name('store');
+    Route::get('/wingersunlimited/promotions', [WingersController::class, 'promotions'])->name('promotions');
+    Route::get('/wingersunlimited/franchise', [WingersController::class, 'franchise'])->name('franchise');
+    Route::get('/wingersunlimited/store', [WingersController::class, 'store'])->name('store');
 });
 
 Route::group(['as' => '5bdf.hot-wings.'], function () {
-    Route::get('/hot-wings', [HotWingController::class, 'index'])->name('index');
-    Route::get('/hot-wings/promotions', [HotWingController::class, 'promotions'])->name('promotions');
-    Route::get('/hot-wings/careers', [HotWingController::class, 'careers'])->name('careers');
-    Route::get('/hot-wings/franchise', [HotWingController::class, 'franchise'])->name('franchise');
-    Route::get('/hot-wings/store', [HotWingController::class, 'store'])->name('store');
+    Route::get('/nybuffalobradshotwings', [HotWingController::class, 'index'])->name('index');
+    Route::get('/nybuffalobradshotwings/promotions', [HotWingController::class, 'promotions'])->name('promotions');
+    Route::get('/nybuffalobradshotwings/careers', [HotWingController::class, 'careers'])->name('careers');
+    Route::get('/nybuffalobradshotwings/franchise', [HotWingController::class, 'franchise'])->name('franchise');
+    Route::get('/nybuffalobradshotwings/store', [HotWingController::class, 'store'])->name('store');
 });
 
 Route::group(['as' => '5bdf.sports.'], function () {
-    Route::get('/sports', [SportController::class, 'index'])->name('index');
-    Route::get('/sports/promotions', [SportController::class, 'promotions'])->name('promotions');
-    Route::get('/sports/careers', [SportController::class, 'careers'])->name('careers');
-    Route::get('/sports/franchise', [SportController::class, 'franchise'])->name('franchise');
-    Route::get('/sports/store', [SportController::class, 'store'])->name('store');
+    Route::get('/nybuffalobradssportslounge', [SportController::class, 'index'])->name('index');
+    Route::get('/nybuffalobradssportslounge/promotions', [SportController::class, 'promotions'])->name('promotions');
+    Route::get('/nybuffalobradssportslounge/careers', [SportController::class, 'careers'])->name('careers');
+    Route::get('/nybuffalobradssportslounge/franchise', [SportController::class, 'franchise'])->name('franchise');
+    Route::get('/nybuffalobradssportslounge/store', [SportController::class, 'store'])->name('store');
 });
 
 // Global Resources

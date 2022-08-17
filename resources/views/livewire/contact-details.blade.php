@@ -12,7 +12,7 @@
                         Address
                     </h3>
                     <p>
-                        A108 Adam Street, New York, NY 535022
+                        20/F, Latitude Corporate Center, Mindanao Ave., Cebu City, Cebu 6000
                     </p>
                 </div>
             </div>
@@ -26,9 +26,11 @@
                     <h3 class="mt-3 fw-bold">
                         Email
                     </h3>
-                    <p>
-                        contact@example.com
-                    </p>
+                    <a href="mailto:headoffice@5bdf.ph" class="text-decoration-none text-dark">
+                        <p>
+                            headoffice@5bdf.ph
+                        </p>
+                    </a>
                 </div>
             </div>
             <div class="col-md-4">
