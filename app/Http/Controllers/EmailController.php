@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use PDF;
 use App\Mail\Franchise;
+use Illuminate\Support\Facades\Log;
 
 class EmailController extends Controller
 {
@@ -23,7 +24,7 @@ class EmailController extends Controller
         // nysportsloungefranchise@5bdf.ph"		
         if ($request->brand == 'Wingers Unlimited') {
             // $to = "wingersfranchise@5bdf.ph";
-            $to ="edmer.codes@gmail.com";
+            $to = "edmer.codes@gmail.com";
         } else if ($request->brand == 'NY Buffalo Brads Hot Wings') {
             // $to = "nybuffalofranchise@5bdf.ph";
             $to = "alapateam@gmail.com";
@@ -45,9 +46,46 @@ class EmailController extends Controller
         // save the pdf file make the dir first
         $pdf->save(public_path('pdf/' . $pdf_name));
         $pdf_path = public_path('pdf/' . $pdf_name);
-        Mail::to($to)->queue(new Franchise($request->all(), $pdf_name, $subject, $message,$pdf_path));
+        Mail::to($to)->queue(new Franchise($request->all(), $pdf_name, $subject, $message, $pdf_path));
         // delete pdf
         unlink($pdf_path);
         return redirect()->back()->with('success', 'Thank you for your interest in our franchise. We will get back to you soon.');
+    }
+
+
+    public function careerForm(Request $request)
+    {
+        Log::info($request->all());
+        $TO = "edmer.codes@gmail.com";
+        // store files temporarily
+        $files = [];
+        foreach ($request->docs as $file) {
+            Log::info('test');
+            $file_name = $file->getClientOriginalName();
+            $file->move(public_path('uploads'), $file_name);
+            array_push($files, public_path('uploads/' . $file_name));
+        }
+        Log::info($files);
+        
+        $subject = "Career Inquiry:" . $request->firstName . " " . $request->lastName;
+        
+        Mail::send('emails.career',['request'=>$request->all()],function ($message) use ($files, $subject, $TO) {
+            $message->from('noreply@5bdf.ph', '5BDF Website');
+            $message->subject($subject);
+            $message->to($TO);
+            foreach ($files as $file) {
+                $message->attach($file,[
+                    'as' => 'attachment.pdf',
+                    'mime' => ' application/pdf',
+                ]);
+            }
+        });
+        // delete files
+        foreach ($files as $file) {
+            unlink($file);
+        }
+
+
+        return redirect()->back()->with('success', 'Thank you for your interest in our company. We will get back to you soon.');
     }
 }

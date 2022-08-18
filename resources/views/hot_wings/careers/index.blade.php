@@ -3,6 +3,5 @@
 <livewire:navbar-wingers />
 <livewire:hot-navbar />
 @include('hot_wings.careers.hero')
-@include('hot_wings.careers.contact')
-
+<livewire:career-form />
 <livewire:footer />

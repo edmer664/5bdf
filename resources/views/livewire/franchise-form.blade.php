@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 py-2">
-                <form action="{{route('5bdf.email')}}" method="get" id="franchiseForm">
+                <form action="{{ route('5bdf.email') }}" method="post" id="franchiseForm">
                     @csrf
                     <div class="row">
                         <div class="col-6 mb-2">
@@ -62,8 +62,17 @@
                     </div>
 
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn bg-green text-white" data-bs-toggle="modal"
-                        data-bs-target="#modelId">
+                    <button type="button"
+                        class="btn 
+                    @if (request()->routeIs('5bdf.hot-wings.*')) bg-orange
+                @elseif(request()->routeIs('5bdf.sports.*'))
+                bg-red
+                @elseif(request()->routeIs('5bdf.wingers.*'))
+                bg-green
+                @else
+                bg-orange @endif
+                    text-white"
+                        data-bs-toggle="modal" data-bs-target="#modelId">
                         Continue
                     </button>
 
@@ -81,22 +90,27 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         {{-- if brand is not defined then display dropdown --}}
-                                        @if($brand == null)
-                                        <div class="col-md-12 mb-2">
-                                            <label for="brand">Brand</label>
-                                            <select class="form-select" name="brand" id="brand">
-                                                <option value="Wingers Unlimited">Wingers Unlimited</option>
-                                                <option value="NY Buffalo Brads Hot Wings">NY Buffalo Brads Hot Wings</option>
-                                                <option value="NY Buffalo Brads Sports Lounge">NY Buffalo Brads Sports Lounge</option>
-                                            </select>
-                                        </div>
+                                        @if ($brand == null)
+                                            <div class="col-md-12 mb-2">
+                                                <label for="brand">Brand</label>
+                                                <select class="form-select" name="brand" id="brand">
+                                                    <option value="Wingers Unlimited">Wingers Unlimited</option>
+                                                    <option value="NY Buffalo Brads Hot Wings">NY Buffalo Brads Hot
+                                                        Wings</option>
+                                                    <option value="NY Buffalo Brads Sports Lounge">NY Buffalo Brads
+                                                        Sports Lounge</option>
+                                                </select>
+                                            </div>
                                         @else
-                                        <input type="brand" value="{{$brand}}" class="d-none">
+                                            <input type="brand" name="brand" value="{{ $brand }}"
+                                                class="d-none">
                                         @endif
 
                                         <div class="col-12 mb-2">
                                             <label for="area">Area/location proposed for franchised outlet: <span
                                                     class="text-secondary">(Please describe)</span></label>
+                                            <input class="form-control" type="text" name="area"
+                                                id="area">
                                         </div>
                                         <div class="col-md-4 mb-2">
                                             <label for="otherAreas">Will you consider other areas?</label>
@@ -165,13 +179,23 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="g-recaptcha" data-sitekey="6LeI6oIhAAAAAAuqq1iDsM-vESKjBWQaRrsUJi2a"></div>
+                                        <div class="g-recaptcha"
+                                            data-sitekey="6LeI6oIhAAAAAAuqq1iDsM-vESKjBWQaRrsUJi2a"></div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn bg-green text-white">Submit</button>
+                                    <button type="submit"
+                                        class="btn 
+                                    @if (request()->routeIs('5bdf.hot-wings.*')) bg-orange
+                @elseif(request()->routeIs('5bdf.sports.*'))
+                bg-red
+                @elseif(request()->routeIs('5bdf.wingers.*'))
+                bg-green
+                @else
+                bg-orange @endif
+                                    text-white">Submit</button>
 
                                 </div>
                             </div>
@@ -181,7 +205,16 @@
                 </form>
             </div>
             <div class="col-md-6 py-2" data-aos="fade-left">
-                <div class="card bg-orange text-white py-5 h-100">
+                <div
+                    class="card 
+                @if (request()->routeIs('5bdf.hot-wings.*')) bg-orange
+                @elseif(request()->routeIs('5bdf.sports.*'))
+                bg-red
+                @elseif(request()->routeIs('5bdf.wingers.*'))
+                bg-green
+                @else
+                bg-orange @endif
+                text-white py-5 h-100">
                     <div class="card-body">
                         <div class="text-center" style="font-size: 8rem">
                             <i class="bi bi-shop"></i>
@@ -197,18 +230,17 @@
     </div>
 
     @push('scripts')
-    <script>
-        document.getElementById('franchiseForm').addEventListener('submit', function (e) {
-            var captcha = document.querySelector('#g-recaptcha-response');
-            if (captcha.value == '') {
-                e.preventDefault();
-                alert('Please check the the captcha form');
-                return false;
-            }
-            
-        });
-    </script>
+        <script>
+            document.getElementById('franchiseForm').addEventListener('submit', function(e) {
+                var captcha = document.querySelector('#g-recaptcha-response');
+                if (captcha.value == '') {
+                    e.preventDefault();
+                    alert('Please check the the captcha form');
+                    return false;
+                }
+
+            });
+        </script>
     @endpush
 
 </section>
-

@@ -17,11 +17,11 @@
             </div>
 
             <p class="text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto recusandae eius eligendi aperiam,
-                reprehenderit
-                pariatur doloremque accusamus dolorem? Quidem unde cupiditate suscipit! Assumenda illum ea sed laboriosam
-                quam
-                voluptas.
+                The business idea was created in 2015 by five young and enthusiastic businessmen in Cebu. Established in the
+                year 2016 after pursuing a whole year of research and development, finally the idea then came into reality.
+                Registered in the Philippines Securities and Exchange Commission (SEC) in April 25, 2016, known as 5 Brad’s
+                Dragon Food Corporation (5BDF Corporation) doing business as New York Buffalo Brad’s Hot Wings and Wingers
+                Unlimited Flavored Wings.
             </p>
         </div>
     </section>
@@ -38,10 +38,10 @@
                     </div> --}}
                     <div class="col-md-6 py-2 text-white d-flex justify-content-center flex-column">
                         <h2>
-                            John Doe
+                            ROBIN G. ROBINS III
                         </h2>
                         <small><i>
-                                CEO
+                            Chief Executive Officer
                             </i></small>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente voluptatem magni
@@ -56,15 +56,15 @@
 
     <section class="py-5">
         <div class="container-xl pb-5">
-            <div class="pb-5">              
+            <div class="pb-5">
                 <h2 class="section-title">
                     Mission
                 </h2>
             </div>
 
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto dolore aperiam officiis consequatur aut
-                necessitatibus facilis nemo. Odit, reprehenderit sequi.
+                To bring the internationally acclaimed Flavored Chicken Buffalo Wings in the Philippine market by innovating
+                and introducing an array of sauces that is perfect for the Filipino taste.
 
             </p>
         </div>
@@ -76,8 +76,8 @@
                 </h2>
             </div>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum blanditiis sed labore, dolorum voluptates
-                dignissimos est! Beatae perferendis laboriosam tenetur!
+                To be the country’s leading fast food chain built with a solid business partnership recognized by its
+                distinct taste of Flavored Chicken Wings, efficient service, and dynamic people.
             </p>
         </div>
         <div class="container-xl pb-5">
@@ -87,8 +87,15 @@
                 </h2>
             </div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam corporis perferendis? Perspiciatis,
-                modi totam itaque nulla non sed adipisci?
+                We are committed in treating our customers with respect, friendly and family oriented service.
+            <ul>
+                <li>
+                    We continually grow with creativity and innovation.
+                </li>
+                <li>
+                    We integrate honesty, integrity and business ethics into all aspects of our operation.
+                </li>
+            </ul>
             </p>
         </div>
     </section>
@@ -104,10 +111,10 @@
                     <div class="text-center">
                         <img src="{{ asset('assets/images/ceo.png') }}" alt="" class="img-fluid rounded">
                         <h3 class="mt-3 fw-bold">
-                            John Doe
+                            HARLOW GAYLE Z. FACTURAN
                         </h3>
                         <p>
-                            Position
+                            Chief Operating Officer
                         </p>
                     </div>
                 </div>
@@ -115,10 +122,10 @@
                     <div class="text-center">
                         <img src="{{ asset('assets/images/ceo.png') }}" alt="" class="img-fluid rounded">
                         <h3 class="mt-3 fw-bold">
-                            John Doe
+                            ROBERT R. CO
                         </h3>
                         <p>
-                            Position
+                            Chief Finance Officer
                         </p>
                     </div>
                 </div>
@@ -126,10 +133,10 @@
                     <div class="text-center">
                         <img src="{{ asset('assets/images/ceo.png') }}" alt="" class="img-fluid rounded">
                         <h3 class="mt-3 fw-bold">
-                            John Doe
+                            JEFFREY T. LINGAD
                         </h3>
                         <p>
-                            Position
+                            Chief of Production
                         </p>
                     </div>
                 </div>
@@ -137,24 +144,14 @@
                     <div class="text-center">
                         <img src="{{ asset('assets/images/ceo.png') }}" alt="" class="img-fluid rounded">
                         <h3 class="mt-3 fw-bold">
-                            John Doe
+                            FULBERT NEWTON B. LEE
                         </h3>
                         <p>
-                            Position
+                            Chief of Architecture & Design
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/images/ceo.png') }}" alt="" class="img-fluid rounded">
-                        <h3 class="mt-3 fw-bold">
-                            John Doe
-                        </h3>
-                        <p>
-                            Position
-                        </p>
-                    </div>
-                </div>
+                
 
             </div>
         </div>

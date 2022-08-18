@@ -42,7 +42,9 @@ Route::group(['as' => '5bdf.'], function () {
     Route::get('/csr', [HomeController::class, 'csr'])->name('csr');
     Route::get('/our-group', [HomeController::class, 'ourGroup'])->name('our-group');
 
-    Route::get('/franchise', [EmailController::class, 'franchiseForm'])->name('email');
+    Route::post('/franchise', [EmailController::class, 'franchiseForm'])->name('email');
+    Route::post('/career', [EmailController::class, 'careerForm'])->name('career');
+
 
 });
 

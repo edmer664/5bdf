@@ -4,9 +4,9 @@
             Contact Us
         </h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus reprehenderit voluptate facere illo ullam explicabo ipsa tenetur, minima velit!
+            Need to get in touch? We'd love to hear from you. Here's how you can reach us...
         </p>
-        <button class="btn bg-light text-orange">Lorem Ipsum</button>
+        <a href="{{route('5bdf.our-group')}}#contact" class="btn bg-light text-orange">Get in touch!</a>
 
     </div>
 </section>

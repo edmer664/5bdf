@@ -54,6 +54,38 @@
     <main>
         @yield('content')
     </main>
+    @if (session()->has('error'))
+        <script>
+            alert("{{ session()->get('error') }}");
+        </script>
+    @endif
+    @if (session()->has('success'))
+        {{-- thankyou modal --}}
+        <div class="modal fade" id="thankyouModal" tabindex="-1" aria-labelledby="thankyouModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="thankyouModalLabel">Thank you for your message!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>{{ session()->get('success') }}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var myModal = new bootstrap.Modal(document.getElementById('thankyouModal'), {
+                keyboard: false
+            })
+            myModal.show()
+        </script>
+        
+    @endif
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -62,6 +94,9 @@
 
         });
     </script>
+
+
+
 
     @stack('scripts')
 

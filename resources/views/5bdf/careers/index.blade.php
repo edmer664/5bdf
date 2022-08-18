@@ -2,5 +2,5 @@
 @section('content')
 <livewire:navbar-wingers />
 @include('5bdf.careers.hero')
-@include('5bdf.careers.contact')
+<livewire:career-form />
 <livewire:footer />

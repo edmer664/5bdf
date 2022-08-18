@@ -150,7 +150,7 @@
         </div>
     </section>
 
-
+    <livewire:franchise-form :brand="'Wingers Unlimited'" />
     <livewire:contact-us />
     <livewire:footer />
 @endsection

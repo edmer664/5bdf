@@ -1,4 +1,4 @@
-<section class="py-5">
+<section class="py-5" id="contact">
     <div class="container-xl">
         <div class="row">
             <div class="col-md-4">

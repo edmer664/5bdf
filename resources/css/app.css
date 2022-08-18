@@ -47,9 +47,7 @@ body {
 #contact input::placeholder {
     color: #b8bcca;
 }
-#contact button {
-    background: #0f381a;
-}
+
 #contact-content {
     border-radius: 11px;
 }
@@ -127,7 +125,7 @@ body {
     /* make fixed on top */
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 100;
     width: 100%;
 
 
@@ -137,3 +135,9 @@ body {
     transform: scale(1.1);
     transition: all 0.5s ease;
 }
+
+.no-decor{
+    list-style: none;
+    text-decoration: none;
+}
+

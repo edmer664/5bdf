@@ -6,8 +6,10 @@ use Livewire\Component;
 
 class Footer extends Component
 {
+    public $fb;
+
     public function render()
     {
-        return view('livewire.footer');
+        return view('livewire.footer',['fb' => $this->fb]);
     }
 }
