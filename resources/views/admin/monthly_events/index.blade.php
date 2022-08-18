@@ -16,8 +16,8 @@
                                 placeholder="Lorem Ipsum" required>
                         </div>
                         <div class="form-group">
-                            <label for="branch">Branch</label>
-                            <select class="form-control" name="branch" id="branch">
+                            <label for="brand">brand</label>
+                            <select class="form-control" name="brand" id="brand">
                               <option value="main">5BDF</option>
                                 <option value="hot-wings">Hot Wings</option>
                                 <option value="sports">Sports Lounge</option>
@@ -60,7 +60,7 @@
                                         Date
                                     </th>
                                     <th>
-                                        Branch
+                                        brand
                                     </th>
                                     <th>
                                         Action
@@ -79,13 +79,13 @@
                                             {{ $monthly_event->created_at->format('d M Y') }}
                                         </td>
                                         <td>
-                                            @if ($monthly_event->branch == 'main')
+                                            @if ($monthly_event->brand == 'main')
                                                 5BDF
-                                            @elseif ($monthly_event->branch == 'hot-wings')
+                                            @elseif ($monthly_event->brand == 'hot-wings')
                                                 Hot Wings
-                                            @elseif($monthly_event->branch == 'sports')
+                                            @elseif($monthly_event->brand == 'sports')
                                                 Sports Lounge
-                                            @elseif($monthly_event->branch == 'wingers')
+                                            @elseif($monthly_event->brand == 'wingers')
                                                 Wingers Unlimited
                                             @endif
                                         </td>

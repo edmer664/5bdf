@@ -44,7 +44,7 @@ class CareerPostController extends Controller
         $career->title = $request->title;
         $career->description = $request->description;
         $career->requirements = $request->requirements;
-        $career->branch = $request->branch;
+        $career->brand = $request->brand;
         $career->location = $request->location;
         $career->save();
 

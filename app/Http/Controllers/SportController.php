@@ -14,27 +14,27 @@ class SportController extends Controller
     function index(Request $request){
         if ($request->has('all')) {
             return view('sport.index', [
-                'carousels' => Carousel::where('branch', '=', 'sport')->orderBy('created_at', 'desc')->get(),
-                'products' => Product::where('branch', '=', 'sport')->orderBy('created_at', 'desc')->get(),
+                'carousels' => Carousel::where('brand', '=', 'sport')->orderBy('created_at', 'desc')->get(),
+                'products' => Product::where('brand', '=', 'sport')->orderBy('created_at', 'desc')->get(),
             ]);
         }
         return view('sports_lounge.index',[
-            'carousels' => Carousel::where('branch', '=', 'sports')->orderBy('created_at', 'desc')->get(),
-            'products' => Product::where('branch', '=', 'sports')->orderBy('created_at', 'desc')->take(6)->get(),
+            'carousels' => Carousel::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->get(),
+            'products' => Product::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->take(6)->get(),
         ]);
     }
 
     function promotions(Request $request){
         if($request->has('all')){
             return view('sports_lounge.promotions',[
-                'carousels' => Carousel::where('branch', '=', 'sports')->orderBy('created_at', 'desc')->get(),
-                'promotions' => Promotion::where('branch', '=', 'sports')->orderBy('created_at', 'desc')->get(),
+                'carousels' => Carousel::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->get(),
+                'promotions' => Promotion::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->get(),
                 'all' => false,
             ]);
         }else{
             return view('sports_lounge.promotions',[
-                'carousels' => Carousel::where('branch', '=', 'sports')->orderBy('created_at', 'desc')->get(),
-                'promotions' => Promotion::where('branch', '=', 'sports')->orderBy('created_at', 'desc')->take(3)->get(),
+                'carousels' => Carousel::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->get(),
+                'promotions' => Promotion::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->take(3)->get(),
                 'all' => true,
             ]);
         }
@@ -42,14 +42,14 @@ class SportController extends Controller
 
     function careers(){
         return view('sports_lounge.careers.index',[
-            'careers' => CareerPost::where('branch', '=', 'sports')->orderBy('created_at', 'desc')->get(),
+            'careers' => CareerPost::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->get(),
         
         ]);
     }
 
     function franchise(){
         return view('sports_lounge.franchise',[
-            'carousels' => Carousel::where('branch', '=', 'sports')->orderBy('created_at', 'desc')->get(),
+            'carousels' => Carousel::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->get(),
         
         ]);
     }

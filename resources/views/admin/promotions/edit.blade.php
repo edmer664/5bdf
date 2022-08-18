@@ -19,12 +19,12 @@
                                 required>
                         </div>
                         <div class="form-group">
-                            <label for="branch">Branch</label>
-                            <select class="form-control" name="branch" id="branch">
-                                <option {{("hot-wings" == $promotion->branch) ? "selected" : ""}} value="hot-wings">Hot Wings</option>
-                                <option {{("sports" == $promotion->branch) ? "selected" : ""}} value="sports">Sports Lounge</option>
-                                <option {{("main" == $promotion->branch) ? "selected" : ""}} value="main">5BDF</option>
-                                <option {{("wingers" == $promotion->branch) ? "selected" : ""}} value="wingers">Wingers Unlimited</option>
+                            <label for="brand">brand</label>
+                            <select class="form-control" name="brand" id="brand">
+                                <option {{("hot-wings" == $promotion->brand) ? "selected" : ""}} value="hot-wings">Hot Wings</option>
+                                <option {{("sports" == $promotion->brand) ? "selected" : ""}} value="sports">Sports Lounge</option>
+                                <option {{("main" == $promotion->brand) ? "selected" : ""}} value="main">5BDF</option>
+                                <option {{("wingers" == $promotion->brand) ? "selected" : ""}} value="wingers">Wingers Unlimited</option>
                             </select>
                         </div>
                         <div class="form-group">

@@ -49,7 +49,7 @@ class PromotionController extends Controller
         Promotion::create([
             'title' => $request->title,
             'description' => $request->description,
-            'branch' => $request->branch,
+            'brand' => $request->brand,
             'image' => $imageName,
         ]);
         return redirect()->back()->with('success','Promotion created successfully');
@@ -96,7 +96,7 @@ class PromotionController extends Controller
         $promotion->update([
             'title' => $request->title,
             'description' => $request->description,
-            'branch' => $request->branch,
+            'brand' => $request->brand,
         ]);
         return redirect()->back()->with('success','Promotion updated successfully');
     }

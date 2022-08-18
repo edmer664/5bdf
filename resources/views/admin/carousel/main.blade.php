@@ -12,7 +12,7 @@
 
                     <form action="{{ route('5bdf.admin.carousel.store') }}" method="post" enctype="multipart/form-data">
                         @csrf
-                        <input type="text" name="branch" value="main" hidden>
+                        <input type="text" name="brand" value="main" hidden>
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" class="form-control" name="name" id="name"

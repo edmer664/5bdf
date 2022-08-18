@@ -47,7 +47,7 @@ class ProductController extends Controller
         Product::create([
             'name' => $request->name,
             'image' => $imageName,
-            'branch' => $request->branch,
+            'brand' => $request->brand,
         ]);
         return redirect()->back()->with('success', 'Image uploaded successfully');
     }

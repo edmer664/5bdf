@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Csr;
+use App\Models\Inclusion;
 use Illuminate\Http\Request;
 
-class CsrController extends Controller
+class InclusionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,10 @@ class CsrController extends Controller
      */
     public function index()
     {
-        //
-        return view('admin.csr.index',[
-            'csrs'=>Csr::orderBy('created_at', 'desc')->get(),
+        return view('admin.inclusions.index', [
+            'inclusions' => Inclusion::all()->sortByDesc('created_at')
         ]);
+
     }
 
     /**
@@ -38,24 +38,23 @@ class CsrController extends Controller
      */
     public function store(Request $request)
     {
-        $imageFile = $request->file('image');
-        $imageName = time().'.'.$imageFile->getClientOriginalExtension();
-        $imageFile->storeAs('public/csr',$imageName);
+        //
+        $inclusion = new Inclusion();
+        $inclusion->title = $request->title;
+        $inclusion->description = $request->description;
+        $inclusion->brand = $request->brand;
+        $inclusion->save();
+        return redirect()->back()->with('success', 'Inclusion created successfully');
 
-        Csr::create([
-            'path' => $imageName,
-            'brand' => $request->brand,
-        ]);
-        return redirect()->back()->with('success','Image uploaded successfully');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Csr  $csr
+     * @param  \App\Models\Inclusion  $inclusion
      * @return \Illuminate\Http\Response
      */
-    public function show(Csr $csr)
+    public function show(Inclusion $inclusion)
     {
         //
     }
@@ -63,37 +62,35 @@ class CsrController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Csr  $csr
+     * @param  \App\Models\Inclusion  $inclusion
      * @return \Illuminate\Http\Response
      */
-    public function edit(Csr $csr)
+    public function edit(Inclusion $inclusion)
     {
         //
+        
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Csr  $csr
+     * @param  \App\Models\Inclusion  $inclusion
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Csr $csr)
+    public function update(Request $request, Inclusion $inclusion)
     {
         //
-
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Csr  $csr
+     * @param  \App\Models\Inclusion  $inclusion
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Csr $csr)
+    public function destroy(Inclusion $inclusion)
     {
         //
-        $csr->delete();
-        return redirect()->back()->with('success','File deleted');
     }
 }

@@ -16,8 +16,8 @@
                                 required>
                         </div>
                         <div class="form-group">
-                            <label for="branch">Branch</label>
-                            <select class="form-control" name="branch" id="branch">
+                            <label for="brand">brand</label>
+                            <select class="form-control" name="brand" id="brand">
                                 <option value="hot-wings">Hot Wings</option>
                                 <option value="sports">Sports Lounge</option>
                                 <option value="main">5BDF</option>
@@ -59,7 +59,7 @@
                                         Date
                                     </th>
                                     <th>
-                                        Branch
+                                        brand
                                     </th>
                                     <th>
                                         Action
@@ -76,13 +76,13 @@
                                             {{ $career->created_at->format('d M Y') }}
                                         </td>
                                         <td>
-                                            @if($career->branch == 'hot-wings')
+                                            @if($career->brand == 'hot-wings')
                                                 Hot Wings
-                                            @elseif($career->branch == 'sports')
+                                            @elseif($career->brand == 'sports')
                                                 Sports Lounge
-                                            @elseif($career->branch == 'main')
+                                            @elseif($career->brand == 'main')
                                                 5BDF
-                                            @elseif($career->branch == 'wingers')
+                                            @elseif($career->brand == 'wingers')
                                                 Wingers Unlimited
                                             @endif
                                         </td>

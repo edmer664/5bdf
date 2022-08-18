@@ -12,6 +12,6 @@ class MonthlyEvent extends Model
     protected $fillable = [
         'name',
         'image',
-        'branch',
+        'brand',
     ];
 }

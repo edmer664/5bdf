@@ -30,8 +30,8 @@
                         <small id="when" class="text-muted">Set the date.</small>
                     </div>
                     <div class="form-group">
-                        <label for="branch">Branch</label>
-                        <select class="form-control" name="branch" id="branch" required>
+                        <label for="brand">brand</label>
+                        <select class="form-control" name="brand" id="brand" required>
                             <option value="hot-wings">Hot Wings</option>
                             <option value="sports">Sports Lounge</option>
                             <option value="main">5BDF</option>
@@ -67,7 +67,7 @@
                                         Date
                                     </th>
                                     <th>
-                                        Branch
+                                        brand
                                     </th>
                                     <th>
                                         Action
@@ -84,7 +84,7 @@
                                             {{ $event->date }}
                                         </td>
                                         <td>
-                                            {{ $event->branch }}
+                                            {{ $event->brand }}
                                         </td>
                                         <td>
                                             <div class="btn-group">
@@ -135,18 +135,18 @@
             var title = document.getElementById('title').value;
             var date = document.getElementById('date').value;
             var description = quill.getContents();
-            var branch = document.getElementById('branch').value;
+            var brand = document.getElementById('brand').value;
             var data = {
                 title: title,
                 date: date,
                 description: JSON.stringify(description),
-                branch: branch
+                brand: brand
             };
             var formData = new FormData();
             formData.append('title', title);
             formData.append('date', date);
             formData.append('description', JSON.stringify(description));
-            formData.append('branch', branch);
+            formData.append('brand', brand);
             formData.append('image', document.getElementById('image').files[0]);
 
 

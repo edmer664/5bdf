@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('title');
             $table->text('description');
-            $table->enum('branch', ['hot-wings', 'wingers', 'sports', 'main']);
+            $table->enum('brand', ['hot-wings', 'wingers', 'sports', 'main']);
             $table->text('requirements');
             $table->string('location');
         });

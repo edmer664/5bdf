@@ -10,7 +10,7 @@ class Csr extends Model
     use HasFactory;
 
     protected $fillable = [
-        'branch',
+        'brand',
         'path',
     ];
 }

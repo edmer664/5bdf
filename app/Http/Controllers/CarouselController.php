@@ -13,28 +13,28 @@ class CarouselController extends Controller
     function mainView()
     {
         return view('admin.carousel.main', [
-            'carousels' => Carousel::where('branch', 'main')->get()
+            'carousels' => Carousel::where('brand', 'main')->get()
         ]);
     }
 
     function hotWingsView()
     {
         return view('admin.carousel.hot_wings', [
-            'carousels' => Carousel::where('branch', 'hot-wings')->get()
+            'carousels' => Carousel::where('brand', 'hot-wings')->get()
         ]);
     }
 
     function sportsView()
     {
         return view('admin.carousel.sports', [
-            'carousels' => Carousel::where('branch', 'sports')->get()
+            'carousels' => Carousel::where('brand', 'sports')->get()
         ]);
     }
 
     function wingersView()
     {
         return view('admin.carousel.wingers', [
-            'carousels' => Carousel::where('branch', 'wingers')->get()
+            'carousels' => Carousel::where('brand', 'wingers')->get()
         ]);
     }
 
@@ -45,7 +45,7 @@ class CarouselController extends Controller
         Log::info($request->file('imageFile')->getClientOriginalExtension());
         $test = Validator::make($request->all(),[
             'imageFile' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'branch' => 'required',
+            'brand' => 'required',
             'name' => 'required'
         ]);
 
@@ -66,7 +66,7 @@ class CarouselController extends Controller
             // store imageFileName in database
             $carousel = new Carousel;
             $carousel->path = $imageName;
-            $carousel->branch = $request->branch;
+            $carousel->brand = $request->brand;
             $carousel->name = $request->name;
             $carousel->save();
 

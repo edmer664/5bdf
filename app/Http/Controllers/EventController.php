@@ -44,7 +44,7 @@ class EventController extends Controller
         $event = new Event;
         $event->title = $request->title;
         $event->description = $request->description;
-        $event->branch = $request->branch;
+        $event->brand = $request->brand;
         $event->date = $request->date;
 
         $imageFile = $request->file('image');
@@ -95,7 +95,7 @@ class EventController extends Controller
         Log::info('EventController@update');
         $event->title = $request->title;
         $event->description = $request->description;
-        $event->branch = $request->branch;
+        $event->brand = $request->brand;
         $event->date = $request->date;
         $event->save();
         return response()->json(['success' => 'Event updated successfully.']);

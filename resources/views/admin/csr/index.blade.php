@@ -16,8 +16,8 @@
                                 required>
                         </div> --}}
                         <div class="form-group">
-                            <label for="branch">Branch</label>
-                            <select class="form-control" name="branch" id="branch">
+                            <label for="brand">brand</label>
+                            <select class="form-control" name="brand" id="brand">
                                 <option value="hot-wings">Hot Wings</option>
                                 <option value="sports">Sports Lounge</option>
                                 <option value="main">5BDF</option>
@@ -60,7 +60,7 @@
                                         Date
                                     </th>
                                     <th>
-                                        Branch
+                                        brand
                                     </th>
                                     <th>
                                         Action
@@ -78,13 +78,13 @@
                                             {{ $csr->created_at->format('d M Y') }}
                                         </td>
                                         <td>
-                                            @if ($csr->branch == 'hot-wings')
+                                            @if ($csr->brand == 'hot-wings')
                                                 Hot Wings
-                                            @elseif($csr->branch == 'sports')
+                                            @elseif($csr->brand == 'sports')
                                                 Sports Lounge
-                                            @elseif($csr->branch == 'main')
+                                            @elseif($csr->brand == 'main')
                                                 5BDF
-                                            @elseif($csr->branch == 'wingers')
+                                            @elseif($csr->brand == 'wingers')
                                                 Wingers Unlimited
                                             @endif
                                         </td>

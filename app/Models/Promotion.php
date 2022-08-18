@@ -13,6 +13,6 @@ class Promotion extends Model
         'title',
         'description',
         'image',
-        'branch',
+        'brand',
     ];
 }

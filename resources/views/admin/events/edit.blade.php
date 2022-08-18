@@ -24,8 +24,8 @@
                         <small id="when" class="text-muted">Set the date.</small>
                     </div>
                     <div class="form-group">
-                        <label for="branch">Branch</label>
-                        <select class="form-control" name="branch" id="branch" required>
+                        <label for="brand">brand</label>
+                        <select class="form-control" name="brand" id="brand" required>
                             <option value="hot-wings">Hot Wings</option>
                             <option value="sports">Sports Lounge</option>
                             <option value="main">5BDF</option>
@@ -72,12 +72,12 @@
             var title = document.getElementById('title').value;
             var date = document.getElementById('date').value;
             var description = JSON.stringify(quill.getContents());
-            var branch = document.getElementById('branch').value;
+            var brand = document.getElementById('brand').value;
             var data = {
                 title: title,
                 date: date,
                 description: description,
-                branch: branch,
+                brand: brand,
                 _method: 'PUT'
             };
             const URL = "{{ route('5bdf.admin.events.update',$event->id) }}";

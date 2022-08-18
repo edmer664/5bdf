@@ -12,7 +12,7 @@ class CareerPost extends Model
     protected $fillable = [
         'title',
         'description',
-        'branch',
+        'brand',
         'requirements',
     ];
 }

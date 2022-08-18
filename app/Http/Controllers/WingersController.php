@@ -14,13 +14,13 @@ class WingersController extends Controller
     {
         if ($request->has('all')) {
             return view('wingers.index', [
-                'carousels' => Carousel::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
-                'products' => Product::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
+                'carousels' => Carousel::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
+                'products' => Product::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
             ]);
         }
         return view('wingers.index', [
-            'carousels' => Carousel::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
-            'products' => Product::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->take(6)->get(),
+            'carousels' => Carousel::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
+            'products' => Product::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->take(6)->get(),
         ]);
     }
 
@@ -28,14 +28,14 @@ class WingersController extends Controller
     {
         if ($request->has('all')) {
             return view('wingers.promotions', [
-                'carousels' => Carousel::where('branch', '=', 'wingers')->get(),
-                'promotions' => Promotion::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
+                'carousels' => Carousel::where('brand', '=', 'wingers')->get(),
+                'promotions' => Promotion::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
                 'all' => false,
             ]);
         } else {
             return view('wingers.promotions', [
-                'carousels' => Carousel::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
-                'promotions' => Promotion::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->take(3)->get(),
+                'carousels' => Carousel::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
+                'promotions' => Promotion::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->take(3)->get(),
                 'all' => true,
             ]);
         }
@@ -44,7 +44,7 @@ class WingersController extends Controller
     function careers()
     {
         return view('wingers.careers.index', [
-            'careers' => CareerPost::where('branch', '=', 'wingers')->get(),
+            'careers' => CareerPost::where('brand', '=', 'wingers')->get(),
         ]);
     }
 
@@ -53,7 +53,7 @@ class WingersController extends Controller
         return view(
             'wingers.franchise',
             [
-                'carousels' => Carousel::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
+                'carousels' => Carousel::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->get(),
             ]
         );
     }

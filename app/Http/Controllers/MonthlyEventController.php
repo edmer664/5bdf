@@ -47,7 +47,7 @@ class MonthlyEventController extends Controller
         $monthly_event = new MonthlyEvent();
         $monthly_event->name = $request->name;
         $monthly_event->image = $imageName;
-        $monthly_event->branch = $request->branch;
+        $monthly_event->brand = $request->brand;
         $monthly_event->save();
         return redirect()->back()->with('success', 'Monthly Event created successfully');
     }

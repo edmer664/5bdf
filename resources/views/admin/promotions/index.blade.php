@@ -18,8 +18,8 @@
                                 required>
                         </div>
                         <div class="form-group">
-                            <label for="branch">Branch</label>
-                            <select class="form-control" name="branch" id="branch">
+                            <label for="brand">brand</label>
+                            <select class="form-control" name="brand" id="brand">
                                 <option value="hot-wings">Hot Wings</option>
                                 <option value="sports">Sports Lounge</option>
                                 <option value="main">5BDF</option>
@@ -61,7 +61,7 @@
                                         Date
                                     </th>
                                     <th>
-                                        Branch
+                                        brand
                                     </th>
                                     <th>
                                         Action
@@ -78,13 +78,13 @@
                                             {{ $promotion->created_at->format('d M Y') }}
                                         </td>
                                         <td>
-                                            @if($promotion->branch == 'hot-wings')
+                                            @if($promotion->brand == 'hot-wings')
                                                 Hot Wings
-                                            @elseif($promotion->branch == 'sports')
+                                            @elseif($promotion->brand == 'sports')
                                                 Sports Lounge
-                                            @elseif($promotion->branch == 'main')
+                                            @elseif($promotion->brand == 'main')
                                                 5BDF
-                                            @elseif($promotion->branch == 'wingers')
+                                            @elseif($promotion->brand == 'wingers')
                                                 Wingers Unlimited
                                             @endif
                                         </td>

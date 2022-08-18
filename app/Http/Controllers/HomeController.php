@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function index()
     {
         return view('5bdf.index', [
-            'carousels' => Carousel::where('branch', '=', 'main')->orderBy('created_at', 'desc')->get(),
+            'carousels' => Carousel::where('brand', '=', 'main')->orderBy('created_at', 'desc')->get(),
         ]);
     }
 
@@ -22,7 +22,7 @@ class HomeController extends Controller
     {
 
         return view('5bdf.careers.index', [
-            'careers' => CareerPost::where('branch', '=', 'main')->orderBy('created_at', 'desc')->get(),
+            'careers' => CareerPost::where('brand', '=', 'main')->orderBy('created_at', 'desc')->get(),
         ]);
     }
 
@@ -37,7 +37,7 @@ class HomeController extends Controller
     public function events()
     {
         return view('5bdf.events',[
-            'carousels' => Carousel::where('branch', '=', 'main')->orderBy('created_at', 'desc')->get(),
+            'carousels' => Carousel::where('brand', '=', 'main')->orderBy('created_at', 'desc')->get(),
             'monthly_events' => MonthlyEvent::orderBy('created_at', 'desc')->get(),
             'events' => Event::orderBy('created_at', 'desc')->get(),
         ]);
@@ -54,9 +54,9 @@ class HomeController extends Controller
     public function csr()
     {
         // first six csr
-        $wingers = Csr::where('branch', '=', 'wingers')->orderBy('created_at', 'desc')->take(6)->get();
-        $hot_wings = Csr::where('branch', '=', 'hot-wings')->orderBy('created_at', 'desc')->take(6)->get();
-        $sports = Csr::where('branch', '=', 'sports')->orderBy('created_at', 'desc')->take(6)->get();
+        $wingers = Csr::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->take(6)->get();
+        $hot_wings = Csr::where('brand', '=', 'hot-wings')->orderBy('created_at', 'desc')->take(6)->get();
+        $sports = Csr::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->take(6)->get();
         return view('5bdf.csr', [
             'wingers' => $wingers,
             'hot_wings' => $hot_wings,

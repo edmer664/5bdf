@@ -14,6 +14,7 @@ use App\Http\Controllers\EmailController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\MonthlyEventController;
+use App\Http\Controllers\InclusionController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -112,6 +113,9 @@ Route::group(['as' => '5bdf.admin.', 'middleware' => 'auth'], function () {
 
     // Monthly Events CRUD
     Route::resource('/admin/monthly-events', MonthlyEventController::class);
+
+    // Inclusions CRUD
+    Route::resource('/admin/inclusions', InclusionController::class);
 });
 
 

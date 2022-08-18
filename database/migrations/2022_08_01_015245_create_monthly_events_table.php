@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('name');
             $table->string('image');
-            $table->string('branch');
+            $table->string('brand');
         });
     }
 

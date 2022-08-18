@@ -11,7 +11,7 @@ class Carousel extends Model
 
     protected $fillable = [
         'path',
-        'branch',
+        'brand',
         'name'
     ];
 }

@@ -84,6 +84,7 @@
                         <a href="{{ route('5bdf.admin.promotions.index') }}" class="collapse-item">Promotions</a>
                         <a href="{{route('5bdf.admin.products.index')}}" class="collapse-item">Products</a>
                         <a href="{{route('5bdf.admin.monthly-events.index')}}" class="collapse-item">Monthly Events</a>
+                        <a href="{{route('5bdf.admin.inclusions.index')}}" class="collapse-item">Inclusions</a>
                     </div>
                 </div>
             </li>
@@ -98,7 +99,7 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Branch</h6>
+                        <h6 class="collapse-header">brand</h6>
                         <a class="collapse-item" href="{{ route('5bdf.admin.carousel.main') }}">5BDF</a>
                         <a class="collapse-item" href="{{ route('5bdf.admin.carousel.hot-wings') }}">Hot Wings</a>
                         <a class="collapse-item" href="{{ route('5bdf.admin.carousel.wingers') }}">Wingers Unlimited</a>

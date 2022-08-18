@@ -31,13 +31,13 @@
                 {{ Date::parse($event->date)->format('l, F j, Y') }}
                 <br>
                 <i class="bi bi-geo-alt"></i>
-                @if($event->branch == 'main')
+                @if($event->brand == 'main')
                     5BDF
-                @elseif($event->branch == 'wingers')
+                @elseif($event->brand == 'wingers')
                     Wingers Unlimited
-                @elseif($event->branch == 'hot-wings')
+                @elseif($event->brand == 'hot-wings')
                     Hot Wings
-                @elseif($event->branch == 'sports')
+                @elseif($event->brand == 'sports')
                     Sports Lounge
                 @endif
 
