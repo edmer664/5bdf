@@ -19,9 +19,9 @@
                             Wingers Unlimited
                         </h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente voluptatem magni
-                            necessitatibus
-                            fugit autem animi nihil ut perferendis accusamus.
+                            Wingers Unlimited is a restaurant where it serves unlimited dine-in experience and offers
+                            Flavored Chicken Wings in five different sauces, rice, flavored Fries, bottomless softdrinks,
+                            juices, and soft served ice cream all at an affordable price per head.
                         </p>
                     </div>
                     <div class="col-sm-6">
@@ -81,7 +81,7 @@
                 <div class="row justify-content-center">
                     <div class="col-4">
                         <div class="text-center">
-                            <a href="{{route('5bdf.wingers.index',['all'=>true])}}" class="btn bg-green text-white">
+                            <a href="{{ route('5bdf.wingers.index', ['all' => true]) }}" class="btn bg-green text-white">
                                 View More
                             </a>
                         </div>

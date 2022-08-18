@@ -68,7 +68,9 @@ class InclusionController extends Controller
     public function edit(Inclusion $inclusion)
     {
         //
-        
+        return view('admin.inclusions.edit', [
+            'inclusion' => $inclusion
+        ]);
     }
 
     /**
@@ -81,6 +83,11 @@ class InclusionController extends Controller
     public function update(Request $request, Inclusion $inclusion)
     {
         //
+        $inclusion->title = $request->title;
+        $inclusion->description = $request->description;
+        $inclusion->brand = $request->brand;
+        $inclusion->save();
+        return redirect()->back()->with('success', 'Inclusion updated successfully');
     }
 
     /**
@@ -92,5 +99,8 @@ class InclusionController extends Controller
     public function destroy(Inclusion $inclusion)
     {
         //
+        $inclusion->delete();
+        return redirect()->back()->with('success', 'Inclusion deleted successfully');
+        
     }
 }

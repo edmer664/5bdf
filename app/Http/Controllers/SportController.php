@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Carousel;
 use App\Models\CareerPost;
+use App\Models\Inclusion;
 use App\Models\Promotion;
 use App\Models\Product;
 
@@ -50,7 +51,7 @@ class SportController extends Controller
     function franchise(){
         return view('sports_lounge.franchise',[
             'carousels' => Carousel::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->get(),
-        
+            'inclusions' => Inclusion::where('brand', '=', 'sports')->get(),
         ]);
     }
 

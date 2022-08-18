@@ -11,17 +11,16 @@
         <div class="bg-orange text-white">
             <div class="container-xl py-3">
                 <div class="row">
-                    <div class="col-sm-6 d-flex flex-column justify-content-center">
+                    <div class="col-sm-6 d-flex flex-column justify-content-center" data-aos="fade-right">
                         <h2>
                             NY Buffalo Brads Hot Wings
                         </h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente voluptatem magni
-                            necessitatibus
-                            fugit autem animi nihil ut perferendis accusamus.
+                            New York Buffalo Brad’s Hot Wings offers ala carte Flavored Chicken Wings, Hotdogs, New York
+                            Burgers, Fries, Ribs, Pasta, and more.
                         </p>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" data-aos="fade-left">
                         <img src="{{ asset('assets/images/img1.png') }}" class="img-fluid rounded" alt="">
                     </div>
                 </div>
@@ -78,7 +77,7 @@
                 <div class="row justify-content-center">
                     <div class="col-4">
                         <div class="text-center">
-                            <a href="{{route('5bdf.wingers.index',['all'=>true])}}" class="btn bg-orange text-white">
+                            <a href="{{ route('5bdf.wingers.index', ['all' => true]) }}" class="btn bg-orange text-white">
                                 View More
                             </a>
                         </div>

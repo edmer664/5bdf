@@ -23,14 +23,23 @@ class EmailController extends Controller
         // Under NYBB Sports Lounge:
         // nysportsloungefranchise@5bdf.ph"		
         if ($request->brand == 'Wingers Unlimited') {
-            // $to = "wingersfranchise@5bdf.ph";
-            $to = "edmer.codes@gmail.com";
+            if (env('APP_ENV') == 'production') {
+                $to = "wingersfranchise@5bdf.ph";
+            } else {
+                $to = "edmer.codes@gmail.com";
+            }
         } else if ($request->brand == 'NY Buffalo Brads Hot Wings') {
-            // $to = "nybuffalofranchise@5bdf.ph";
-            $to = "alapateam@gmail.com";
+            if (env('APP_ENV') == 'production') {
+                $to = "nybuffalofranchise@5bdf.ph";
+            } else {
+                $to = "alapateam@gmail.com";
+            }
         } else if ($request->brand == 'NY Buffalo Brads Sports Lounge') {
-            // $to = "nysportsloungefranchise@5bdf.ph";
-            $to = "alapateam@gmail.com";
+            if (env('APP_ENV') == 'production') {
+                $to = "nysportsloungefranchise@5bdf.ph";
+            } else {
+                $to = "alapateam@gmail.com";
+            }
         } else {
             return redirect()->back()->with('error', 'Something went wrong. Please try again.');
         }
@@ -56,7 +65,11 @@ class EmailController extends Controller
     public function careerForm(Request $request)
     {
         Log::info($request->all());
-        $TO = "edmer.codes@gmail.com";
+        if (env('APP_ENV') == 'production') {
+            $TO = "recruitment@5bdf.ph";
+        } else {
+            $TO = "edmer.codes@gmail.com";
+        }
         // store files temporarily
         $files = [];
         foreach ($request->docs as $file) {
@@ -66,15 +79,15 @@ class EmailController extends Controller
             array_push($files, public_path('uploads/' . $file_name));
         }
         Log::info($files);
-        
+
         $subject = "Career Inquiry:" . $request->firstName . " " . $request->lastName;
-        
-        Mail::send('emails.career',['request'=>$request->all()],function ($message) use ($files, $subject, $TO) {
+
+        Mail::send('emails.career', ['request' => $request->all()], function ($message) use ($files, $subject, $TO) {
             $message->from('noreply@5bdf.ph', '5BDF Website');
             $message->subject($subject);
             $message->to($TO);
             foreach ($files as $file) {
-                $message->attach($file,[
+                $message->attach($file, [
                     'as' => 'attachment.pdf',
                     'mime' => ' application/pdf',
                 ]);

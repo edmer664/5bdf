@@ -6,7 +6,7 @@
 
     {{-- Content --}}
     <section>
-        <img class="img-fluid" style="object-fit: contain" src="{{ asset('assets/images/img5.jpg') }}" alt="">
+        <img class=""  style="object-fit: cover;height: 50vh;width: 100%;" src="{{ asset('assets/images/img5.jpg') }}" alt="">
     </section>
     <section class="py-5">
         <div class="container-xl">

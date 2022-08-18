@@ -16,9 +16,9 @@
                             NY Buffalo Brads Hot Wings
                         </h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente voluptatem magni
-                            necessitatibus
-                            fugit autem animi nihil ut perferendis accusamus.
+                            New York Buffalo Brad’s Sports Lounge is a combination of fine dining restaurant and a bar where
+                            it offers Flavored Chicken Wings, Ribs, Pasta, Pinoy dishes, and Appetizers perfect to pair with
+                            Liquors and Spirits .
                         </p>
                     </div>
                     <div class="col-sm-6">
@@ -78,7 +78,7 @@
                 <div class="row justify-content-center">
                     <div class="col-4">
                         <div class="text-center">
-                            <a href="{{route('5bdf.wingers.index',['all'=>true])}}" class="btn bg-red text-white">
+                            <a href="{{ route('5bdf.wingers.index', ['all' => true]) }}" class="btn bg-red text-white">
                                 View More
                             </a>
                         </div>
