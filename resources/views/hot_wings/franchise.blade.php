@@ -36,7 +36,7 @@
     <section class="py-5">
         <div class="container-xl">
             <div class="row">
-                @if ($inclusions)
+                @if ($inclusions->count() > 0)
                     @foreach ($inclusions as $inclusion)
                         <div class="col-md-4">
                             <livewire:inclusion-card :inclusion="$inclusion" />

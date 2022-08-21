@@ -45,6 +45,7 @@ Route::group(['as' => '5bdf.'], function () {
 
     Route::post('/franchise', [EmailController::class, 'franchiseForm'])->name('email');
     Route::post('/career', [EmailController::class, 'careerForm'])->name('career');
+    Route::post('/contact', [EmailController::class, 'contactForm'])->name('contact');
 
 
 });

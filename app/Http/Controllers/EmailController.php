@@ -101,4 +101,21 @@ class EmailController extends Controller
 
         return redirect()->back()->with('success', 'Thank you for your interest in our company. We will get back to you soon.');
     }
+
+
+    public function contactForm(Request $request)
+    {
+        if (env('APP_ENV') == 'production') {
+            $TO = "headoffice@5bdf.ph";
+        } else {
+            $TO = "alapateam@gmail.com";
+        }
+        $subject = "Contact Inquiry:" . $request->name;
+        Mail::send('emails.contact', ['request' => $request->all()], function ($message) use ($subject, $TO) {
+            $message->from('noreply@5bdf.ph', '5BDF Website');
+            $message->subject($subject);
+            $message->to($TO);
+        });
+        return redirect()->back()->with('success', 'Thank you for your interest in our company. We will get back to you soon.');
+    }
 }

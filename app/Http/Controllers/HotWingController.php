@@ -8,6 +8,7 @@ use App\Models\Carousel;
 use App\Models\Inclusion;
 use App\Models\Product;
 use App\Models\Promotion;
+use Illuminate\Support\Facades\Log;
 
 class HotWingController extends Controller
 {
@@ -54,6 +55,7 @@ class HotWingController extends Controller
 
     function franchise()
     {
+        Log::info(Inclusion::where('brand', '=', 'hot-wings')->get());
         return view('hot_wings.franchise',[
             'carousels' => Carousel::where('brand', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
             'inclusions' => Inclusion::where('brand', '=', 'hot-wings')->get()
