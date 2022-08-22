@@ -16,14 +16,14 @@ class HotWingController extends Controller
     function index(Request $request)
     {
         if($request->has('all')){
-            return view('hot_wings.index',[
+            return view('hot_wings.index2',[
                 'carousels' => Carousel::where('brand', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
-                'products' => Product::where('brand', '=', 'hot-wings')->get()
+                'products' => Product::where('brand', '=', 'hot-wings')->orderBy('created_at','desc')->get()
             ]);
         }else{
-            return view('hot_wings.index',[
+            return view('hot_wings.index2',[
                 'carousels' => Carousel::where('brand', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
-                'products' => Product::where('brand', '=', 'hot-wings')->take(6)->get()
+                'products' => Product::where('brand', '=', 'hot-wings')->orderBy('created_at','desc')->take(6)->get()
             ]);
         }
     }

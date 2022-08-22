@@ -15,9 +15,8 @@
                 </h2>
             </div>
             <p class="text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima nostrum animi odit architecto minus
-                exercitationem sint excepturi facilis similique esse perferendis, hic cumque, ea totam nisi dolore atque
-                reiciendis.
+                Avail these exciting promos and discounts now! For more information, please visit our contact page.
+                
 
             </p>
         </div>
@@ -34,7 +33,7 @@
             <div class="" id="promotion-section">
                 @if (count($promotions) > 0)
                     @foreach ($promotions as $promotion)
-                        <div class="bg-orange mb-3">
+                        <div class="bg-orange mb-3" data-aos="fade-up">
                             <div class="container-xl">
                                 <div class="row">
                                     <div class="col-md-6 d-flex justify-content-center py-3">
@@ -86,7 +85,7 @@
         </div>
     </section>
 
-    <section class="py-5">
+    <section class="py-5 d-none">
         <div class="container-xl">
             <p class="text-center">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus asperiores cupiditate tempora

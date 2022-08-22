@@ -1,4 +1,4 @@
-<div class="bg-green py-5 text-white">
+<div class="py-5 border-top">
     <div class="container-xl">
         <div class="row ">
             <div class="col-md-6">
@@ -14,17 +14,17 @@
 
                             <ul>
                                 <li>
-                                    <a href="{{ route('5bdf.hot-wings.index') }}" class="text-white no-decor">
+                                    <a href="{{ route('5bdf.hot-wings.index') }}" class="text-dark no-decor">
                                         NYBB Hot Wings
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('5bdf.sports.index') }}" class="text-white no-decor">
+                                    <a href="{{ route('5bdf.sports.index') }}" class="text-dark no-decor">
                                         NYBB Sports Lounge
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('5bdf.wingers.index') }}" class="text-white no-decor">
+                                    <a href="{{ route('5bdf.wingers.index') }}" class="text-dark no-decor">
                                         Wingers Unlimited
                                     </a>
                                 </li>
@@ -42,10 +42,10 @@
                         <small>
                             <ul>
                                 <li>
-                                    <a href="{{ route('5bdf.our-group') }}" class="text-white no-decor">Our Group</a>
+                                    <a href="{{ route('5bdf.our-group') }}" class="text-dark no-decor">Our Group</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('5bdf.events') }}" class="text-white no-decor">Events</a>
+                                    <a href="{{ route('5bdf.events') }}" class="text-dark no-decor">Events</a>
                                 </li>
                                 <li>
                                     <a href="
@@ -58,7 +58,7 @@
                                     @else
                                         {{ route('5bdf.careers') }} @endif
                                     "
-                                        class="text-white no-decor">Careers</a>
+                                        class="text-dark no-decor">Careers</a>
                                 </li>
                             </ul>
                         </small>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <hr class="text-white">
+        <hr class="">
         <div class="row">
             <div class="col">
                 <small>
@@ -87,7 +87,7 @@
                         @elseif(request()->routeIs('5bdf.wingers.*'))
                         https://www.facebook.com/wingersunlimited/ @endif
                         "
-                            class="text-white">
+                            class="text-dark">
                             <i class="bi bi-facebook"></i>
                         </a>
                     </div>

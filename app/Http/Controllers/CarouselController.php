@@ -44,7 +44,7 @@ class CarouselController extends Controller
         // image aspect ratio must be 16:9
         Log::info($request->file('imageFile')->getClientOriginalExtension());
         $test = Validator::make($request->all(),[
-            'imageFile' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'imageFile' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             'brand' => 'required',
             'name' => 'required'
         ]);

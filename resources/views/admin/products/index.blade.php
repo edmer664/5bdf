@@ -18,7 +18,7 @@
                         <div class="form-group">
                             <label for="brand">brand</label>
                             <select class="form-control" name="brand" id="brand">
-                              <option value="main">5BDF</option>
+                              {{-- <option value="main">5BDF</option> --}}
                                 <option value="hot-wings">Hot Wings</option>
                                 <option value="sports">Sports Lounge</option>
                                 <option value="wingers">Wingers Unlimited</option>

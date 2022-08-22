@@ -13,7 +13,7 @@
             <div class="container-xl py-3">
                 <div class="row">
                     <div class="col-sm-6 d-flex flex-column justify-content-center" data-aos="fade-up">
-                        <h2>
+                        <h2 style="font-size: 5rem">
                             NY Hot Wings Flagship
                         </h2>
                         <p>
@@ -23,7 +23,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" data-aos="fade-left">
-                        <img src="{{ asset('assets/images/img1.png') }}" class="img-fluid rounded" alt="">
+                        <img src="{{ asset('assets/images/hw.png') }}" class="img-fluid rounded" alt="">
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <div class="container-xl py-3">
                 <div class="row">
                     <div class="col-sm-6 d-flex flex-column justify-content-center" data-aos="fade-up">
-                        <h2>
+                        <h2 style="font-size: 5rem">
                             NY Sports Lounge Flagship
                         </h2>
                         <p>
@@ -43,7 +43,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" data-aos="fade-left">
-                        <img src="{{ asset('assets/images/img1.png') }}" class="img-fluid rounded" alt="">
+                        <img src="{{ asset('assets/images/sl.png') }}" class="img-fluid rounded" alt="">
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
             <div class="container-xl py-3">
                 <div class="row">
                     <div class="col-sm-6 d-flex flex-column justify-content-center" data-aos="fade-up">
-                        <h2>
+                        <h2 style="font-size: 5rem">
                             Wingers Flagship
                         </h2>
                         <p>
@@ -62,7 +62,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" data-aos="fade-left">
-                        <img src="{{ asset('assets/images/img1.png') }}" class="img-fluid rounded" alt="">
+                        <img src="{{ asset('assets/images/wu.png') }}" class="img-fluid rounded" alt="">
                     </div>
                 </div>
             </div>
@@ -121,40 +121,14 @@
                                 CEO
                             </i></small>
                         <p data-aos="fade-up">
-                            Coming from a family of businessmen, Mr. Robin G. Robins III started
-                            his humble beginnings when he had his first training during his teenage
-                            years. He was given tasks to do and taught to learn by himself. He
-                            learned to put value in his name in order to be a trusted business
-                            member in the community. As a leader, he also learned to work hard
-                            and know everybody&#x27;s job in the business so he&#x27;ll be much wiser than
-                            anybody else. During his early years of leadership, he learned that the
-                            harder mistakes he made, the more learnings he gained. He always
-                            brings his generals with him, ready to conquer the demands of the
-                            business.
+                            Coming from a family of businessmen, Mr. Robin G. Robins III started his humble beginnings when
+                            he had his first training during his teenage years. As a leader, he also learned to work hard
+                            and know everybody's job in the business so he'll be much wiser than anybody else.
                         </p>
-                        <p data-aos="fade-up">
-                            <i>
-                                As Mr. Robin G. Robins III quoted, “There are multiple pages on how to
-                                run a business. First is by knowing everyone&#x27;s job, second is actually
-                                reaching out and marketing your business as much as you can, and
-                                third is managing your people well.”
-                            </i>
-                        </p>
-                        <p data-aos="fade-up">
-
-                            Mr. Robin G. Robins III follows a humble leadership by respecting each
-                            employees no matter what position you have in the organization. He
-                            believes that it is also a way of lifting everyone&#x27;s morale.
-                            Lastly, Mr. Robin G. Robins III shared that during the trying times, he
-                            always sees to it to keep his team who have contributed something for
-                            the success of the company. As Mr. Robins III quotes, “It takes sacrifice
-                            to keep everyone in the organization but it pays off as we&#x27;ve retained
-                            most of the people despite the circumstances.”
-
-                        </p>
+                        
                     </div>
                     <div class="col-md-6 d-none py-2 d-md-flex align-items-center">
-                        <img src="{{ asset('assets/images/ceo.jpg') }}" data-aos="flip-right" class="rounded"
+                        <img src="{{ asset('assets/images/ceo.png') }}" data-aos="flip-right" class="rounded"
                             height="115%" width="100%" style="object-fit: cover" alt="">
                     </div>
                 </div>
