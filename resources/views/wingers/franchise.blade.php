@@ -47,7 +47,7 @@
                     {{-- render 6 times --}}
                     @for ($i = 0; $i < 6; $i++)
                         <div class="col-md-4 p-3">
-                            <div class="card bg-orange text-white">
+                            <div class="card bg-green text-white">
                                 <div class="card-body">
                                     <h3 class="card-title">
                                         Inclusion #
