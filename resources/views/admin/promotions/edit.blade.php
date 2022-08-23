@@ -14,12 +14,12 @@
                     <div class="card-body">
                         @csrf
                         <div class="form-group">
-                            <label for="title">Job Title</label>
+                            <label for="title">Title</label>
                             <input type="text" class="form-control" name="title" id="title" placeholder="Marketer" value="{{ $promotion->title }}"
                                 required>
                         </div>
                         <div class="form-group">
-                            <label for="brand">brand</label>
+                            <label for="brand">Brand</label>
                             <select class="form-control" name="brand" id="brand">
                                 <option {{("hot-wings" == $promotion->brand) ? "selected" : ""}} value="hot-wings">Hot Wings</option>
                                 <option {{("sports" == $promotion->brand) ? "selected" : ""}} value="sports">Sports Lounge</option>
