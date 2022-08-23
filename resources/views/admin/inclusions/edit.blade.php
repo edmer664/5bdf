@@ -23,7 +23,7 @@
                             <select class="form-control" name="brand" id="brand">
                                 <option {{("hot-wings" == $inclusion->brand) ? "selected" : ""}} value="hot-wings">Hot Wings</option>
                                 <option {{("sports" == $inclusion->brand) ? "selected" : ""}} value="sports">Sports Lounge</option>
-                                <option {{("main" == $inclusion->brand) ? "selected" : ""}} value="main">5BDF</option>
+                                {{-- <option {{("main" == $inclusion->brand) ? "selected" : ""}} value="main">5BDF</option> --}}
                                 <option {{("wingers" == $inclusion->brand) ? "selected" : ""}} value="wingers">Wingers Unlimited</option>
                             </select>
                         </div>
