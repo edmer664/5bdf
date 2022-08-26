@@ -31,7 +31,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 
-Route::group(['as' => '5bdf.'], function () {
+Route::group(['as' => '5bdf.','middleware'=>'auth'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('index');
 
     // Careers
@@ -50,7 +50,7 @@ Route::group(['as' => '5bdf.'], function () {
 
 });
 
-Route::group(['as' => '5bdf.wingers.'], function () {
+Route::group(['as' => '5bdf.wingers.','middleware'=>'auth'], function () {
     Route::get('/wingersunlimited', [WingersController::class, 'index'])->name('index');
 
     Route::get('/wingersunlimited/careers', [WingersController::class, 'careers'])->name('careers');
@@ -61,7 +61,7 @@ Route::group(['as' => '5bdf.wingers.'], function () {
     Route::get('/wingersunlimited/store', [WingersController::class, 'store'])->name('store');
 });
 
-Route::group(['as' => '5bdf.hot-wings.'], function () {
+Route::group(['as' => '5bdf.hot-wings.','middleware'=>'auth'], function () {
     Route::get('/nybuffalobradshotwings', [HotWingController::class, 'index'])->name('index');
     Route::get('/nybuffalobradshotwings/promotions', [HotWingController::class, 'promotions'])->name('promotions');
     Route::get('/nybuffalobradshotwings/careers', [HotWingController::class, 'careers'])->name('careers');
@@ -69,7 +69,7 @@ Route::group(['as' => '5bdf.hot-wings.'], function () {
     Route::get('/nybuffalobradshotwings/store', [HotWingController::class, 'store'])->name('store');
 });
 
-Route::group(['as' => '5bdf.sports.'], function () {
+Route::group(['as' => '5bdf.sports.','middleware'=>'auth'], function () {
     Route::get('/nybuffalobradssportslounge', [SportController::class, 'index'])->name('index');
     Route::get('/nybuffalobradssportslounge/promotions', [SportController::class, 'promotions'])->name('promotions');
     Route::get('/nybuffalobradssportslounge/careers', [SportController::class, 'careers'])->name('careers');
