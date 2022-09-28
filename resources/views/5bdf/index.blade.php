@@ -83,21 +83,21 @@
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-right" data-aos-delay="300">
                     <a href="{{ route('5bdf.hot-wings.index') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
-                            <img class="img-fluid" src="{{ asset('assets/images/HotWingsLogo.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/images/hotWingsLogo.png') }}" alt="">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-delay="300">
                     <a href="{{ route('5bdf.wingers.index') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
-                            <img class="img-fluid" src="{{ asset('assets/images/WingersLogo.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/images/wingersLogo.png') }}" alt="">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-left" data-aos-delay="300">
                     <a href="{{ route('5bdf.sports.index') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
-                            <img class="img-fluid" src="{{ asset('assets/images/SportsLoungeLogo.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/images/sportsLoungeLogo.png') }}" alt="">
                         </div>
                     </a>
                 </div>
@@ -157,21 +157,21 @@
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-right" data-aos-delay="300">
                     <a href="{{ route('5bdf.hot-wings.franchise') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
-                            <img class="img-fluid" src="{{ asset('assets/images/HotWingsLogo.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/images/hotWingsLogo.png') }}" alt="">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-delay="300">
                     <a href="{{ route('5bdf.wingers.franchise') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
-                            <img class="img-fluid" src="{{ asset('assets/images/WingersLogo.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/images/wingersLogo.png') }}" alt="">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-left" data-aos-delay="300">
                     <a href="{{ route('5bdf.sports.franchise') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
-                            <img class="img-fluid" src="{{ asset('assets/images/SportsLoungeLogo.png') }}"
+                            <img class="img-fluid" src="{{ asset('assets/images/sportsLoungeLogo.png') }}"
                                 alt="">
                         </div>
                     </a>
