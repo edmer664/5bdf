@@ -37,7 +37,7 @@
 
 
     {{-- Favicon --}}
-    <link rel="icon" href="{{ asset('assets/images/Logo5bdf.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('assets/images/Logo5BDF.png') }}" type="image/png">
 
 
 
