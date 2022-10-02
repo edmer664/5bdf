@@ -11,7 +11,7 @@
         <div class="bg-red text-white d-none">
             <div class="container-xl py-3">
                 <div class="row">
-                    <div class="col-sm-6 d-flex flex-column justify-content-center">
+                    <div class="col-sm-6 d-flex flex-column justify-content-center text-white">
                         <h2>
                             NY Buffalo Brads Hot Wings
                         </h2>
@@ -51,7 +51,7 @@
     </style>
 
     <section>
-        <div style="height: 100vh;position: relative;">
+        <div class="" style="height: 100vh;position: relative;">
             <div class="circle-red">
             </div>
         </div>
@@ -60,7 +60,7 @@
                 <div class="content">
 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 text-white">
                             <h2 class="title">
                                 NY Buffalo Brads Sports Lounge
                             </h2>
@@ -169,6 +169,8 @@
 
     {{-- onscroll .circle-red cover entire div --}}
     <script>
+        
+        
         gsap.registerPlugin(ScrollTrigger);
         gsap.to('.circle-red', {
             scrollTrigger: {
@@ -193,7 +195,7 @@
                 trigger: '.title',
                 
                 start: 'top bottom',
-                end: 'bottom 50%',
+                end: 'top 50%',
                 scrub: true,
             },
             x: '-100%',
@@ -206,7 +208,7 @@
                 trigger: '.text',
                 
                 start: 'top bottom',
-                end: 'bottom 50%',
+                end: 'top 50%',
                 scrub: true,
             },
             y: '100%',
@@ -215,35 +217,6 @@
         })
         
 
-        gsap.to('.title',{
-            scrollTrigger: {
-                trigger: '.color-change',
-                
-                start: 'top bottom',
-                end: 'bottom 50%',
-                pin:".content",
-                scrub: true,
-            },
-            color: '#fff',
-            delay: 1,
-            duration: 1,
-            ease: 'SlowMo.ease',
-        })
-
-        gsap.to('.text',{
-            scrollTrigger: {
-                trigger: '.color-change',
-                
-                start: 'top bottom',
-                end: 'bottom 50%',
-                pin:".content",
-                scrub: true,
-            },
-            color: '#fff',
-            delay: 1,
-            duration: 1,
-            ease: 'SlowMo.ease',
-        })
 
         gsap.to('#hero',{
             scrollTrigger: {
