@@ -45,7 +45,7 @@ class PromotionController extends Controller
         //
         $image = $request->file('image');
         $imageName = time().'.'.$image->getClientOriginalExtension();
-        $image->storeAs('public/promotions',$imageName);
+        $image->move(public_path('images/promotions'), $imageName);
         Promotion::create([
             'title' => $request->title,
             'description' => $request->description,

@@ -41,7 +41,7 @@ class MonthlyEventController extends Controller
         //
         $image = $request->file('image');
         $imageName = time() . '.' . $image->getClientOriginalExtension();
-        $image->storeAs('public/monthly_events', $imageName);
+        $image->move(public_path('images/monthly_events'), $imageName);
 
 
         $monthly_event = new MonthlyEvent();

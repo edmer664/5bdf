@@ -49,7 +49,7 @@ class EventController extends Controller
 
         $imageFile = $request->file('image');
         $imageName = time().'.'.$imageFile->getClientOriginalExtension();
-        $imageFile->storeAs('public/events',$imageName);
+        $imageFile->move(public_path('images/events'), $imageName);
 
         $event->image = $imageName;
 

@@ -40,7 +40,7 @@ class CsrController extends Controller
     {
         $imageFile = $request->file('image');
         $imageName = time().'.'.$imageFile->getClientOriginalExtension();
-        $imageFile->storeAs('public/csr',$imageName);
+        $imageFile->move(public_path('images/csr'), $imageName);
 
         Csr::create([
             'path' => $imageName,

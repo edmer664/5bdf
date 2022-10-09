@@ -61,7 +61,7 @@ class CarouselController extends Controller
             // set name to TIME_STAMP.extension
             $imageName = time() . '.' . $imageFile->getClientOriginalExtension();
             // store imageFile in storage/app/public/carousel
-            $imageFile->storeAs('public/carousel', $imageName);
+            $imageFile->move(public_path('storage/carousel'), $imageName);
 
             // store imageFileName in database
             $carousel = new Carousel;
