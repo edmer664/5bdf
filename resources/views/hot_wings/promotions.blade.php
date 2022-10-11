@@ -51,9 +51,9 @@
                             </div> --}}
                                     <div class="col-md-6 py-2 text-white d-flex justify-content-center flex-column">
                                         <h2>
-                                            <u>
+                                          
                                                 {{ $promotion->title }}
-                                            </u>
+                                         
                                         </h2>
 
                                         <p>
