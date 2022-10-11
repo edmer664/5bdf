@@ -49,7 +49,7 @@ class EventController extends Controller
 
         $imageFile = $request->file('image');
         $imageName = time().'.'.$imageFile->getClientOriginalExtension();
-        $imageFile->move(public_path('images/events'), $imageName);
+        $imageFile->move(public_path('storage/events'), $imageName);
 
         $event->image = $imageName;
 
@@ -110,6 +110,14 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
         //
+        Log::info('EventController@destroy');
+        // find header img
+        $image_path = public_path('images/events/'.$event->image);
+        if(file_exists($image_path)) {
+            unlink($image_path);
+        }
+        $event->delete();
+        return redirect()->back()->with('success', 'Event deleted successfully.');
     }
  
 }
