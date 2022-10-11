@@ -45,7 +45,7 @@ class PromotionController extends Controller
         //
         $image = $request->file('image');
         $imageName = time().'.'.$image->getClientOriginalExtension();
-        $image->move(public_path('images/promotions'), $imageName);
+        $image->move(public_path('storage/promotions'), $imageName);
         Promotion::create([
             'title' => $request->title,
             'description' => $request->description,
@@ -113,7 +113,9 @@ class PromotionController extends Controller
         // find the image and delete
         $image = $promotion->image;
         $imagePath = public_path('storage/promotions/'.$image);
-        unlink($imagePath);
+        if(file_exists($imagePath)){
+            unlink($imagePath);
+        }
         $promotion->delete();
         return redirect()->back()->with('success','Promotion deleted successfully');
         
