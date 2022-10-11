@@ -41,7 +41,7 @@ class MonthlyEventController extends Controller
         //
         $image = $request->file('image');
         $imageName = time() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('images/monthly_events'), $imageName);
+        $image->move(public_path('storage/monthly_events'), $imageName);
 
 
         $monthly_event = new MonthlyEvent();
@@ -95,7 +95,7 @@ class MonthlyEventController extends Controller
     public function destroy(MonthlyEvent $monthlyEvent)
     {
         // locate image then delete
-        $image_path = public_path('public/monthly_events/' . $monthlyEvent->image);
+        $image_path = public_path('storage/monthly_events/' . $monthlyEvent->image);
         if (file_exists($image_path)) {
             unlink($image_path);
         }
