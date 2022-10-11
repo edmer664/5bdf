@@ -35,13 +35,17 @@
             <div class="" id="promotion-section">
                 @if (count($promotions) > 0)
                     @foreach ($promotions as $promotion)
-                        <div class="bg-green mb-3">
+                        <div class="bg-green mb-3" data-aos="fade-up"  style="border-radius: 20px">
                             <div class="container-xl">
                                 <div class="row">
-                                    <div class="col-md-6 d-flex justify-content-center py-3">
-                                        <div class="w-75">
+                                    <div class="col-md-6 d-flex py-3">
+                                        <div class="w-75 d-none d-md-block">
                                             <img src="{{ asset('storage/promotions/' . $promotion->image) }}"
-                                                class="rounded img-fluid" alt="">
+                                                class="img-fluid" alt="" style="border-radius: 20px; scale: 95%">
+                                        </div>
+                                        <div class="d-md-none mx-auto">
+                                            <img src="{{ asset('storage/promotions/' . $promotion->image) }}"
+                                                class="img-fluid" alt="" style="border-radius: 20px">
                                         </div>
                                     </div>
                                     {{-- <div class="col-md-6 d-none py-2 d-md-flex align-items-center">
