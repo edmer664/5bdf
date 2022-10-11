@@ -112,7 +112,7 @@ class EventController extends Controller
         //
         Log::info('EventController@destroy');
         // find header img
-        $image_path = public_path('images/events/'.$event->image);
+        $image_path = public_path('storage/events/'.$event->image);
         if(file_exists($image_path)) {
             unlink($image_path);
         }
