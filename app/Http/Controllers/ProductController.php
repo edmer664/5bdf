@@ -42,7 +42,7 @@ class ProductController extends Controller
         //
         $imageFile = $request->file('image');
         $imageName = time() . '.' . $imageFile->getClientOriginalExtension();
-        $imageFile->move(public_path('images/products'), $imageName);
+        $imageFile->move(public_path('storage/products'), $imageName);
 
         Product::create([
             'name' => $request->name,
@@ -94,12 +94,11 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        // find the image from storage then delete
-        $image = Product::find($product->id)->image;
-        Storage::delete('public/products/' . $image);
-        // delete the product
+        // delete img
+        Storage::delete('public/products/' . $product->image);
         $product->delete();
-
+        
+        
         return redirect()->back()->with('success', 'Product deleted successfully');
     }
 }
