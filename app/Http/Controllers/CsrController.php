@@ -40,7 +40,7 @@ class CsrController extends Controller
     {
         $imageFile = $request->file('image');
         $imageName = time().'.'.$imageFile->getClientOriginalExtension();
-        $imageFile->move(public_path('images/csr'), $imageName);
+        $imageFile->move(public_path('storage/csr'), $imageName);
 
         Csr::create([
             'path' => $imageName,
@@ -92,7 +92,13 @@ class CsrController extends Controller
      */
     public function destroy(Csr $csr)
     {
-        //
+        //delete image
+        $image_path = public_path('storage/csr/'.$csr->path);
+        if(file_exists($image_path)){
+            unlink($image_path);
+        }
+        
+        
         $csr->delete();
         return redirect()->back()->with('success','File deleted');
     }
