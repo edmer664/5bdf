@@ -31,7 +31,7 @@
 
 
     <style>
-        .circle-red{
+        .circle-red {
             background-color: #d10000;
             width: 100px;
             height: 100px;
@@ -42,10 +42,11 @@
             z-index: 1;
         }
 
-        .title{
+        .title {
             font-size: 3rem;
         }
-        .text{
+
+        .text {
             font-size: 1.5rem;
         }
     </style>
@@ -64,17 +65,20 @@
                             <h2 class="title">
                                 NY Buffalo Brads Sports Lounge
                             </h2>
-    
+
                             <p class="text">
-                                New York Buffalo Brad’s Sports Lounge is a combination of fine dining restaurant and a bar where
-                                it offers Flavored Chicken Wings, Ribs, Pasta, Pinoy dishes, and Appetizers perfect to pair with
+                                New York Buffalo Brad’s Sports Lounge is a combination of fine dining restaurant and a bar
+                                where
+                                it offers Flavored Chicken Wings, Ribs, Pasta, Pinoy dishes, and Appetizers perfect to pair
+                                with
                                 Liquors and Spirits .
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <img src="{{ asset('assets/images/sl.png') }}" class="img-fluid rounded" id="hero" alt="">
+                            <img src="{{ asset('assets/images/sl.png') }}" class="img-fluid rounded" id="hero"
+                                alt="">
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="color-change">
@@ -114,16 +118,18 @@
                     Our Products
                 </h2>
             </div>
-            <div class="row">
+            <div class="row justify-content-evenly">
                 @if (count($products) > 0)
                     @foreach ($products as $product)
-                        <div class="col-md-4 col-sm-6 p-2" data-aos="fade-up">
+                        <div class="col-md-4 col-sm-6 p-2" data-aos="fade-up" style="width: max-content">
                             <div class="card shadow">
                                 <div class="card-body">
-                                    <img src="{{ asset('storage/products/' . $product->image) }}"
-                                        style="height: 300px;width: 100%;object-fit: cover" class="img-fluid py-3"
-                                        alt="">
-                                    <h5 class="card-title">{{ $product->name }}</h5>
+                                    <div class="mx-auto" style="width: max-content">
+                                        <img src="{{ asset('storage/products/' . $product->image) }}"
+                                            style="height: 300px;width: 300px;object-fit: cover" class="img-fluid py-3"
+                                            alt="">
+                                        <h5 class="card-title">{{ $product->name }}</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -169,13 +175,11 @@
 
     {{-- onscroll .circle-red cover entire div --}}
     <script>
-        
-        
         gsap.registerPlugin(ScrollTrigger);
         gsap.to('.circle-red', {
             scrollTrigger: {
                 trigger: '.circle-red',
-             
+
                 start: 'bottom 80%',
                 end: 'top 50%',
                 scrub: true,
@@ -190,10 +194,10 @@
             ease: 'SlowMo.ease',
         });
 
-        gsap.from('.title',{
+        gsap.from('.title', {
             scrollTrigger: {
                 trigger: '.title',
-                
+
                 start: 'top bottom',
                 end: 'top 50%',
                 scrub: true,
@@ -203,10 +207,10 @@
             ease: 'SlowMo.ease',
         })
 
-        gsap.from('.text',{
+        gsap.from('.text', {
             scrollTrigger: {
                 trigger: '.text',
-                
+
                 start: 'top bottom',
                 end: 'top 50%',
                 scrub: true,
@@ -215,20 +219,19 @@
             duration: 1,
             ease: 'SlowMo.ease',
         })
-        
 
 
-        gsap.to('#hero',{
+
+        gsap.to('#hero', {
             scrollTrigger: {
                 trigger: '#partners',
-                
+
                 start: 'top bottom',
                 end: 'bottom 50%',
                 scrub: true,
             },
-            x:100,
-            y:-100
+            x: 100,
+            y: -100
         })
-
     </script>
 @endpush
