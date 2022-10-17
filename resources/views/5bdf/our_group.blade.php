@@ -32,7 +32,7 @@
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-6 d-flex justify-content-center py-3">
-                        <img src="{{ asset('assets/images/ceo.jpg') }}" class="rounded w-100" alt="">
+                        <img src="{{ asset('assets/images/newCeo.jpg') }}" class="rounded w-100" alt="">
                     </div>
                     {{-- <div class="col-md-6 d-none py-2 d-md-flex align-items-center">
                         <img src="{{ asset('assets/images/ceo.png') }}" class="rounded" alt="">
