@@ -23,7 +23,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" data-aos="fade-left">
-                        <img src="{{ asset('assets/images/hw.png') }}" class="img-fluid rounded" alt="">
+                        <img src="{{ asset('assets/images/hotwings_hero.jpg') }}" class="img-fluid rounded" alt="">
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" data-aos="fade-left">
-                        <img src="{{ asset('assets/images/sl.png') }}" class="img-fluid rounded" alt="">
+                        <img src="{{ asset('assets/images/sports_hero.jpg') }}" class="img-fluid rounded" alt="">
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" data-aos="fade-left">
-                        <img src="{{ asset('assets/images/wu.png') }}" class="img-fluid rounded" alt="">
+                        <img src="{{ asset('assets/images/wingers_hero.jpg') }}" class="img-fluid rounded" alt="">
                     </div>
                 </div>
             </div>

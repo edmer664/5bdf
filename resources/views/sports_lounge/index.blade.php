@@ -75,7 +75,7 @@
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <img src="{{ asset('assets/images/sl.png') }}" class="img-fluid rounded" id="hero"
+                            <img src="{{ asset('assets/images/sports_hero.jpg') }}" class="img-fluid rounded" id="hero"
                                 alt="">
                         </div>
 
