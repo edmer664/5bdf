@@ -123,12 +123,12 @@
                     @foreach ($products as $product)
                         <div class="col-md-4 col-sm-6 p-2" data-aos="fade-up" style="width: max-content">
                             <div class="card shadow">
-                                <div class="card-body">
+                                <div class="card-body p-0">
                                     <div class="mx-auto" style="width: max-content">
                                         <img src="{{ asset('storage/products/' . $product->image) }}"
-                                            style="height: 300px;width: 300px;object-fit: cover" class="img-fluid py-3"
+                                            style="height: 300px;width: 300px;object-fit: cover" class="img-fluid"
                                             alt="">
-                                        <h5 class="card-title">{{ $product->name }}</h5>
+                                        <h5 class="card-title px-3">{{ $product->name }}</h5>
                                     </div>
                                 </div>
                             </div>

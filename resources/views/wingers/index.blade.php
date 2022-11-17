@@ -77,10 +77,8 @@
         <section id="rollTrigger" class="text-white">
             <div class="items">
 
-                <h1 style="width: 5000px; font-weight: bold;z-index: 300; font-size: 4rem" class="py-4 roll">
-                    WINGERS UNLIMITED | WINGERS UNLIMITED | WINGERS UNLIMITED |
-                    WINGERS
-                    UNLIMITED | WINGERS UNLIMITED | WINGERS
+                <h1 style="font-weight: bold;z-index: 300; font-size: 4rem" class="py-4 roll text-center">
+                    WINGERS UNLIMITED 
                 </h1>
                 <div class="container-xl ">
                     <div class="text-white fs-2 text-center" style="z-index: 300;">
@@ -93,13 +91,13 @@
         </section>
 
     </section>
-    <section class="main d-none d-md-block">
+    {{-- <section class="main d-none d-md-block">
         <div class="container">
             <h2 class="filled-text">WINGERS UNLIMITED</h2>
             <h2 class="outline-text">WINGERS UNLIMITED</h2>
             <img class="image hero" src="{{ asset('assets/images/img1.png') }}">
         </div>
-    </section>
+    </section> --}}
 
 
 
@@ -136,12 +134,12 @@
                     @foreach ($products as $product)
                         <div class="col-md-4 col-sm-6 p-2" data-aos="fade-up" style="width: max-content">
                             <div class="card shadow">
-                                <div class="card-body">
+                                <div class="card-body p-0">
                                     <div class="mx-auto" style="width: max-content">
                                         <img src="{{ asset('storage/products/' . $product->image) }}"
-                                            style="height: 300px;width: 300px;object-fit: cover" class="img-fluid py-3"
+                                            style="height: 300px;width: 300px;object-fit: cover" class="img-fluid p-0"
                                             alt="">
-                                        <h5 class="card-title">{{ $product->name }}</h5>
+                                        <h5 class="card-title px-3">{{ $product->name }}</h5>
                                     </div>
                                 </div>
                             </div>
