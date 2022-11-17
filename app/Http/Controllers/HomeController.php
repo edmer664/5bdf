@@ -57,10 +57,12 @@ class HomeController extends Controller
         $wingers = Csr::where('brand', '=', 'wingers')->orderBy('created_at', 'desc')->take(6)->get();
         $hot_wings = Csr::where('brand', '=', 'hot-wings')->orderBy('created_at', 'desc')->take(6)->get();
         $sports = Csr::where('brand', '=', 'sports')->orderBy('created_at', 'desc')->take(6)->get();
+        $main = Csr::where('brand', '=', 'main')->orderBy('created_at', 'desc')->take(6)->get();
         return view('5bdf.csr', [
             'wingers' => $wingers,
             'hot_wings' => $hot_wings,
             'sports' => $sports,
+            'main' => $main,
         ]);
     }
 

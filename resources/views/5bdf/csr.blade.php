@@ -9,6 +9,39 @@
         <div class="container-xl">
             <div class="pb-5">
                 <h2 class="section-title">
+                    5BDF
+                </h2>
+            </div>
+            @if (count($main) > 0)
+                <div class="row">
+                    @foreach ($main as $item)
+                        <div class="col-md-4 col-sm-6">
+                            <img src="{{ asset('storage/csr/' . $item->path) }}"
+                                class="rounded img-fluid mx-auto d-block my-3" alt=""
+                                style="height: 300px; width: 300px; object-fit: cover; object-position: center">
+                        </div>
+                    @endforeach
+                </div>
+            @else
+                <div class="row">
+                    @for ($i = 0; $i < 6; $i++)
+                        <div class="col-md-4 col-sm-6">
+                            <img src="{{ asset('assets/images/img4.jpg') }}" class="rounded img-fluid mx-auto d-block my-3"
+                                alt="" style="height: 300px; width: 300px; object-fit: cover; object-position: center">
+                        </div>
+                    @endfor
+
+                </div>
+            @endif
+
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container-xl">
+            <div class="pb-5">
+                <h2 class="section-title">
                     Wingers Unlimited
                 </h2>
             </div>
