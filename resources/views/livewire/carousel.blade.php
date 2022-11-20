@@ -3,13 +3,13 @@
         .c-image {
             width: 100%;
             object-fit: contain;
-            /* max-height: 100vh; */
+            max-height: 1080px;
         }
 
         @media (min-width: 768px) {
             .c-image {
                 object-fit: contain;
-                /* max-height: unset; */
+                /* max-height: 1080px; */
                 
             }
         }
