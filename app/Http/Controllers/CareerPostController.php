@@ -48,7 +48,11 @@ class CareerPostController extends Controller
         $career->location = $request->location;
         $career->save();
 
-        return redirect()->back()->with('success', 'Career Post Created Successfully');
+        return response()->json([
+            'message' => 'Career Post Created Successfully',
+            'career' => $career,
+            'status' => 200
+        ]);
 
     }
 
