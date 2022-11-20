@@ -5,3 +5,4 @@
 @include('sports_lounge.careers.hero')
 <livewire:career-form />
 <livewire:footer />
+@endsection
