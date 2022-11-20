@@ -4,3 +4,4 @@
 @include('5bdf.careers.hero')
 <livewire:career-form />
 <livewire:footer />
+@endsection
