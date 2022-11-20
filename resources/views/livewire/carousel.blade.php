@@ -2,14 +2,15 @@
     <style>
         .c-image {
             width: 100%;
-            height: 50vh;
             object-fit: contain;
+            /* max-height: 100vh; */
         }
 
         @media (min-width: 768px) {
             .c-image {
-                object-fit: cover;
-                height: 80vh;
+                object-fit: contain;
+                /* max-height: unset; */
+                
             }
         }
     </style>
