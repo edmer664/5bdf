@@ -24,15 +24,16 @@
                         <i class="bi bi-list"></i>
                       </span>
                       Description</h2>
-                    <p>
-                        {{ $career->description }}
-                    </p>
+                    {{-- render quill js data --}}
+                    <div id="description">
+
+                    </div>
                     <h2 class="fs-3 pt-5">
                       <span class="text-orange"><i class="bi bi-list-check"></i> </span>
                       Requirements</h2>
-                    <p>
-                        {{ $career->requirements }}
-                    </p>
+                    {{-- render quill js data --}}
+                    <div id="requirements">
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <h2 class="fs-3">
@@ -50,3 +51,26 @@
         </div>
     </section>
 @endsection
+
+@push('scripts')
+    {{-- quill js --}}
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+        // quill js
+        var quill = new Quill('#description', {
+            modules: {
+                toolbar: false
+            },
+            theme: 'snow'
+        });
+        quill.setContents({!! $career->description !!});
+
+        var quill = new Quill('#requirements', {
+            modules: {
+                toolbar: false
+            },
+            theme: 'snow'
+        });
+        quill.setContents({!! $career->requirements !!});
+    </script>
+@endpush
