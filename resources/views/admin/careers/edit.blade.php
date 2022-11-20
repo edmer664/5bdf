@@ -9,7 +9,7 @@
                 <div class="card-header">
                     <h4 class="card-title">Edit</h4>
                 </div>
-                <form action="{{ route('5bdf.admin.careers.update', $career->id) }}" method="post">
+                <form action="{{ route('5bdf.admin.careers.update', $career->id) }}" method="post" >
                   @method('PUT')
                     <div class="card-body">
                         @csrf
@@ -29,11 +29,17 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea class="form-control" name="description" id="description" rows="3" required>{{$career->description}}</textarea>
+                            {{-- render quill js --}}
+                            <div id="editor" style="height: 300px">
+                               
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="requirements">Requirements</label>
-                            <textarea class="form-control" name="requirements" id="requirements" rows="3" required>{{$career->requirements}}</textarea>
+                            {{-- render quill js --}}
+                            <div id="editor2" style="height: 300px">
+                              
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="location">Location</label>
@@ -43,10 +49,73 @@
                     </div>
                     <div class="card-footer">
                         <a href="{{route('5bdf.admin.careers.index')}}" class="btn btn-secondary">Cancel</a>
-                        <button type="submit" class="btn btn-warning">Submit</button>
+                        <button type="submit" id="submit" class="btn btn-warning">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 @endsection
+
+@push('scripts')
+
+    {{-- quill js --}}
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <script>
+        var quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+        quill.setContents({!! $career->description !!});
+
+        var quill2 = new Quill('#editor2', {
+            theme: 'snow'
+        });
+        quill2.setContents({!! $career->requirements !!});
+        
+
+        document.getElementById('submit').addEventListener('click', function(e) {
+            e.preventDefault();
+            // prevent multiple clicks
+            document.getElementById('submit').disabled = true;
+            // get the data from the quill editor
+            var description = quill.getContents();
+            var requirements = quill2.getContents();
+            var title = document.getElementById('title').value;
+            var brand = document.getElementById('brand').value;
+            var location = document.getElementById('location').value;
+            // create a form data object
+
+            var formData = new FormData();
+            formData.append('description', JSON.stringify(description));
+            formData.append('requirements', JSON.stringify(requirements));
+            formData.append('title', title);
+            formData.append('brand', brand);
+            formData.append('location', location);
+            formData.append('_method', 'PUT');
+            // send the data to the server
+            const URL = "{{ route('5bdf.admin.careers.update', $career->id) }}";
+            fetch(URL, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute(
+                            'content'),
+                    }
+                })
+                .then(response => response.json())
+                .then(result => {
+                    console.log('Success:', result);
+                    document.getElementById('submit').disabled = false;
+                    window.location.href = "{{route('5bdf.admin.careers.index')}}";
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('submit').disabled = false;
+                });
+        });
+
+
+    </script>
+
+@endpush

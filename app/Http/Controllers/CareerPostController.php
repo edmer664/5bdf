@@ -16,7 +16,7 @@ class CareerPostController extends Controller
     public function index()
     {
         //
-        return view('admin.careers.index',[
+        return view('admin.careers.index', [
             'careers' => CareerPost::all()
         ]);
     }
@@ -53,7 +53,6 @@ class CareerPostController extends Controller
             'career' => $career,
             'status' => 200
         ]);
-
     }
 
     /**
@@ -76,7 +75,7 @@ class CareerPostController extends Controller
     public function edit(CareerPost $career)
     {
         //
-        return view('admin.careers.edit',[
+        return view('admin.careers.edit', [
             'career' => $career
         ]);
     }
@@ -91,8 +90,18 @@ class CareerPostController extends Controller
     public function update(Request $request, CareerPost $career)
     {
         //
-        $career->update($request->all());
-        return redirect()->route('5bdf.admin.careers.index')->with('success', 'Career Post Updated Successfully');
+        $career->title = $request->title;
+        $career->description = $request->description;
+        $career->requirements = $request->requirements;
+        $career->brand = $request->brand;
+        $career->location = $request->location;
+        $career->save();
+
+        return response()->json([
+            'message' => 'Career Post Updated Successfully',
+            'career' => $career,
+            'status' => 200
+        ]);
     }
 
     /**
@@ -104,8 +113,8 @@ class CareerPostController extends Controller
     public function destroy(CareerPost $career)
     {
         //
-        Log::info('Deleting career post: '.$career->title);
+        Log::info('Deleting career post: ' . $career->title);
         $career->delete();
-        return redirect()->back()->with('success','Career Post Deleted Successfully');
+        return redirect()->back()->with('success', 'Career Post Deleted Successfully');
     }
 }

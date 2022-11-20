@@ -190,8 +190,6 @@
                     // unblock the button
                     document.getElementById('submit').disabled = false;                    
                 });
-
-
         })
     </script>
 @endpush
