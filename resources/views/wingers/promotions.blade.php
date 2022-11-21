@@ -16,9 +16,8 @@
                 </h2>
             </div>
             <p class="text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima nostrum animi odit architecto minus
-                exercitationem sint excepturi facilis similique esse perferendis, hic cumque, ea totam nisi dolore atque
-                reiciendis.
+                Avail these exciting promos and discounts now! For more information, please visit our contact page.
+
 
             </p>
         </div>
@@ -91,7 +90,7 @@
         </div>
     </section>
 
-    <section class="py-5">
+    {{-- <section class="py-5">
         <div class="container-xl">
             <p class="text-center">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus asperiores cupiditate tempora
@@ -101,7 +100,7 @@
 
             </p>
         </div>
-    </section>
+    </section> --}}
 
     <livewire:contact-us />
     <livewire:footer />

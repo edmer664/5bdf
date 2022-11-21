@@ -35,13 +35,13 @@ class HotWingController extends Controller
             return view('hot_wings.promotions',[
                 'carousels' => Carousel::where('brand', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
                 'promotions' => Promotion::where('brand', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
-                'all' => true
+                'all' => false
             ]);
         }else{
             return view('hot_wings.promotions',[
                 'carousels' => Carousel::where('brand', '=', 'hot-wings')->orderBy('created_at', 'desc')->get(),
                 'promotions' => Promotion::where('brand', '=', 'hot-wings')->orderBy('created_at', 'desc')->take(3)->get(),
-                'all' => false
+                'all' => true
             ]);
         }
     }

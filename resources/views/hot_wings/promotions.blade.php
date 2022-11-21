@@ -79,7 +79,7 @@
                     {{-- green view more btn --}}
                     <div class="row justify-content-center">
                         <div class="col-4 text-center">
-                            <a href="{{route('5bdf.wingers.promotions',['all' => 'true'])}}" class="btn bg-orange text-white">
+                            <a href="{{route('5bdf.hot-wings.promotions',['all' => 'true'])}}" class="btn bg-orange text-white">
                                 View More
                             </a>
                         </div>
@@ -89,7 +89,7 @@
         </div>
     </section>
 
-    <section class="py-5 d-none">
+    {{-- <section class="py-5 d-none">
         <div class="container-xl">
             <p class="text-center">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus asperiores cupiditate tempora
@@ -99,7 +99,7 @@
 
             </p>
         </div>
-    </section>
+    </section> --}}
 
     <livewire:contact-us />
     <livewire:footer />
