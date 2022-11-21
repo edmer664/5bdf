@@ -4,6 +4,7 @@
             width: 100%;
             object-fit: contain;
             max-height: 1080px;
+            max-width: 1920px;
         }
 
         @media (min-width: 768px) {
