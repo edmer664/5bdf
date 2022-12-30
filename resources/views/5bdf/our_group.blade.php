@@ -46,29 +46,28 @@
                             </i></small>
                         <p>
                             Coming from a family of businessmen, Mr. Robin G. Robins III started his humble beginnings when
-                            he had his first training during his teenage years. He was given tasks to do and taught to learn
-                            by himself. He learned to put value in his name in order to be a trusted business member in the
-                            community. As a leader, he also learned to work hard and know everybody's job in the business so
-                            he'll be much wiser than anybody else. During his early years of leadership, he learned that the
-                            harder mistakes he made, the more learnings he gained. He always brings his generals with him,
-                            ready to conquer the demands of the business.
+                            he had his first training during his teenage years. Learning the ins and outs of business and
+                            placing value in his name in order to be a trusted business member in the community. As a
+                            leader, he also learned to work hard and to know everybody&apos;s job in the business so he can
+                            manage the challenges and overcome the obstacles in the business&apos; daily life. During his early
+                            years of leadership, he learned that the harder mistakes he made, the more learning he gained.
                         </p>
                         <p>
-                            <i>
+                            
 
-                                As Mr. Robin G. Robins III quoted, “There are multiple pages on how to run a business. First is
-                                by knowing everyone's job, second is actually reaching out and marketing your business as much
-                                as you can, and third is managing your people well.”
-                            </i>
+                                As Mr. Robin G. Robins III once quoted, <i>“There are multiple pages on how to run a business.
+                                First is to know how the business works to be able to reach out to the team, second is to
+                                manage your people well, and third is to market your business as much as you can.” </i>Mr. Robin
+                                G. Robins III also follows a humble leadership by respecting each employee no matter what
+                                position you have in the organization. Balance, Dedication, & Family are our company core
+                                values. In order to bring life to the organization there must be,
+                            
                         </p>
                         <p>
 
-                            Mr. Robin G. Robins III follows a humble leadership by respecting each employees no matter what
-                            position you have in the organization. He believes that it is also a way of lifting everyone's
-                            morale. Lastly, Mr. Robin G. Robins III shared that during the trying times, he always sees to
-                            it to keep his team who have contributed something for the success of the company. As Mr. Robins
-                            III quotes, “It takes sacrifice to keep everyone in the organization but it pays off as we've
-                            retained most of the people despite the circumstances.”
+                            For Balance: equality, mutual respect, work/life balance, & be believer of faith; For
+                            Dedication: hard work, result oriented, career growth & work invested; For Family: empathy, team
+                            work, open communication, & customer centric.
                         </p>
                     </div>
                 </div>
@@ -121,7 +120,8 @@
             </p>
         </div>
     </section>
-    <section class="py-5">
+
+    {{-- <section class="py-5">
         <div class="container-xl">
             <div class="pb-5 text-center">
                 <h2 class="section-title">
@@ -178,7 +178,7 @@
             </div>
         </div>
 
-    </section>
+    </section> --}}
 
     {{-- Contact Details --}}
     <livewire:contact-details />
