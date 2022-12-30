@@ -108,15 +108,9 @@
                 </h2>
             </div>
             <p>
-                We are committed in treating our customers with respect, friendly and family oriented service.
-            <ul>
-                <li>
-                    We continually grow with creativity and innovation.
-                </li>
-                <li>
-                    We integrate honesty, integrity and business ethics into all aspects of our operation.
-                </li>
-            </ul>
+                <b>BALANCE</b> Equality Work-Life Balance Respect Believer of Faith <br>
+                <b>DEDICATION</b> Hard Work Work Investment Career Growth Result Oriented <br>
+                <b>FAMILY ORIENTED</b> Customer Centric Team work Empathy Open Communication
             </p>
         </div>
     </section>
