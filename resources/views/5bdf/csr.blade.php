@@ -18,7 +18,7 @@
                         <div class="col-md-4 col-sm-6">
                             <img src="{{ asset('storage/csr/' . $item->path) }}"
                                 class="rounded img-fluid mx-auto d-block my-3" alt=""
-                                style="height: 300px; width: 300px; object-fit: cover; object-position: center">
+                                style="height: 300px; width: 300px; object-fit: contain; object-position: center">
                         </div>
                     @endforeach
                 </div>
@@ -27,7 +27,7 @@
                     @for ($i = 0; $i < 6; $i++)
                         <div class="col-md-4 col-sm-6">
                             <img src="{{ asset('assets/images/img4.jpg') }}" class="rounded img-fluid mx-auto d-block my-3"
-                                alt="" style="height: 300px; width: 300px; object-fit: cover; object-position: center">
+                                alt="" style="height: 300px; width: 300px; object-fit: contain; object-position: center">
                         </div>
                     @endfor
 
@@ -83,7 +83,7 @@
                         <div class="col-md-4 col-sm-6">
                             <img src="{{ asset('storage/csr/' . $hot_wing->path) }}"
                                 class="rounded img-fluid mx-auto d-block my-3" alt=""
-                                style="height: 300px; width: 300px; object-fit: cover; object-position: center" srcset="">
+                                style="height: 300px; width: 300px; object-fit: contain; object-position: center" srcset="">
                         </div>
                     @endforeach
                 </div>
@@ -93,7 +93,7 @@
                         <div class="col-md-4 col-sm-6">
                             <img src="{{ asset('assets/images/img4.jpg') }}" c
                                 class="rounded img-fluid mx-auto d-block my-3" alt=""
-                                style="height: 300px; width: 300px; object-fit: cover; object-position: center">
+                                style="height: 300px; width: 300px; object-fit: contain; object-position: center">
                         </div>
                     @endfor
 
@@ -116,7 +116,7 @@
                         <div class="col-md-4 col-sm-6">
                             <img src="{{ asset('storage/csr/' . $sports_lounge->path) }}"
                                 class="rounded img-fluid mx-auto d-block my-3" alt=""
-                                style="height: 300px; width: 300px; object-fit: cover; object-position: center">
+                                style="height: 300px; width: 300px; object-fit: contain; object-position: center">
                         </div>
                     @endforeach
                 </div>
@@ -125,7 +125,7 @@
                     @for ($i = 0; $i < 6; $i++)
                         <div class="col-md-4 col-sm-6">
                             <img src="{{ asset('assets/images/img4.jpg') }}" class="rounded img-fluid mx-auto d-block my-3"
-                                alt="" style="height: 300px; width: 300px; object-fit: cover; object-position: center">
+                                alt="" style="height: 300px; width: 300px; object-fit: contain; object-position: center">
                         </div>
                     @endfor
 
