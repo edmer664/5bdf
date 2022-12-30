@@ -121,21 +121,33 @@
                                 CEO
                             </i></small>
                         <p data-aos="fade-up">
-                            Coming from a family of businessmen, Mr. Robin G. Robins III started his humble beginnings when he had his first training during his teenage years. Learning the ins and outs of business and placing value in his name in order to be a trusted business member in the community. As a leader, he also learned to work hard and to know everybody’s job in the business so he can manage the challenges and overcome the obstacles in the business’ daily life. During his early years of leadership, he learned that the harder mistakes he made, the more learning he gained.
+                            Coming from a family of businessmen, Mr. Robin G. Robins III started his humble beginnings when
+                            he had his first training during his teenage years. Learning the ins and outs of business and
+                            placing value in his name in order to be a trusted business member in the community. As a
+                            leader, he also learned to work hard and to know everybody&apos;s job in the business so he can
+                            manage the challenges and overcome the obstacles in the business&apos; daily life. During his early
+                            years of leadership, he learned that the harder mistakes he made, the more learning he gained.
                         </p>
                         <p data-aos="fade-up">
-                            As Mr. Robin G. Robins III once quoted, “There are multiple pages on how to run a business. First is to know how the business works to be able to reach out to the team, second is to manage your people well, and third is to market your business as much as you can.” Mr. Robin G. Robins III also follows a humble leadership by respecting each employee no matter what position you have in the organization. Balance, Dedication, & Family are our company core values. In order to bring life to the organization there must be,
+                            As Mr. Robin G. Robins III once quoted, “There are multiple pages on how to run a business.
+                            First is to know how the business works to be able to reach out to the team, second is to manage
+                            your people well, and third is to market your business as much as you can.” Mr. Robin G. Robins
+                            III also follows a humble leadership by respecting each employee no matter what position you
+                            have in the organization. Balance, Dedication, & Family are our company core values. In order to
+                            bring life to the organization there must be,
                         </p>
                         <p data-aos="fade-up">
-                            For Balance: equality, mutual respect, work/life balance, & be believer of faith; For Dedication: hard work, result oriented, career growth & work invested; For Family: empathy, team work, open communication, & customer centric.
+                            For Balance: equality, mutual respect, work/life balance, & be believer of faith; For
+                            Dedication: hard work, result oriented, career growth & work invested; For Family: empathy, team
+                            work, open communication, & customer centric.
                         </p>
-                        
+
                     </div>
                     <div class="col-md-6 d-none py-2 d-md-flex align-items-center">
-                        <div >
-                            
-                            <img src="{{ asset('assets/images/newCeo.jpg') }}" data-aos="flip-right" class="rounded d-block mx-auto" 
-                                width="70%" style="object-fit: cover;" alt="" >
+                        <div>
+
+                            <img src="{{ asset('assets/images/newCeo.jpg') }}" data-aos="flip-right"
+                                class="rounded d-block mx-auto" width="70%" style="object-fit: cover;" alt="">
                         </div>
                     </div>
                 </div>
@@ -162,21 +174,21 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-right" data-aos-delay="300">
-                    <a href="{{ route('5bdf.hot-wings.franchise') }}">
+                    <a href="{{ route('5bdf.hot-wings.index') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
                             <img class="img-fluid" src="{{ asset('assets/images/hotWingsLogo.png') }}" alt="">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-delay="300">
-                    <a href="{{ route('5bdf.wingers.franchise') }}">
+                    <a href="{{ route('5bdf.wingers.index') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
                             <img class="img-fluid" src="{{ asset('assets/images/wingersLogo.png') }}" alt="">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-left" data-aos-delay="300">
-                    <a href="{{ route('5bdf.sports.franchise') }}">
+                    <a href="{{ route('5bdf.sports.index') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
                             <img class="img-fluid" src="{{ asset('assets/images/sportsLoungeLogo.png') }}"
                                 alt="">
