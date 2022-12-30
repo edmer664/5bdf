@@ -36,7 +36,7 @@
                                     <div class="card-header p-0" style="position: relative;">
                                         {{-- Image header --}}
                                         <img data-src="{{ asset('storage/events/'.$event->image) }}" alt=""
-                                            class="rounded-top mx-auto d-block" style="height: 200px; width: 100%; object-fit: cover">
+                                            class="rounded-top mx-auto d-block" style="height: 200px; width: 100%; object-fit: contain">
                                         {{-- Date --}}
                                         <div class="bg-orange p-2 w-25" style="position: absolute; bottom: 0">
                                             <div class="text-center">
