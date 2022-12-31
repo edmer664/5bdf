@@ -156,7 +156,7 @@
     </section>
 
     {{-- Franchise Section --}}
-    <section class="py-5" id="franchise">
+    {{-- <section class="py-5" id="franchise">
         <div class="container-xl">
             <div class="pb-5">
                 <h2 class="section-title">
@@ -197,11 +197,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     {{-- Franchise Form --}}
-    <livewire:franchise-form />
+    {{-- <livewire:franchise-form /> --}}
 
     {{-- Contact Us --}}
     <livewire:contact-us />

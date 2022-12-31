@@ -35,11 +35,11 @@
                             <li class="nav-item">
                                 <a class="nav-link {{(Route::currentRouteName() == '5bdf.our-group') ? 'active' : ''}}" href="{{route('5bdf.our-group')}}">Our Group</a>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="{{route('5bdf.index')}}#franchise" class="btn bg-orange text-white">
                                     Franchise With Us <i class="bi bi-arrow-right"></i>
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>
