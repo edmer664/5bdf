@@ -108,9 +108,9 @@
                 </h2>
             </div>
             <p>
-                <b>BALANCE</b> Equality Work-Life Balance Respect Believer of Faith <br>
-                <b>DEDICATION</b> Hard Work Work Investment Career Growth Result Oriented <br>
-                <b>FAMILY ORIENTED</b> Customer Centric Team work Empathy Open Communication
+                <b>BALANCE</b>- Equality Work-Life Balance Respect Believer of Faith <br>
+                <b>DEDICATION</b>- Hard Work Work Investment Career Growth Result Oriented <br>
+                <b>FAMILY ORIENTED</b>- Customer Centric Team work Empathy Open Communication
             </p>
         </div>
     </section>
