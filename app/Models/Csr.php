@@ -12,5 +12,6 @@ class Csr extends Model
     protected $fillable = [
         'brand',
         'path',
+        'year',
     ];
 }

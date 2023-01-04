@@ -45,6 +45,7 @@ class CsrController extends Controller
         Csr::create([
             'path' => $imageName,
             'brand' => $request->brand,
+            'year' => $request->year,
         ]);
         return redirect()->back()->with('success','Image uploaded successfully');
     }

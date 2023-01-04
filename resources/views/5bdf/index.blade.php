@@ -122,7 +122,7 @@
                             </i></small>
                         <p data-aos="fade-up">
                             Coming from a family of businessmen, Mr. Robin G. Robins III started his humble beginnings when
-                            he had his first training during his teenage years. Learning the ins and outs of business and
+                            he had his first training during his teenage years. Learning the ins & outs of business and
                             placing value in his name in order to be a trusted business member in the community. As a
                             leader, he also learned to work hard and to know everybody&apos;s job in the business so he can
                             manage the challenges and overcome the obstacles in the business&apos; daily life. During his early

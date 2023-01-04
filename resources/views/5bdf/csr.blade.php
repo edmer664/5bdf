@@ -5,7 +5,7 @@
     <livewire:navbar-wingers />
 
     {{-- Content --}}
-    <section class="py-5">
+    {{-- <section class="py-5">
         <div class="container-xl">
             <div class="pb-5">
                 <h2 class="section-title">
@@ -133,7 +133,32 @@
             @endif
 
         </div>
-    </section>
+    </section> --}}
+    @foreach($csrsByYear as $year => $csrs)
+
+    <section class="py-5">
+        <div class="container-xl">
+            <div class="pb-5">
+                <h2 class="section-title">
+                    {{ $year }}
+                </h2>
+            </div>
+            @if (count($csrs) > 0)
+                <div class="row">
+                    @foreach ($csrs as $csr)
+                        <div class="col-md-4 col-sm-6">
+                            <img src="{{ asset('storage/csr/' . $csr->path) }}"
+                                class="rounded img-fluid mx-auto d-block my-3" alt=""
+                                style="height: 300px; width: 300px; object-fit: contain; object-position: center">
+                        </div>
+                    @endforeach
+                </div>
+            @endif
+
+        </div>
+    </section> 
+    @endforeach
+
 
     {{-- Contact Us --}}
     <livewire:contact-us />

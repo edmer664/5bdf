@@ -16,6 +16,11 @@
                                 required>
                         </div> --}}
                         <div class="form-group">
+                            <label for="date">Year</label>
+                            <input type="number" class="form-control" name="year" id="year" placeholder="20XX" min="2000" max="2099" step="1"
+                                required>
+                        </div>
+                        <div class="form-group">
                             <label for="brand">brand</label>
                             <select class="form-control" name="brand" id="brand">
                                 <option value="hot-wings">Hot Wings</option>
@@ -27,7 +32,7 @@
                         <div class="custom-file">
                             <label class="custom-file-label" for="image">Image</label>
                             <input type="file" class="custom-file-input" name="image" id="image" placeholder=""
-                                aria-describedby="fileHelpId">
+                                aria-describedby="fileHelpId" required>
                         </div>
                         {{-- preview image --}}
                         <div class="form-group py-2">
@@ -60,7 +65,7 @@
                                         Date
                                     </th>
                                     <th>
-                                        brand
+                                        year
                                     </th>
                                     <th>
                                         Action
@@ -78,7 +83,7 @@
                                             {{ $csr->created_at->format('d M Y') }}
                                         </td>
                                         <td>
-                                            @if ($csr->brand == 'hot-wings')
+                                            {{-- @if ($csr->brand == 'hot-wings')
                                                 Hot Wings
                                             @elseif($csr->brand == 'sports')
                                                 Sports Lounge
@@ -86,7 +91,8 @@
                                                 5BDF
                                             @elseif($csr->brand == 'wingers')
                                                 Wingers Unlimited
-                                            @endif
+                                            @endif --}}
+                                            {{ $csr->year }}
                                         </td>
                                         <td>
                                             <div class="btn-group btn-sm">
