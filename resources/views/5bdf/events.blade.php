@@ -99,7 +99,7 @@
                     @foreach ($monthly_events as $monthly_event)
                         <div class="col-md-4 col-sm-6">
                             <img src="{{ asset('storage/monthly_events/' . $monthly_event->image) }}"  class="rounded img-fluid mx-auto d-block my-3"
-                            alt="" style="height: 300px; width: 100%; object-fit: cover; object-position: center" >
+                            alt="" style="height: 300px; width: 100%; object-fit: contain; object-position: center" >
                         </div>
                     @endforeach
                 @else
