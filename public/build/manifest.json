@@ -8,5 +8,15 @@
     "file": "assets/app.0205ef1c.css",
     "src": "resources/css/app.css",
     "isEntry": true
+  },
+  "node_modules/basiclightbox/dist/basicLightbox.min.css": {
+    "file": "assets/basicLightbox.min.dbf96cef.css",
+    "src": "node_modules/basiclightbox/dist/basicLightbox.min.css",
+    "isEntry": true
+  },
+  "node_modules/bootstrap/dist/css/bootstrap.min.css": {
+    "file": "assets/bootstrap.min.faf03c21.css",
+    "src": "node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "isEntry": true
   }
 }

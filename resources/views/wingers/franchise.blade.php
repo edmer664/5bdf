@@ -17,6 +17,17 @@
                         </h2>
                     </div>
                     <p class="fs-5">
+                        Unlimited happiness? We got you!
+                        Take your business to the next level.
+                        Franchise with Wingers Unlimited Flavored Wings.
+                        Experience our concept of unlimited chicken & rice + fries.
+                        <br>
+                        <br>
+                        Join our young, dynamic, and aggressive brand.
+                        A crowd favorite, for the yourng and young at heart.
+                        Sign up with us and start your franchise now!
+                        <br>
+                        <br>
                         Get started by filling in this <a href="https://forms.gle/X4Jo7NKoZuyDjor2A" >form</a>
                     </p>
                 </div>

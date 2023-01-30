@@ -16,6 +16,12 @@
                         </h2>
                     </div>
                     <p class="fs-5">
+                        Take a step and be your own boss. Be our franchisee.
+                        Join our expanding brand with our distinct taste and 
+                        premium quality products. <br>
+                        <br>
+                        Sign up with us and discover why NY Buffalo Brad's Hot Wings is one of the "HOT-test" franchise opportunities. <br>
+                        <br>
                         Get started by filling in this <a href="https://forms.gle/X4Jo7NKoZuyDjor2A" >form</a>
                     </p>
                 </div>
