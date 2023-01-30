@@ -39,11 +39,11 @@
                                 <div class="row">
                                     <div class="col-md-6 d-flex py-3">
                                         <div class="w-75 d-none d-md-block">
-                                            <img src="{{ asset('storage/promotions/' . $promotion->image) }}"
+                                            <img src="{{ asset('storage/promotions/' . $promotion->image) }}" data-lightbox="{{asset('storage/promotions/' . $promotion->image)}}"
                                                 class="img-fluid" alt="" style="border-radius: 20px; scale: 95%">
                                         </div>
                                         <div class="d-md-none mx-auto">
-                                            <img src="{{ asset('storage/promotions/' . $promotion->image) }}"
+                                            <img src="{{ asset('storage/promotions/' . $promotion->image) }}" data-lightbox="{{asset('storage/promotions/' . $promotion->image)}}"
                                                 class="img-fluid" alt="" style="border-radius: 20px">
                                         </div>
                                     </div>

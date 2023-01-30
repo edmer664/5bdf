@@ -77,4 +77,15 @@ class HomeController extends Controller
     {
         return view('5bdf.our_group');
     }
+
+
+    public function downloadNYBrochure()
+    {
+        return response()->download(public_path('5bdf/NYbrochure.pdf'));
+    }
+    public function downloadWUBrochure()
+    {
+        return response()->download(public_path('5bdf/WUbrochure.pdf'));
+    }
+
 }

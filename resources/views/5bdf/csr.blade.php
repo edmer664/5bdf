@@ -147,8 +147,8 @@
                 <div class="row">
                     @foreach ($csrs as $csr)
                         <div class="col-md-4 col-sm-6">
-                            <img src="{{ asset('storage/csr/' . $csr->path) }}"
-                                class="rounded img-fluid mx-auto d-block my-3" alt=""
+                            <img src="{{ asset('storage/csr/' . $csr->path) }}" data-lightbox="{{asset('storage/csr/' . $csr->path)}}"
+                                class="rounded img-fluid mx-auto d-block my-3 a-img" alt=""
                                 style="height: 300px; width: 300px; object-fit: contain; object-position: center">
                         </div>
                     @endforeach
@@ -156,7 +156,7 @@
             @endif
 
         </div>
-    </section> 
+    </section>
     @endforeach
 
 

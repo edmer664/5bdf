@@ -77,7 +77,7 @@
                         <div class="col-md-4 col-sm-6 p-2" data-aos="fade-up" style="width: max-content">
                             <div class="card shadow">
                                 <div class="card-body p-0">
-                                    <div class="mx-auto" style="width: max-content">
+                                    <div class="mx-auto" style="width: max-content" data-lightbox="{{asset('storage/products/' . $product->image)}}">
                                         <img src="{{ asset('storage/products/' . $product->image) }}"
                                             style="height: 300px;width: 300px;object-fit: cover" class="img-fluid"
                                             alt="">
@@ -117,7 +117,7 @@
     <livewire:contact-form />
 
 
-    <livewire:contact-details />
+    <livewire:contact-details :email="'nybuffalofranchise@5bdf.ph'" />
     {{-- Footer --}}
 
     <livewire:footer />

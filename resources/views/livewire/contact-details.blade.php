@@ -26,9 +26,9 @@
                     <h3 class="mt-3 fw-bold">
                         Email
                     </h3>
-                    <a href="mailto:headoffice@5bdf.ph" class="text-decoration-none text-dark">
-                        <p>
-                            headoffice@5bdf.ph
+                    <a href="mailto:{{$email ? $email : 'headoffice@5bdf.ph'}}" class="text-decoration-none text-dark">
+                        <p> 
+                            {{$email ? $email : 'headoffice@5bdf.ph'}}
                         </p>
                     </a>
                 </div>
@@ -48,7 +48,8 @@
 <b>NY Sports Lounge</b> -<small> 520 4930 / 520 4931 / 520 4932 / 520 4933 / 520 4934 <br></small>
 <b>Wingers Unlimited</b> - <small> 520 4930 / 520 4931 / 520 4932 / 520 4933 / 520 4934 <br></small>
                     </p> --}}
-                    520 4930 / 520 4931 / 520 4932 / 520 4933 / 520 4934
+                    (+63)32-5204930 to 34 <br>
+                    (+63)917-7037372
 
                 </div>
             </div>

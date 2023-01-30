@@ -59,6 +59,7 @@ Route::group(['as' => '5bdf.wingers.','middleware'=>'auth'], function () {
     Route::get('/wingersunlimited/promotions', [WingersController::class, 'promotions'])->name('promotions');
     Route::get('/wingersunlimited/franchise', [WingersController::class, 'franchise'])->name('franchise');
     Route::get('/wingersunlimited/store', [WingersController::class, 'store'])->name('store');
+    Route::get('/wingersunlimited/download',[HomeController::class, 'downloadWUBrochure'])->name('downloadWUBrochure');
 });
 
 Route::group(['as' => '5bdf.hot-wings.','middleware'=>'auth'], function () {
@@ -67,6 +68,7 @@ Route::group(['as' => '5bdf.hot-wings.','middleware'=>'auth'], function () {
     Route::get('/nybuffalobradshotwings/careers', [HotWingController::class, 'careers'])->name('careers');
     Route::get('/nybuffalobradshotwings/franchise', [HotWingController::class, 'franchise'])->name('franchise');
     Route::get('/nybuffalobradshotwings/store', [HotWingController::class, 'store'])->name('store');
+    Route::get('/nybuffalobradshotwings/download',[HomeController::class, 'downloadNYBrochure'])->name('downloadNYBrochure');
 });
 
 Route::group(['as' => '5bdf.sports.','middleware'=>'auth'], function () {

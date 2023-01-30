@@ -8,7 +8,7 @@
         <div class="container-xl">
             <div class="pb-5">
                 <h1 class="section-title">
-                    Store
+                    Branches
                 </h1>
             </div>
             {{-- <p>
@@ -23,11 +23,29 @@
     <section class="pb-5">
         <div class="container-xl">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/bb/store1.jpg') }}" class="img-fluid py-3" alt="" srcset="">
+                <div class="col-md-4 col-sm-6 p-3">
+                    <img src="{{ asset('assets/stores/bb/store1.jpg') }}" class="img-fluid py-3" alt="" srcset="" data-lightbox="{{asset('assets/stores/bb/store1.jpg')}}">
+                    <h6 class="fw-bold">
+                        NY Hotwings - Mango
+                    </h6>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/bb/store2.jpg') }}" class="img-fluid py-3" alt="" srcset="">
+                <div class="col-md-4 col-sm-6 p-3">
+                    <img src="{{ asset('assets/stores/bb/store2.jpg') }}" class="img-fluid py-3" alt="" srcset="" data-lightbox="{{asset('assets/stores/bb/store2.jpg')}}">
+                    <h6 class="fw-bold">
+                        NY Hotwings - Mactan
+                    </h6>
+                </div>
+                <div class="col-md-4 col-sm-6 p-3">
+                    <img src="{{ asset('assets/stores/bb/naga.jpg') }}" class="img-fluid py-3" alt="" srcset="" data-lightbox="{{asset('assets/stores/bb/naga.jpg')}}">
+                    <h6 class="fw-bold">
+                        NY Hotwings - Garden Bloc
+                    </h6>
+                </div>
+                <div class="col-md-4 col-sm-6 p-3">
+                    <img src="{{ asset('assets/stores/bb/gardenbloc.jpg') }}" class="img-fluid py-3" alt="" srcset="" data-lightbox="{{asset('assets/stores/bb/gardenbloc.jpg')}}">
+                    <h6 class="fw-bold">
+                        NY Hotwings - Naga
+                    </h6>
                 </div>
             </div>
         </div>

@@ -2,12 +2,12 @@
 
 @section('content')
     {{-- Navbar --}}
-    <livewire:navbar-wingers />
+    <livewire:navbar-wingers/>
 
     {{-- Content --}}
     <section>
         <img class="" style="object-fit: cover;height: 50vh;width: 100%;" src="{{ asset('assets/images/img5.jpg') }}"
-            alt="">
+             alt="">
     </section>
     <section class="py-5">
         <div class="container-xl">
@@ -18,10 +18,14 @@
             </div>
 
             <p class="text-center">
-                The business idea was created in 2015 by five young and enthusiastic businessmen in Cebu. Established in the
-                year 2016 after pursuing a whole year of research and development, finally the idea then came into reality.
-                Registered in the Philippines Securities and Exchange Commission (SEC) in April 25, 2016, known as 5 Brad’s
-                Dragon Food Corporation (5BDF Corporation) doing business as New York Buffalo Brad’s Hot Wings and Wingers
+                The business idea was created in 2015 by five young and enthusiastic businessmen in Cebu. Established in
+                the
+                year 2016 after pursuing a whole year of research and development, finally the idea then came into
+                reality.
+                Registered in the Philippines Securities and Exchange Commission (SEC) in April 25, 2016, known as 5
+                Brad’s
+                Dragon Food Corporation (5BDF Corporation) doing business as New York Buffalo Brad’s Hot Wings and
+                Wingers
                 Unlimited Flavored Wings.
             </p>
         </div>
@@ -45,28 +49,37 @@
                                 Chief Executive Officer
                             </i></small>
                         <p>
-                            Coming from a family of businessmen, Mr. Robin G. Robins III started his humble beginnings when
-                            he had his first training during his teenage years. Learning the ins and outs of business and
+                            Coming from a family of businessmen, Mr. Robin G. Robins III started his humble beginnings
+                            when
+                            he had his first training during his teenage years. Learning the ins and outs of business
+                            and
                             placing value in his name in order to be a trusted business member in the community. As a
-                            leader, he also learned to work hard and to know everybody&apos;s job in the business so he can
-                            manage the challenges and overcome the obstacles in the business&apos; daily life. During his early
-                            years of leadership, he learned that the harder mistakes he made, the more learning he gained.
+                            leader, he also learned to work hard and to know everybody&apos;s job in the business so he
+                            can
+                            manage the challenges and overcome the obstacles in the business&apos; daily life. During
+                            his early
+                            years of leadership, he learned that the harder mistakes he made, the more learning he
+                            gained.
                         </p>
                         <p>
-                            
 
-                                As Mr. Robin G. Robins III once quoted, <i>“There are multiple pages on how to run a business.
-                                First is to know how the business works to be able to reach out to the team, second is to
-                                manage your people well, and third is to market your business as much as you can.” </i>Mr. Robin
-                                G. Robins III also follows a humble leadership by respecting each employee no matter what
-                                position you have in the organization. Balance, Dedication, & Family are our company core
-                                values. In order to bring life to the organization there must be,
-                            
+
+                            As Mr. Robin G. Robins III once quoted, <i>“There are multiple pages on how to run a
+                                business.
+                                First is to know how the business works to be able to reach out to the team, second is
+                                to
+                                manage your people well, and third is to market your business as much as you can.” </i>Mr.
+                            Robin
+                            G. Robins III also follows a humble leadership by respecting each employee no matter what
+                            position you have in the organization. Balance, Dedication, & Family are our company core
+                            values. In order to bring life to the organization there must be,
+
                         </p>
                         <p>
 
                             For Balance: equality, mutual respect, work/life balance, & be believer of faith; For
-                            Dedication: hard work, result oriented, career growth & work invested; For Family: empathy, team
+                            Dedication: hard work, result oriented, career growth & work invested; For Family: empathy,
+                            team
                             work, open communication, & customer centric.
                         </p>
                     </div>
@@ -84,7 +97,8 @@
             </div>
 
             <p>
-                To bring the internationally acclaimed Flavored Chicken Buffalo Wings in the Philippine market by innovating
+                To bring the internationally acclaimed Flavored Chicken Buffalo Wings in the Philippine market by
+                innovating
                 and introducing an array of sauces that is perfect for the Filipino taste.
 
             </p>
@@ -107,11 +121,47 @@
                     Core Values
                 </h2>
             </div>
-            <p>
-                <b>BALANCE</b>- Equality Work-Life Balance Respect Believer of Faith <br>
-                <b>DEDICATION</b>- Hard Work Work Investment Career Growth Result Oriented <br>
-                <b>FAMILY ORIENTED</b>- Customer Centric Team work Empathy Open Communication
-            </p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">
+                                <b>BALANCE</b>
+                            </h3>
+                            <p class="card-text">
+                                Equality Work-Life Balance Respect Believer of Faith
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">
+                                <b>DEDICATION</b>
+                            </h3>
+                            <p class="card-text">
+                                Hard Work Work Investment Career Growth Result Oriented
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">
+                                <b>FAMILY ORIENTED</b>
+                            </h3>
+                            <p class="card-text">
+                                Customer Centric Team work Empathy Open Communication
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -175,9 +225,9 @@
     </section> --}}
 
     {{-- Contact Details --}}
-    <livewire:contact-details />
+    <livewire:contact-details/>
 
 
     {{-- Footer --}}
-    <livewire:footer />
+    <livewire:footer/>
 @endsection

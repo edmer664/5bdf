@@ -8,7 +8,7 @@
         <div class="container-xl">
             <div class="pb-5">
                 <h1 class="section-title">
-                    Store
+                    Branches
                 </h1>
             </div>
             {{-- <p>
@@ -22,30 +22,64 @@
     </section>
     <section class="pb-5">
         <div class="container-xl">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/wu/store1.jpg') }}" class="img-fluid py-3" alt=""
+            <div class="row ">
+                <div class="col-md-4 col-sm-6 p-3">
+
+                    <img src="{{ asset('assets/stores/wu/store1.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store1.jpg')}}"
                         srcset="">
+                    <h6 class="fw-bold">
+                        Wingers Unlimited - Ayala Central Bloc
+                    </h6>
+
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/wu/store2.jpg') }}" class="img-fluid py-3" alt=""
+                <div class="col-md-4 col-sm-6 p-3">
+
+                    <img src="{{ asset('assets/stores/wu/store2.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store2.jpg')}}"
                         srcset="">
+                    <h6 class="fw-bold">
+                        Wingers Unlimited - Robinsons Galleria
+                    </h6>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/wu/store3.jpg') }}" class="img-fluid py-3" alt=""
+                <div class="col-md-4 col-sm-6 p-3">
+
+
+                    <img src="{{ asset('assets/stores/wu/store3.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store3.jpg')}}"
                         srcset="">
+                    <h6 class="fw-bold">
+                        Wingers Unlimited - Mactan Town Center
+                    </h6>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/wu/store4.jpg') }}" class="img-fluid py-3" alt=""
+                <div class="col-md-4 col-sm-6 p-3">
+
+                    <img src="{{ asset('assets/stores/wu/store4.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store4.jpg')}}"
                         srcset="">
+                    <h6 class="fw-bold">
+                        Wingers Unlimited - Mango
+                    </h6>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/wu/store5.jpg') }}" class="img-fluid py-3" alt=""
+                <div class="col-md-4 col-sm-6 p-3">
+
+                    <img src="{{ asset('assets/stores/wu/store5.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store5.jpg')}}"
                         srcset="">
+                    <h6 class="fw-bold">
+                        Wingers Unlimited - Parkmall
+                    </h6>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/wu/store6.jpg') }}" class="img-fluid py-3" alt=""
+                <div class="col-md-4 col-sm-6 p-3">
+
+                    <img src="{{ asset('assets/stores/wu/store6.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store6.jpg')}}"
                         srcset="">
+                    <h6 class="fw-bold">
+                        Wingers Unlimited - Talamban
+                    </h6>
+                </div>
+                <div class="col-md-4 col-sm-6 p-3">
+
+                    <img src="{{ asset('assets/stores/wu/ormoc.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/ormoc.jpg')}}"
+                         srcset="">
+                    <h6 class="fw-bold">
+                        Wingers Unlimited - Ormoc
+                    </h6>
                 </div>
             </div>
         </div>

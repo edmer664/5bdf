@@ -15,13 +15,8 @@
                             Franchise With Us
                         </h2>
                     </div>
-                    <p class="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto recusandae eius eligendi aperiam,
-                        reprehenderit
-                        pariatur doloremque accusamus dolorem? Quidem unde cupiditate suscipit! Assumenda illum ea sed
-                        laboriosam
-                        quam
-                        voluptas.
+                    <p class="fs-5">
+                        Get started by filling in this <a href="https://forms.gle/X4Jo7NKoZuyDjor2A" >form</a>
                     </p>
                 </div>
                 <div class="col-md-6">

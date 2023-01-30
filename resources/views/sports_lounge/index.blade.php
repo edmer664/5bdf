@@ -125,7 +125,7 @@
                             <div class="card shadow">
                                 <div class="card-body p-0">
                                     <div class="mx-auto" style="width: max-content">
-                                        <img src="{{ asset('storage/products/' . $product->image) }}"
+                                        <img src="{{ asset('storage/products/' . $product->image) }}" data-lightbox="{{asset('storage/products/' . $product->image)}}"
                                             style="height: 300px;width: 300px;object-fit: cover" class="img-fluid"
                                             alt="">
                                         <h5 class="card-title px-3">{{ $product->name }}</h5>

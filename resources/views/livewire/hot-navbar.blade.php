@@ -6,8 +6,8 @@
         <ul class=" list-unstyled d-flex gap-3 gap-md-5 align-items-lg-center  m-0">
             <li class="fw-5"><a class="text-decoration-none text-white" href="{{ route('5bdf.hot-wings.careers') }}">Careers</a></li>
             <li class="fw-5"><a class="text-decoration-none text-white" href="{{ route('5bdf.hot-wings.promotions') }}">Promotions</a></li>
-            {{-- <li class="fw-5"><a class="text-decoration-none text-white" href="{{ route('5bdf.hot-wings.franchise') }}">Franchise</a></li> --}}
-            <li class="fw-5"><a class="text-decoration-none text-white" href="{{ route('5bdf.hot-wings.store') }}">Store</a></li>
+             <li class="fw-5"><a class="text-decoration-none text-white" href="{{ route('5bdf.hot-wings.franchise') }}">Franchise</a></li>
+            <li class="fw-5"><a class="text-decoration-none text-white" href="{{ route('5bdf.hot-wings.store') }}">Branches</a></li>
         </ul>
     </div>
 </div>

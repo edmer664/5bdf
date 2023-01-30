@@ -8,7 +8,7 @@
         <div class="container-xl">
             <div class="pb-5">
                 <h1 class="section-title">
-                    Store
+                    Branches
                 </h1>
             </div>
             {{-- <p>
@@ -23,13 +23,19 @@
     <section class="pb-5">
         <div class="container-xl">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/sl/store1.jpg') }}" class="img-fluid py-3" style="object-fit: cover;height: 100%;" alt=""
+                <div class="col-md-4 col-sm-6 p-3">
+                    <img src="{{ asset('assets/stores/sl/store1.jpg') }}" class="img-fluid py-3" style="object-fit: cover;height: 100%;" alt="" data-lightbox="{{asset('assets/stores/sl/store1.jpg')}}"
                         srcset="">
+                    <h6 class="fw-bold">
+                        NY Buffalo Brads Sports Lounge - Ayala Central Bloc
+                    </h6>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="{{ asset('assets/stores/sl/store2.jpg') }}" class="img-fluid py-3" style="object-fit: cover;height: 100%;" alt=""
+                <div class="col-md-4 col-sm-6 p-3">
+                    <img src="{{ asset('assets/stores/sl/store2.jpg') }}" class="img-fluid py-3" style="object-fit: cover;height: 100%;" alt="" data-lightbox="{{asset('assets/stores/sl/store2.jpg')}}"
                         srcset="">
+                    <h6 class="fw-bold">
+                        NY Buffalo Brads Sports Lounge - Ayala Central Bloc (Inside)
+                    </h6>
                 </div>
             </div>
         </div>

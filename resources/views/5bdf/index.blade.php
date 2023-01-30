@@ -125,7 +125,8 @@
                             he had his first training during his teenage years. Learning the ins & outs of business and
                             placing value in his name in order to be a trusted business member in the community. As a
                             leader, he also learned to work hard and to know everybody&apos;s job in the business so he can
-                            manage the challenges and overcome the obstacles in the business&apos; daily life. During his early
+                            manage the challenges and overcome the obstacles in the business&apos; daily life. During his
+                            early
                             years of leadership, he learned that the harder mistakes he made, the more learning he gained.
                         </p>
                         <p data-aos="fade-up">
@@ -155,8 +156,8 @@
         </div>
     </section>
 
-    {{-- Franchise Section --}}
-    {{-- <section class="py-5" id="franchise">
+    {{--     Franchise Section --}}
+    <section class="py-5" id="franchise">
         <div class="container-xl">
             <div class="pb-5">
                 <h2 class="section-title">
@@ -172,32 +173,32 @@
         </div>
         <div class="container-xl">
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-evenly">
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-right" data-aos-delay="300">
-                    <a href="{{ route('5bdf.hot-wings.index') }}">
+                    <a href="{{ route('5bdf.hot-wings.franchise') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
                             <img class="img-fluid" src="{{ asset('assets/images/hotWingsLogo.png') }}" alt="">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-delay="300">
-                    <a href="{{ route('5bdf.wingers.index') }}">
+                    <a href="{{ route('5bdf.wingers.franchise') }}">
                         <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
                             <img class="img-fluid" src="{{ asset('assets/images/wingersLogo.png') }}" alt="">
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 p-3" data-aos="fade-left" data-aos-delay="300">
-                    <a href="{{ route('5bdf.sports.index') }}">
-                        <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge">
-                            <img class="img-fluid" src="{{ asset('assets/images/sportsLoungeLogo.png') }}"
-                                alt="">
-                        </div>
-                    </a>
-                </div>
+                {{--                <div class="col-md-4 col-sm-6 p-3" data-aos="fade-left" data-aos-delay="300"> --}}
+                {{--                    <a href="{{ route('5bdf.sports.franchise') }}"> --}}
+                {{--                        <div class="card shadow justify-content-center d-flex align-items-center w-100 h-100 h-enlarge"> --}}
+                {{--                            <img class="img-fluid" src="{{ asset('assets/images/sportsLoungeLogo.png') }}" --}}
+                {{--                                alt=""> --}}
+                {{--                        </div> --}}
+                {{--                    </a> --}}
+                {{--                </div> --}}
             </div>
         </div>
-    </section> --}}
+    </section>
 
 
     {{-- Franchise Form --}}

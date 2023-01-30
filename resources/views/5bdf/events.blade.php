@@ -36,7 +36,7 @@
                                     <div class="card-header p-0" style="position: relative;">
                                         {{-- Image header --}}
                                         <img data-src="{{ asset('storage/events/'.$event->image) }}" alt=""
-                                            class="rounded-top mx-auto d-block" style="height: 200px; width: 100%; object-fit: contain">
+                                            class="rounded-top mx-auto d-block a-img" style="height: 200px; width: 100%; object-fit: contain">
                                         {{-- Date --}}
                                         <div class="bg-orange p-2 w-25" style="position: absolute; bottom: 0">
                                             <div class="text-center">
@@ -58,7 +58,7 @@
                                         </h3>
                                         <p class="pb-4">
                                             @foreach (json_decode($event->description) as $e)
-                                                {{ 
+                                                {{
                                                 // first 200 characters
                                                 substr($e[0]->insert, 0, 150) . '...'
                                                  }}
@@ -98,8 +98,8 @@
                 @if (count($monthly_events) > 0)
                     @foreach ($monthly_events as $monthly_event)
                         <div class="col-md-4 col-sm-6">
-                            <img src="{{ asset('storage/monthly_events/' . $monthly_event->image) }}"  class="rounded img-fluid mx-auto d-block my-3"
-                            alt="" style="height: 300px; width: 100%; object-fit: contain; object-position: center" >
+                            <img src="{{ asset('storage/monthly_events/' . $monthly_event->image) }}"  class="rounded img-fluid mx-auto d-block my-3 a-img"
+                            alt="" style="height: 300px; width: 100%; object-fit: contain; object-position: center" data-lightbox="{{asset('storage/monthly_events/' . $monthly_event->image)}}">
                         </div>
                     @endforeach
                 @else
