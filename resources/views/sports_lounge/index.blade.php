@@ -118,7 +118,7 @@
                     Our Products
                 </h2>
             </div>
-            <div class="row justify-content-evenly">
+            <div class="row">
                 @if (count($products) > 0)
                     @foreach ($products as $product)
                         <div class="col-md-4 col-sm-6 p-2" data-aos="fade-up" style="width: max-content">
