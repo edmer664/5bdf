@@ -24,15 +24,15 @@
         <div class="container-xl">
             <div class="row">
                 <div class="col-md-4 col-sm-6 p-3">
-                    <img src="{{ asset('assets/stores/bb/store1.jpg') }}" class="img-fluid py-3" alt="" srcset=""
-                        data-lightbox="{{ asset('assets/stores/bb/store1.jpg') }}">
+                    <img src="{{ asset('assets/stores2/bb/mango.jpg') }}" class="img-fluid py-3" alt="" srcset=""
+                        data-lightbox="{{ asset('assets/stores2/bb/mango.jpg') }}">
                     <h6 class="fw-bold">
                         NY Hotwings - Mango
                     </h6>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
-                    <img src="{{ asset('assets/stores/bb/store2.jpg') }}" class="img-fluid py-3" alt=""
-                        srcset="" data-lightbox="{{ asset('assets/stores/bb/store2.jpg') }}">
+                    <img src="{{ asset('assets/stores2/bb/mactan.jpg') }}" class="img-fluid py-3" alt=""
+                        srcset="" data-lightbox="{{ asset('assets/stores2/bb/mactan.jpg') }}">
                     <h6 class="fw-bold">
                         NY Hotwings - Mactan
                     </h6>
@@ -46,8 +46,8 @@
                     </h6>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
-                    <img src="{{ asset('assets/stores/bb/gardenbloc.jpg') }}" class="img-fluid py-3" alt=""
-                        srcset="" data-lightbox="{{ asset('assets/stores/bb/gardenbloc.jpg') }}">
+                    <img src="{{ asset('assets/stores2/bb/gardenbloc.jpg') }}" class="img-fluid py-3" alt=""
+                        srcset="" data-lightbox="{{ asset('assets/stores2/bb/gardenbloc.jpg') }}">
                     <h6 class="fw-bold">
                         NY Hotwings - Garden Bloc
                     </h6>

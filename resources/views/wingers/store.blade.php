@@ -25,8 +25,8 @@
             <div class="row ">
                 <div class="col-md-4 col-sm-6 p-3">
 
-                    <img src="{{ asset('assets/stores/wu/store1.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store1.jpg')}}"
-                        srcset="">
+                    <img src="{{ asset('assets/stores2/wu/cb.jpg') }}" class="img-fluid py-3" alt=""
+                        data-lightbox="{{ asset('assets/stores2/wu/cb.jpg') }}" srcset="">
                     <h6 class="fw-bold">
                         Wingers Unlimited - Ayala Central Bloc
                     </h6>
@@ -34,8 +34,8 @@
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
 
-                    <img src="{{ asset('assets/stores/wu/store2.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store2.jpg')}}"
-                        srcset="">
+                    <img src="{{ asset('assets/stores2/wu/rbgalleria.jpg') }}" class="img-fluid py-3" alt=""
+                        data-lightbox="{{ asset('assets/stores2/wu/rbgalleria.jpg') }}" srcset="">
                     <h6 class="fw-bold">
                         Wingers Unlimited - Robinsons Galleria
                     </h6>
@@ -43,40 +43,40 @@
                 <div class="col-md-4 col-sm-6 p-3">
 
 
-                    <img src="{{ asset('assets/stores/wu/store3.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store3.jpg')}}"
-                        srcset="">
+                    <img src="{{ asset('assets/stores2/wu/mactan.jpg') }}" class="img-fluid py-3" alt=""
+                        data-lightbox="{{ asset('assets/stores2/wu/mactan.jpg') }}" srcset="">
                     <h6 class="fw-bold">
                         Wingers Unlimited - Mactan Town Center
                     </h6>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
 
-                    <img src="{{ asset('assets/stores/wu/store4.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store4.jpg')}}"
-                        srcset="">
+                    <img src="{{ asset('assets/stores2/wu/mango.jpg') }}" class="img-fluid py-3" alt=""
+                        data-lightbox="{{ asset('assets/stores2/wu/mango.jpg') }}" srcset="">
                     <h6 class="fw-bold">
                         Wingers Unlimited - Mango
                     </h6>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
 
-                    <img src="{{ asset('assets/stores/wu/store5.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store5.jpg')}}"
-                        srcset="">
+                    <img src="{{ asset('assets/stores2/wu/parkmall.jpg') }}" class="img-fluid py-3" alt=""
+                        data-lightbox="{{ asset('assets/stores2/wu/parkmall.jpg') }}" srcset="">
                     <h6 class="fw-bold">
                         Wingers Unlimited - Parkmall
                     </h6>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
 
-                    <img src="{{ asset('assets/stores/wu/store6.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/store6.jpg')}}"
-                        srcset="">
+                    <img src="{{ asset('assets/stores2/wu/talamban.jpg') }}" class="img-fluid py-3" alt=""
+                        data-lightbox="{{ asset('assets/stores2/wu/talamban.jpg') }}" srcset="">
                     <h6 class="fw-bold">
                         Wingers Unlimited - Talamban
                     </h6>
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
 
-                    <img src="{{ asset('assets/stores/wu/ormoc.jpg') }}" class="img-fluid py-3" alt="" data-lightbox="{{asset('assets/stores/wu/ormoc.jpg')}}"
-                         srcset="">
+                    <img src="{{ asset('assets/stores/wu/ormoc.jpg') }}" class="img-fluid py-3" alt=""
+                        data-lightbox="{{ asset('assets/stores/wu/ormoc.jpg') }}" srcset="">
                     <h6 class="fw-bold">
                         Wingers Unlimited - Ormoc
                     </h6>
