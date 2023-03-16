@@ -111,7 +111,7 @@
             <div class="container-xl">
                 <div class="row">
                     <div class="col-12 d-md-none d-flex justify-content-center py-3">
-                        <img src="{{ asset('assets/images/newCeo.jpg') }}" class="rounded w-50" alt="">
+                        <img src="{{ asset('assets/ceo_homepage.jpg') }}" class="rounded w-50" alt="">
                     </div>
                     <div class="col-md-6 py-5 text-white d-flex justify-content-center flex-column">
                         <h2 data-aos="fade-up">
@@ -147,7 +147,7 @@
                     <div class="col-md-6 d-none py-2 d-md-flex align-items-center">
                         <div>
 
-                            <img src="{{ asset('assets/images/newCeo.jpg') }}" data-aos="flip-right"
+                            <img src="{{ asset('assets/ceo_homepage.jpg') }}" data-aos="flip-right"
                                 class="rounded d-block mx-auto" width="70%" style="object-fit: cover;" alt="">
                         </div>
                     </div>
