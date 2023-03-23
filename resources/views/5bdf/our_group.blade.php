@@ -130,7 +130,7 @@
                                 <b>BALANCE</b>
                             </h3>
                             <p class="card-text">
-                                Equality Work-Life Balance Respect Believer of Faith
+                                Equality | Work-Life | Balance | Respect | Believer of Faith
                             </p>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
                                 <b>DEDICATION</b>
                             </h3>
                             <p class="card-text">
-                                Hard Work Work Investment Career Growth Result Oriented
+                                Hard Work | Work Investment | Career Growth | Result Oriented
                             </p>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                                 <b>FAMILY ORIENTED</b>
                             </h3>
                             <p class="card-text">
-                                Customer Centric Team work Empathy Open Communication
+                                Customer Centric | Team work | Empathy | Open Communication
                             </p>
                         </div>
                     </div>
