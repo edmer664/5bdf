@@ -125,39 +125,51 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">
                                 <b>BALANCE</b>
                             </h3>
-                            <p class="card-text">
-                                Equality | Work-Life | Balance | Respect | Believer of Faith
-                            </p>
+                            <ul class="card-text">
+                                <li>Equality</li>
+                                <li>Work-Life Balance</li>
+                                <li>Respect</li>
+                                <li>Believer of Faith</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">
                                 <b>DEDICATION</b>
                             </h3>
-                            <p class="card-text">
-                                Hard Work | Work Investment | Career Growth | Result Oriented
-                            </p>
+                            <ul class="card-text">
+                                <li>Hard Work</li>
+                                <li>Work Investment</li>
+                                <li>Career Growth</li>
+                                <li>Result Oriented</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">
                                 <b>FAMILY ORIENTED</b>
                             </h3>
-                            <p class="card-text">
-                                Customer Centric | Team work | Empathy | Open Communication
-                            </p>
+                            <ul class="card-text">
+                                <li>Customer Centric</li>
+                                <li>Team work</li>
+                                <li>Empathy</li>
+                                <li>Open Communication</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
