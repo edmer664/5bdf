@@ -39,7 +39,7 @@
         </div>
     </section>
     {{-- section with fixed bg parallax --}}
-    <section class="hw-banner" style="background-image: url('{{ asset('parallax/banner2.jpg') }}')">
+    <section class="hw-banner" style="background-image: url('{{ asset('assets/images/hero2.jpg') }}')">
 
     </section>
 
@@ -77,7 +77,8 @@
                         <div class="col-md-4 col-sm-6 p-2" data-aos="fade-up" style="width: max-content">
                             <div class="card shadow">
                                 <div class="card-body p-0">
-                                    <div class="mx-auto" style="width: max-content" data-lightbox="{{asset('storage/products/' . $product->image)}}">
+                                    <div class="mx-auto" style="width: max-content"
+                                        data-lightbox="{{ asset('storage/products/' . $product->image) }}">
                                         <img src="{{ asset('storage/products/' . $product->image) }}"
                                             style="height: 300px;width: 300px;object-fit: cover" class="img-fluid"
                                             alt="">
