@@ -165,7 +165,7 @@
                 </h2>
             </div>
             <p>
-                Grow your business with us thru our Franchise package
+                Grow your business with us through our Franchise package
 
             </p>
 
