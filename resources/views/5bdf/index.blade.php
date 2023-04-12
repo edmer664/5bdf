@@ -127,20 +127,20 @@
                             leader, he also learned to work hard and to know everybody&apos;s job in the business so he can
                             manage the challenges and overcome the obstacles in the business&apos; daily life. During his
                             early
-                            years of leadership, he learned that the harder mistakes he made, the more learning he gained.
+                            years of leadership, he learned that the more mistakes made, the more learning he gained.
                         </p>
                         <p data-aos="fade-up">
                             As Mr. Robin G. Robins III once quoted, “There are multiple pages on how to run a business.
                             First is to know how the business works to be able to reach out to the team, second is to manage
                             your people well, and third is to market your business as much as you can.” Mr. Robin G. Robins
                             III also follows a humble leadership by respecting each employee no matter what position you
-                            have in the organization. Balance, Dedication, & Family are our company core values. In order to
-                            bring life to the organization there must be,
+                            have in the organization.
                         </p>
                         <p data-aos="fade-up">
-                            For Balance: equality, mutual respect, work/life balance, & be believer of faith; For
-                            Dedication: hard work, result oriented, career growth & work invested; For Family: empathy, team
-                            work, open communication, & customer centric.
+                            Balance, Dedication, and Balance are the company's core values in order to bring life to the
+                            organization. Balance emphasizes on equality, mutual respect, work/life balance, and be believer
+                            of faith. Dedication focuses on hardwork, result-oriented, career growth, and work invested.
+                            Family highlights on empathy, teamwork, open communication, and customer centric.
                         </p>
 
                     </div>
