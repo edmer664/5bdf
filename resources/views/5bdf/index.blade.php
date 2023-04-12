@@ -36,7 +36,7 @@
                             NY Sports Lounge Flagship
                         </h2>
                         <p>
-                            New York Buffalo Brad&#x27;s Sports Lounge is a combination of fine dining restaurant and a bar
+                            New York Buffalo Brad&#x27;s Sports Lounge is a combination of fine dining restaurant and bar
                             where
                             it offers Flavored Chicken Wings, Ribs, Pasta, Pinoy dishes, and Appetizers perfect to pair with
                             Liquors and Spirits .
@@ -57,7 +57,7 @@
                         </h2>
                         <p>
                             Wingers Unlimited is a restaurant where it serves unlimited dine-in experience and offers
-                            Flavored Chicken Wings in five different sauces, rice, flavored Fries, bottomless softdrinks,
+                            Flavored Chicken Wings in five different sauces, rice, flavored fries, bottomless softdrinks,
                             juices, and soft served ice cream all at an affordable price per head.
                         </p>
                     </div>
