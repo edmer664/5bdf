@@ -78,7 +78,7 @@
             <div class="items">
 
                 <h1 style="font-weight: bold;z-index: 300; font-size: 4rem" class="py-4 roll text-center">
-                    WINGERS UNLIMITED 
+                    WINGERS UNLIMITED
                 </h1>
                 <div class="container-xl ">
                     <div class="text-white fs-2 text-center" style="z-index: 300;">
@@ -136,7 +136,8 @@
                             <div class="card shadow">
                                 <div class="card-body p-0">
                                     <div class="mx-auto" style="width: max-content">
-                                        <img src="{{ asset('storage/products/' . $product->image) }}" data-lightbox="{{asset('storage/products/' . $product->image)}}"
+                                        <img src="{{ asset('storage/products/' . $product->image) }}"
+                                            data-lightbox="{{ asset('storage/products/' . $product->image) }}"
                                             style="height: 300px;width: 300px;object-fit: cover" class="img-fluid p-0"
                                             alt="">
                                         <h5 class="card-title px-3">{{ $product->name }}</h5>
