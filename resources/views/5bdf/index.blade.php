@@ -113,7 +113,8 @@
                     <div class="col-12 d-md-none d-flex justify-content-center py-3">
                         <img src="{{ asset('assets/ceo_homepage.jpg') }}" class="rounded w-50" alt="">
                     </div>
-                    <div class="col-md-6 py-5 text-white d-flex justify-content-center flex-column">
+                    <div class="col-md-6 py-5 text-white d-flex justify-content-center flex-column"
+                        style="text-align: justify">
                         <h2 data-aos="fade-up">
                             ROBIN G. ROBINS III
                         </h2>
@@ -137,7 +138,8 @@
                             have in the organization.
                         </p>
                         <p data-aos="fade-up">
-                            Balance, Dedication, and Balance are the company's core values in order to bring life to the
+                            Balance, Dedication, and Family Oriented are the company's core values in order to bring life to
+                            the
                             organization. Balance emphasizes on equality, mutual respect, work/life balance, and be believer
                             of faith. Dedication focuses on hardwork, result-oriented, career growth, and work invested.
                             Family highlights on empathy, teamwork, open communication, and customer centric.
