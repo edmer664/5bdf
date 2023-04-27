@@ -41,7 +41,8 @@
                     {{-- <div class="col-md-6 d-none py-2 d-md-flex align-items-center">
                         <img src="{{ asset('assets/images/ceo.png') }}" class="rounded" alt="">
                     </div> --}}
-                    <div class="col-md-6 py-2 text-white d-flex justify-content-center flex-column">
+                    <div class="col-md-6 py-2 text-white d-flex justify-content-center flex-column"
+                        style="text-align: justify">
                         <h2>
                             ROBIN G. ROBINS III
                         </h2>
@@ -78,7 +79,10 @@
                         <p>
 
                             For Balance: equality, mutual respect, work/life balance, & be believer of faith; For
-                            Dedication: hard work, result oriented, career growth & work invested; For Family: empathy,
+                            Dedication: hard work, result oriented, career growth & work invested;
+                        </p>
+                        <p>
+                            For Family: empathy,
                             team
                             work, open communication, & customer centric.
                         </p>
