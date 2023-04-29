@@ -79,6 +79,8 @@
                         <p>
 
                             For Balance: equality, mutual respect, work/life balance, & be believer of faith; For
+                        </p>
+                        <p>
                             Dedication: hard work, result oriented, career growth & work invested;
                         </p>
                         <p>
