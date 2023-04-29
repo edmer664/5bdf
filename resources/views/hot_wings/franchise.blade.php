@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-md-6">
                     <img class="img-fluid h-100 rounded" style="object-fit: cover"
-                        src="{{ asset('assets/stores/bb/gardenbloc.jpg') }}" alt="">
+                        src="{{ asset('assets/stores2/bb/gardenbloc.jpg') }}" alt="">
                 </div>
             </div>
         </div>

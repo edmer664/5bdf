@@ -26,62 +26,52 @@
                 <div class="col-md-4 col-sm-6 p-3">
                     <img src="{{ asset('assets/stores2/bb/mango.jpg') }}" class="img-fluid py-3" alt="" srcset=""
                         data-lightbox="{{ asset('assets/stores2/bb/mango.jpg') }}">
-                    <h6 class="">
-                        New York Buffalo Brad's Hot Wings
-
-
-                        Mango Square
-
-
-                        "Drive Thru"
+                    <h6 class="text-center">
+                        <span class="fw-bold">New York Buffalo Brad's Hot Wings</span><br>
+                        Mango Square<br>
+                        "Drive Thru"<br>
                         Mango Avenue, Cebu City
-
                     </h6>
+
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
                     <img src="{{ asset('assets/stores2/bb/mactan.jpg') }}" class="img-fluid py-3" alt=""
                         srcset="" data-lightbox="{{ asset('assets/stores2/bb/mactan.jpg') }}">
-                    <h6>
-                        New York Buffalo Brad's Hot Wings
+                    <h6 class="text-center">
+                        <span class="fw-bold">New York Buffalo Brad's Hot Wings</span><br>
 
-
-
-                        City Time Square
-
+                        City Time Square<br>
                     </h6>
+
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
                     <img src="{{ asset('assets/stores2/bb/gardenbloc.jpg') }}" class="img-fluid py-3" alt=""
                         srcset="" data-lightbox="{{ asset('assets/stores2/bb/gardenbloc.jpg') }}">
 
-                    <h6>
-                        New York Buffalo Brad's Hot Wings
+                    <h6 class="text-center">
+                        <span class="fw-bold">New York Buffalo Brad's Hot Wings</span><br>
 
-
-
-                        Garden Bloc
-                        Garden Bloc, IT Park, Lahug, Cebu City
-
+                        Garden Bloc<br>
+                        Garden Bloc, IT Park, Lahug, Cebu City<br>
                     </h6>
+
                 </div>
                 <div class="col-md-4 col-sm-6 p-3">
                     <img src="{{ asset('assets/stores/bb/naga.jpg') }}" class="img-fluid py-3" alt="" srcset=""
                         data-lightbox="{{ asset('assets/stores/bb/naga.jpg') }}">
-                    <h6>
-                        New York Buffalo Brad's Hot Wings
-
-
-
-                        NY Shell Mobility Uling Road Naga Cebu Branch
-
+                    <h6 class="text-center">
+                        <span class="fw-bold">New York Buffalo Brad's Hot Wings</span><br>
+                        NY Shell Mobility <br> Uling Road Naga Cebu Branch<br>
                     </h6>
+
                 </div>
 
                 <div class="col-md-4 col-sm-6 p-3">
                     <img src="{{ asset('assets/stores/bb/shell_m.jpg') }}" class="img-fluid py-3" alt=""
                         srcset="" data-lightbox="{{ asset('assets/stores/bb/shell_m.jpg') }}">
-                    <h6>
-                        New York Buffalo Brad's Hot Wings - Shell Mobility Cebu Country Club
+                    <h6 class="text-center">
+                        <span class="fw-bold">New York Buffalo Brad's Hot Wings</span><br> Shell Mobility Cebu Country
+                        Club <br>
                         Gov. Cuenco Ave. Kasambagan, Cebu City
 
                     </h6>
@@ -90,8 +80,9 @@
                 <div class="col-md-4 col-sm-6 p-3">
                     <img src="{{ asset('assets/stores/bb/shell_n.jpg') }}" class="img-fluid py-3" alt=""
                         srcset="" data-lightbox="{{ asset('assets/stores/bb/shell_n.jpg') }}">
-                    <h6>
-                        New York Buffalo Brad's - NY Shell North Gateway Branch JP Rizal North Rd.
+                    <h6 class="text-center">
+                        <span class="fw-bold">New York Buffalo Brad's Hot Wings</span><br>
+                        NY Shell North Gateway Branch <br> JP Rizal North Rd.
                         Labogon, Mandaue City
 
                     </h6>
