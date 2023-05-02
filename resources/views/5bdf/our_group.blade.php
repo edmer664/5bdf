@@ -78,10 +78,10 @@
                         </p>
                         <p>
 
-                            For Balance: equality, mutual respect, work/life balance, & be believer of faith; For
+                            For Balance: equality, mutual respect, work/life balance, & be believer of faith;
                         </p>
                         <p>
-                            Dedication: hard work, result oriented, career growth & work invested;
+                            For Dedication: hard work, result oriented, career growth & work invested;
                         </p>
                         <p>
                             For Family: empathy,
