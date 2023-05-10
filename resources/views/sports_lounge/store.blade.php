@@ -8,7 +8,7 @@
         <div class="container-xl">
             <div class="pb-5">
                 <h1 class="section-title">
-                    Branches
+                    Branch
                 </h1>
             </div>
             {{-- <p>
