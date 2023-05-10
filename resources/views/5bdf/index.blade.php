@@ -140,7 +140,7 @@
                         <p data-aos="fade-up">
                             Balance, Dedication, and Family Oriented are the company's core values in order to bring life to
                             the
-                            organization. Balance emphasizes on equality, mutual respect, work/life balance, and be believer
+                            organization. Balance emphasizes on equality, mutual respect, work-life balance, and be believer
                             of faith. Dedication focuses on hardwork, result-oriented, career growth, and work invested.
                             Family highlights on empathy, teamwork, open communication, and customer centric.
                         </p>

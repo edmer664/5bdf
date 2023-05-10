@@ -8,10 +8,10 @@
                     href="{{ route('5bdf.sports.careers') }}">Careers</a></li>
             <li class="fw-5"><a class="text-decoration-none text-white"
                     href="{{ route('5bdf.sports.promotions') }}">Promotions</a></li>
-{{--             <li class="fw-5"><a class="text-decoration-none text-white"--}}
-{{--                    href="{{ route('5bdf.sports.franchise') }}">Franchise</a></li>--}}
+            {{--             <li class="fw-5"><a class="text-decoration-none text-white" --}}
+            {{--                    href="{{ route('5bdf.sports.franchise') }}">Franchise</a></li> --}}
             <li class="fw-5"><a class="text-decoration-none text-white"
-                    href="{{ route('5bdf.sports.store') }}">Branches</a></li>
+                    href="{{ route('5bdf.sports.store') }}">Branch</a></li>
         </ul>
     </div>
 </div>

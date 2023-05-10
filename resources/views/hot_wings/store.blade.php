@@ -41,6 +41,7 @@
                         <span class="fw-bold">New York Buffalo Brad's Hot Wings</span><br>
 
                         City Time Square<br>
+                        City Time Square, Marigodon Rd., Basak, Lapu-Lapu City<br>
                     </h6>
 
                 </div>
